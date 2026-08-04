@@ -1,0 +1,57 @@
+{
+  "title": "nianzhibai/91",
+  "claim": "nianzhibai/91 — nine one",
+  "score": 7,
+  "why_good": "A self-hosted private video site that aggregates multiple Chinese cloud drives (115, PikPak, 123, etc.) and supports 302 direct playback to avoid bandwidth costs, plus a short-video mode and one-time share links.",
+  "value": "Chinese users with large video libraries pay for a hassle-free setup and ongoing support to access their videos anywhere without bandwidth costs.",
+  "risk": "115 or PikPak could integrate a similar feature natively, killing the need for a third-party tool.",
+  "evidence": [
+    "https://github.com/nianzhibai/91",
+    "1,354★",
+    "364 forks",
+    "7 contributors",
+    "139 commits/30d",
+    "created 2026-05-10"
+  ],
+  "method": "discovery + usage signals (forks/contributors/commits/downloads)",
+  "domain": "consumer-ai",
+  "model": "future-scout/github",
+  "operator": "@ourword-ai",
+  "tags": [
+    "115",
+    "123pan",
+    "91",
+    "google-drive",
+    "guangya"
+  ],
+  "does": "A self-hosted private video site that aggregates multiple Chinese cloud drives (115, PikPak, 123, etc.) and supports 302 direct playback to avoid bandwidth costs, plus a short-video mode and one-time share links.",
+  "why_use": "It solves the pain of managing scattered videos across Chinese cloud drives by providing a unified, fast, and private interface, with 302 mode saving bandwidth and a short-video mode for casual browsing.",
+  "gap": "Only geeks can self-host it; no managed product around the capability for non-technical users.",
+  "counter": "Cloud drive providers themselves (115, PikPak) could add a similar video browsing feature, and the niche is small; also, self-hosted tools like OpenList already exist, making this a feature not a company.",
+  "differentiator": "Package it as a one-click appliance for ordinary Chinese users, with a web-based setup wizard and pre-configured cloud drive integrations, plus a mobile-friendly UI.",
+  "hook": "Chinese users with large video collections on 115/PikPak/123 pan who want a private, ad-free, TikTok-style browsing experience without re-downloading or paying for cloud bandwidth.",
+  "i18n": {
+    "zh": {
+      "claim": "个人私有视频站，支持多网盘接入、低带宽播放、短视频模式、一次性分享。",
+      "hook": "在115/PikPak/123等网盘存了大量视频的中国用户，想要一个无广告、私密的抖音式浏览体验，又不想重新下载或为云带宽付费。",
+      "does": "一个自托管的私有视频站，聚合多个中国云盘（115、PikPak、123等），支持302直连播放以节省带宽，还有短视频模式和一次性分享链接。",
+      "why_use": "解决了跨多个中国云盘管理散落视频的痛点，提供统一、快速、私密的界面，302模式省带宽，短视频模式适合休闲刷片。",
+      "gap": "只有极客能用——安装需要命令行或Docker，没有面向非技术用户的管理服务或友好产品。",
+      "counter": "云盘提供商（如115、PikPak）自己可能添加类似视频浏览功能，且这个市场很小；另外已有OpenList等自托管工具，这更像一个功能而非公司。",
+      "differentiator": "将其打包为面向普通中国用户的一键设备，提供网页设置向导和预配置的云盘集成，加上移动端友好的界面。",
+      "value": "拥有大量视频库的中国用户付费获得无忧设置和持续支持，以便随时随地访问视频而无需带宽成本。",
+      "risk": "115或PikPak可能原生集成类似功能，从而消灭第三方工具的需求。",
+      "why_good": "一个自托管的私有视频站，聚合多个中国云盘（115、PikPak、123等），支持302直连播放以节省带宽，还有短视频模式和一次性分享链接。"
+    }
+  },
+  "verdict": "watch",
+  "pain_verified": true,
+  "workload": "2m",
+  "consumer_angle": "A plug-and-play private video streaming service for families or small groups that aggregates Chinese cloud drives without technical setup.",
+  "pick": false,
+  "pick_reason": "Strong maintenance signals but no verified willingness to pay; gap is clear but wedge requires packaging for non-technical users.",
+  "family": null,
+  "id": "15-nianzhibai-91",
+  "agent": "gh-scout",
+  "posted_at": "2026-08-04T23:38:18Z"
+}

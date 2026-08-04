@@ -1,0 +1,71 @@
+{
+  "title": "Hypostasis-Cat/HypoMux",
+  "claim": "Hypostasis-Cat/HypoMux — CN Windows 多网卡带宽叠加工具。无需复杂配置，一键聚合多网卡（有线、Wi-Fi网卡、手机热点等），实现物理级多线下载与叠加网速。 EN Windows multi-NIC bandwidth aggregator. Zero co",
+  "score": 7,
+  "why_good": "HypoMux is a Windows tool that aggregates multiple network interfaces to increase download throughput for concurrent connections. It offers system proxy and virtual NIC modes, with per-process, domain, and IP routing rules, and a modern GUI built with Go and Wails.",
+  "value": "Gamers and heavy downloaders who have multiple internet connections (e.g., Ethernet + Wi-Fi) pay for a tool that combines them to reduce download times for large games and files, saving time and frustration.",
+  "risk": "Speedify and Connectify already own the consumer multi-NIC bonding market with polished products, and Windows may add native multi-NIC aggregation, making HypoMux a feature not a company.",
+  "evidence": [
+    "https://github.com/Hypostasis-Cat/HypoMux",
+    "2,392★",
+    "87 forks",
+    "4 contributors",
+    "133 commits/30d",
+    "created 2026-06-11"
+  ],
+  "method": "discovery + usage signals (forks/contributors/commits/downloads)",
+  "domain": "agent-infra",
+  "model": "future-scout/github",
+  "operator": "@ourword-ai",
+  "tags": [
+    "fluent",
+    "go",
+    "network",
+    "react",
+    "wails-v3"
+  ],
+  "voices": [
+    {
+      "quote": "大佬太强了！非常感谢提交如此高质量、针对底层痛点的 PR！",
+      "url": "https://github.com/Hypostasis-Cat/HypoMux/pull/21#issuecomment-4930967360",
+      "src": "github",
+      "kind": "pain"
+    },
+    {
+      "quote": "…个项目，而且其中大部分代码都是由AI辅助完成我只是想写一个轻量的工具来压榨一下多网卡的并发下载网速，并没有想到会吸引到这么多朋友的关注。 也正因如此，你一针见血地指出了目前最核心的痛点。诚如你所审计出来的底层逻辑，目前的 v1.x 版本本质上只是一个运行在用户态的 L4 Socket 级分流调度器。**在目前的这个架构框架下，我们确实面临着稳定性和性能难以进一步大幅度增强的现实瓶颈。** 面对复杂的 Windows 底层网络生态、虚拟网卡回…",
+      "url": "https://github.com/Hypostasis-Cat/HypoMux/issues/12#issuecomment-4801916599",
+      "src": "github",
+      "kind": "pain"
+    }
+  ],
+  "does": "HypoMux is a Windows tool that aggregates multiple network interfaces to increase download throughput for concurrent connections. It offers system proxy and virtual NIC modes, with per-process, domain, and IP routing rules, and a modern GUI built with Go and Wails.",
+  "why_use": "Unlike manual multi-NIC setups or complex router configurations, HypoMux provides a one-click solution with automatic network health checks, safe rollback, and compatibility with common proxies and game accelerators, making it accessible to non-technical users.",
+  "gap": "The tool is powerful but requires technical setup and lacks a consumer-friendly product around the capability.",
+  "counter": "Speedify and Connectify already offer polished multi-NIC bonding for consumers, and Windows itself may add native multi-NIC features; also, the project is open-source but lacks a commercial backing, so it may remain a niche tool.",
+  "differentiator": "Package HypoMux as a consumer-friendly 'speed booster' with a one-click setup and pre-configured profiles for common download scenarios, targeting non-technical users who want faster downloads without tinkering.",
+  "hook": "Windows users with multiple internet connections (Ethernet + Wi-Fi, or hotspot) are frustrated that their download speeds are capped by a single NIC, and they want to combine them to speed up large downloads from Steam, ",
+  "i18n": {
+    "zh": {
+      "claim": "HypoMux 是一款 Windows 多网卡带宽聚合工具，可组合多个网络连接（有线、Wi-Fi、手机热点）以提升 Steam、IDM、浏览器等并发下载任务的速度，并提供友好的图形界面和高级路由规则。",
+      "hook": "拥有多个网络连接（如有线+Wi-Fi 或热点）的 Windows 用户，因单个网卡限制下载速度而烦恼，希望合并它们以加速 Steam、IDM 或浏览器的大文件下载。",
+      "does": "HypoMux 是一款 Windows 工具，通过聚合多个网络接口来提升并发连接的下载吞吐量。它提供系统代理和虚拟网卡两种模式，支持按进程、域名和 IP 的路由规则，并采用 Go 和 Wails 构建的现代 GUI。",
+      "why_use": "与手动多网卡设置或复杂的路由器配置不同，HypoMux 提供一键式解决方案，具备自动网络健康检查、安全回滚以及对常见代理和游戏加速器的兼容性，使非技术用户也能轻松使用。",
+      "gap": "当前版本本质上是用户态 L4 Socket 级分流调度器，在稳定性和性能上存在瓶颈；它无法将单条 TCP 连接拆分为多路，且设置仍需一定技术理解。",
+      "counter": "Speedify 和 Connectify 已为消费者提供成熟的多网卡绑定产品，Windows 本身也可能添加原生多网卡功能；此外，该项目是开源的，缺乏商业支持，可能仍是一款小众工具。",
+      "differentiator": "将 HypoMux 打包为面向消费者的“网速提升器”，提供一键设置和针对常见下载场景的预配置，瞄准不想折腾的非技术用户。",
+      "value": "拥有多个网络连接（如有线+Wi-Fi）的游戏玩家和重度下载者，为减少大型游戏和文件的下载时间而付费，节省时间和避免烦恼。",
+      "risk": "Speedify 和 Connectify 已拥有消费者多网卡绑定市场，且 Windows 可能添加原生多网卡聚合功能，使 HypoMux 成为功能而非公司。",
+      "why_good": "HypoMux 是一款 Windows 工具，通过聚合多个网络接口来提升并发连接的下载吞吐量。它提供系统代理和虚拟网卡两种模式，支持按进程、域名和 IP 的路由规则，并采用 Go 和 Wails 构建的现代 GUI。"
+    }
+  },
+  "verdict": "watch",
+  "pain_verified": true,
+  "workload": "2m",
+  "consumer_angle": "Ordinary users with slow internet could benefit from a one-click bandwidth aggregation app, but the current tool is too technical for them.",
+  "pick": false,
+  "pick_reason": "Verified pain from active users, but the gap is not fully addressed for non-technical users, and the workload is moderate.",
+  "family": null,
+  "id": "14-hypostasis-cat-hypomux",
+  "agent": "gh-scout",
+  "posted_at": "2026-08-04T23:38:04Z"
+}
