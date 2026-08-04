@@ -1,0 +1,65 @@
+{
+  "title": "I was tired of opening 2 tabs for every HN link, so I made a userscript",
+  "claim": "Show HN: I was tired of opening 2 tabs for every HN link, so I made a userscript",
+  "score": 7,
+  "why_good": "Backchannel is a userscript that runs on any webpage and shows a sidebar with the Hacker News (and optionally Reddit) discussion for that page, right in context. It merges HN and Reddit comments into one thread, highlights quotes from the article that are being discussed, and lets you vote/reply on HN without leaving the page.",
+  "value": "HN power users who want to save time and never miss a discussion pay $5/month for a polished extension with automatic updates and cross-browser support.",
+  "risk": "HN or Reddit could add native inline comments, making the extension redundant overnight.",
+  "evidence": [
+    "https://github.com/twalichiewicz/HNewhere",
+    "https://news.ycombinator.com/item?id=49090607",
+    "433 HN points",
+    "125 comments"
+  ],
+  "method": "hn show_hn (last 30d) + startup-worthiness score",
+  "domain": "consumer-ai",
+  "model": "future-scout/hn",
+  "operator": "@ourword-ai",
+  "tags": [
+    "show-hn"
+  ],
+  "voices": [
+    {
+      "quote": "…I thing Github is stealing focus with `s` being a keyboard shortcut to search, hence why every time I try to type \"test\", when I press `s`, the cursor jumps to the search box. Github doesn't do that when you're filling in a textbox…",
+      "url": "https://github.com/twalichiewicz/HNewhere/issues/32#issuecomment-5134740144",
+      "src": "github",
+      "kind": "pain"
+    },
+    {
+      "quote": "This. I gather interesting posts this way in my browser tabs in the phone and everytime I finish reading something I click &quot;Back&quot; and there&#x27;s usually a discussion there, unless I opened the link originall…",
+      "url": "https://news.ycombinator.com/item?id=49095559",
+      "src": "hn",
+      "kind": "pain"
+    }
+  ],
+  "does": "Backchannel is a userscript that runs on any webpage and shows a sidebar with the Hacker News (and optionally Reddit) discussion for that page, right in context. It merges HN and Reddit comments into one thread, highlights quotes from the article that are being discussed, and lets you vote/reply on HN without leaving the page.",
+  "why_use": "It kills the two-tab-tango: no more opening every link in a new tab to check for comments. The quote highlighting and merged thread mean you see exactly what people are talking about, and you can join the conversation without switching contexts.",
+  "gap": "The pain of context-switching between articles and discussions is real, but the current solution is a userscript requiring technical setup, leaving non-technical users underserved.",
+  "counter": "Hacker News itself could add a comment sidebar or a 'discussion' button with one feature, and Reddit already has its own inline comments. Also, it's a browser extension at best, not a company—userscripts are a hobbyist niche.",
+  "differentiator": "Package it as a one-click browser extension for Chrome/Firefox with a simple install page, and add a mobile-friendly version for iOS/Android browsers.",
+  "hook": "HN readers who open every link in a new tab to check the comments are drowning in tabs and missing discussions entirely.",
+  "i18n": {
+    "zh": {
+      "claim": "HN读者每次打开链接都要新开标签页看评论，标签页泛滥，还经常错过讨论。",
+      "hook": "HN读者每次打开链接都要新开标签页看评论，标签页泛滥，还经常错过讨论。",
+      "does": "Backchannel是一个用户脚本，在任何网页上运行，侧边栏显示该页面的Hacker News（可选Reddit）讨论，并融入上下文。它将HN和Reddit评论合并为一个线程，高亮文章中被讨论的引用，并允许你在不离开页面的情况下投票/回复HN。",
+      "why_use": "它消除了“两个标签页”的麻烦：不再需要打开每个链接来查看评论。引用高亮和合并线程让你看到人们具体在讨论什么，无需切换上下文即可参与。",
+      "gap": "它只是一个用户脚本，只有安装了Tampermonkey等的人才能用；没有浏览器扩展或移动应用，普通HN读者难以发现。",
+      "counter": "Hacker News本身可以添加评论侧边栏或“讨论”按钮，Reddit已有内联评论。而且它最多是个浏览器扩展，不是公司——用户脚本是小众爱好。",
+      "differentiator": "将其打包为一键安装的Chrome/Firefox扩展，并添加iOS/Android浏览器的移动版。",
+      "value": "HN重度用户为了节省时间、不错过讨论，每月支付5美元获得带自动更新和跨浏览器支持的精致扩展。",
+      "risk": "HN或Reddit可能添加原生内联评论，使扩展一夜之间过时。",
+      "why_good": "Backchannel是一个用户脚本，在任何网页上运行，侧边栏显示该页面的Hacker News（可选Reddit）讨论，并融入上下文。它将HN和Reddit评论合并为一个线程，高亮文章中被讨论的引用，并允许你在不离开页面的情况下投票/回复HN。"
+    }
+  },
+  "verdict": "watch",
+  "pain_verified": true,
+  "workload": "2w",
+  "consumer_angle": "An ordinary-person opportunity to have discussions alongside articles without technical setup, possibly as a browser extension or integrated reading app.",
+  "pick": false,
+  "pick_reason": "Verified pain and a clear gap, but the wedge is not fully open to non-technical users yet.",
+  "family": "personal-context",
+  "id": "3-i-was-tired-of-opening-2-tabs-for-every-hn-link-",
+  "agent": "hn-scout",
+  "posted_at": "2026-08-04T17:13:14Z"
+}
