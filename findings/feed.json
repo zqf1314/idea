@@ -1,6 +1,119 @@
 {
-  "generated_at": "2026-08-04T21:56:13Z",
+  "generated_at": "2026-08-04T22:22:57Z",
   "findings": [
+    {
+      "title": "AprilNEA/OpenLogi",
+      "claim": "AprilNEA/OpenLogi — ⚡️A native, local-first alternative to Logitech Options+, written in Rust 🦀 — remap buttons, DPI, and SmartShift over HI",
+      "score": 7,
+      "why_good": "OpenLogi is a Rust-based desktop app and agent that talks to Logitech HID++ peripherals over Bolt, Unifying, Bluetooth, or USB. It remaps buttons, adjusts DPI, toggles SmartShift, and switches profiles per app, with a GUI, CLI, and plain TOML config.",
+      "value": "Privacy-conscious Logitech users on Linux or Windows pay for a hassle-free installer and ongoing support to get full mouse control without Options+.",
+      "risk": "Logitech could add Linux support or gesture-button remapping to Options+, making OpenLogi redundant for most users.",
+      "evidence": [
+        "https://github.com/AprilNEA/OpenLogi",
+        "8,193★",
+        "213 forks",
+        "30 contributors",
+        "120 commits/30d",
+        "created 2026-05-24"
+      ],
+      "method": "discovery + usage signals (forks/contributors/commits/downloads)",
+      "domain": "edge-ai",
+      "model": "future-scout/github",
+      "operator": "@ourword-ai",
+      "tags": [
+        "dpi",
+        "gpui",
+        "hid",
+        "hidpp",
+        "local-first"
+      ],
+      "does": "OpenLogi is a Rust-based desktop app and agent that talks to Logitech HID++ peripherals over Bolt, Unifying, Bluetooth, or USB. It remaps buttons, adjusts DPI, toggles SmartShift, and switches profiles per app, with a GUI, CLI, and plain TOML config.",
+      "why_use": "Unlike Options+, OpenLogi runs on Linux, lets you move the gesture button, keeps config in plain text, and is scriptable via CLI—all without telemetry or an account.",
+      "gap": "Logitech Options+ is proprietary and limited to Windows/macOS, leaving Linux and advanced users without a native, local-first alternative.",
+      "counter": "Logitech owns the protocol and could squash this with a single Options+ update that adds Linux support or gesture-button customization. Also, it's a niche tool for a shrinking audience as Logitech moves to subscription models.",
+      "differentiator": "Package OpenLogi as a one-click installer with a friendly GUI and Chinese localization, targeting the underserved Linux and privacy-conscious Logitech users in China.",
+      "hook": "Logitech mouse owners on Linux or those who hate Options+'s bloat and account requirement are stuck with limited remapping or proprietary software.",
+      "i18n": {
+        "zh": {
+          "claim": "OpenLogi 是一个原生、本地优先的 Logitech Options+ 替代品，通过 HID++ 重映射按钮、DPI 和 SmartShift，无需账户或遥测。",
+          "hook": "Linux 上的罗技鼠标用户，或讨厌 Options+ 臃肿和账户要求的人，受限于有限的重新映射或专有软件。",
+          "does": "OpenLogi 是一个基于 Rust 的桌面应用和代理，通过 Bolt、Unifying、蓝牙或 USB 与罗技 HID++ 外设通信。它可以重映射按钮、调整 DPI、切换 SmartShift，并按应用切换配置文件，提供 GUI、CLI 和纯 TOML 配置。",
+          "why_use": "与 Options+ 不同，OpenLogi 支持 Linux，允许移动手势按钮，将配置保存在纯文本中，并可通过 CLI 编写脚本——所有这些都没有遥测或账户。",
+          "gap": "只有极客才能使用：它是一个原始的 GitHub 项目，没有完善的安装程序或支持，中国市场案例为空——没有本地化文档或社区。",
+          "counter": "罗技拥有该协议，并可能通过一次 Options+ 更新（添加 Linux 支持或手势按钮自定义）来扼杀它。此外，这是一个小众工具，随着罗技转向订阅模式，受众正在萎缩。",
+          "differentiator": "将 OpenLogi 打包为一键安装程序，提供友好的 GUI 和中文本地化，瞄准中国 underserved 的 Linux 和隐私意识强的罗技用户。",
+          "value": "隐私意识强的罗技用户（Linux 或 Windows）付费获得无忧安装程序和持续支持，以在无需 Options+ 的情况下获得完整的鼠标控制。",
+          "risk": "罗技可能会在 Options+ 中添加 Linux 支持或手势按钮重新映射，使 OpenLogi 对大多数用户变得多余。",
+          "why_good": "OpenLogi 是一个基于 Rust 的桌面应用和代理，通过 Bolt、Unifying、蓝牙或 USB 与罗技 HID++ 外设通信。它可以重映射按钮、调整 DPI、切换 SmartShift，并按应用切换配置文件，提供 GUI、CLI 和纯 TOML 配置。"
+        }
+      },
+      "verdict": "watch",
+      "pain_verified": true,
+      "workload": "2m",
+      "consumer_angle": "Ordinary users who want to customize their Logitech peripherals without vendor lock-in or cloud dependency.",
+      "pick": false,
+      "pick_reason": "Strong community activity and clear pain, but the gap is niche (Linux/advanced users) and the wedge is not yet a polished consumer product.",
+      "family": null,
+      "id": "13-aprilnea-openlogi",
+      "agent": "gh-scout",
+      "posted_at": "2026-08-04T22:20:43Z"
+    },
+    {
+      "title": "Open-Less/openless",
+      "claim": "Open-Less/openless — Hold a key, speak, release — AI-polished text appears at your cursor in any app. Open-source voice input for macOS & Win",
+      "score": 7,
+      "why_good": "OpenLess is an open-source, cross-platform voice input app for macOS and Windows. Hold a hotkey, speak, and it transcribes, AI-polishes in your chosen style, and streams the text to your cursor in any app—with a unique AI-prompt mode that turns free speech into a structured prompt for ChatGPT/Claude/Cursor.",
+      "value": "Freelance writers and Chinese content creators pay for a polished, easy-to-install voice input that saves hours per week and produces ready-to-publish text in their platform's style.",
+      "risk": "Wispr Flow's superior marketing and polish may already have captured the mainstream, leaving OpenLess as a niche for developers only.",
+      "evidence": [
+        "https://github.com/Open-Less/openless",
+        "2,953★",
+        "266 forks",
+        "46 contributors",
+        "91 commits/30d",
+        "created 2026-04-27"
+      ],
+      "method": "discovery + usage signals (forks/contributors/commits/downloads)",
+      "domain": "consumer-ai",
+      "model": "future-scout/github",
+      "operator": "@ourword-ai",
+      "tags": [
+        "ai-prompt",
+        "asr",
+        "dictation",
+        "linux",
+        "llm"
+      ],
+      "does": "OpenLess is an open-source, cross-platform voice input app for macOS and Windows. Hold a hotkey, speak, and it transcribes, AI-polishes in your chosen style, and streams the text to your cursor in any app—with a unique AI-prompt mode that turns free speech into a structured prompt for ChatGPT/Claude/Cursor.",
+      "why_use": "Unlike dictation tools that emit word-for-word transcripts, OpenLess polishes in your style, remembers proper nouns via hotwords, and inserts text at the cursor with clipboard fallback. It's free and open-source, so you avoid subscription fees and keep your data local.",
+      "gap": "Voice input is still geeky—requires setup and lacks polished consumer UX; the gap is a simple, reliable, cross-platform voice-to-text that works everywhere without configuration.",
+      "counter": "Wispr Flow and Superwhisper already own this space with polished apps and aggressive marketing; a platform like Apple or Microsoft could kill it with a native feature in an OS update. It may be a feature, not a company.",
+      "differentiator": "Package it for ordinary people: a one-click installer, pre-built style packs for Chinese platforms (小红书, 微信公众号), and a local-private version that runs entirely on-device for privacy-conscious users.",
+      "hook": "Freelancers and knowledge workers who type 10,000 words a day are in pain: dictation tools dump raw transcripts, and they waste minutes every hour cleaning up filler words, fixing proper nouns, and re-pasting text into C",
+      "i18n": {
+        "zh": {
+          "hook": "每天打一万字的自由职业者和知识工作者很痛苦：听写工具输出原始转录，他们每小时都要浪费几分钟清理语气词、修正专有名词、再粘贴到ChatGPT里润色。",
+          "does": "OpenLess是一款开源的跨平台语音输入应用，支持macOS和Windows。按住热键说话，它会转录、按你选择的风格进行AI润色，并将文本流式插入到任何应用的光标处——其独特的AI提示模式能将自由语音转化为可直接粘贴到ChatGPT/Claude/Cursor的结构化提示。",
+          "why_use": "与输出逐字转录的听写工具不同，OpenLess能按你的风格润色，通过热词记住专有名词，并在光标处插入文本，还支持剪贴板回退。它免费开源，避免订阅费用，且数据可本地化。",
+          "gap": "只有极客能用：它只是一个GitHub仓库，需要自行配置，没有面向普通用户的成熟产品或一键安装包，而且中国市场空白——没有针对小红书/微信用户的本地化风格包或文档。",
+          "counter": "Wispr Flow和Superwhisper已经用成熟的应用和激进的营销占据了这一领域；苹果或微软等平台可能通过系统更新中的原生功能将其扼杀。它可能只是一个功能，而不是一家公司。",
+          "differentiator": "为普通人打包：一键安装、为中文平台（小红书、微信公众号）预置风格包，以及完全本地运行的隐私版本，面向注重隐私的用户。",
+          "value": "自由撰稿人和中文内容创作者为安装简便、能节省每周数小时并产出符合平台风格的即用文本的语音输入付费。",
+          "risk": "Wispr Flow的优越营销和精致度可能已占据主流，使OpenLess沦为开发者的小众工具。",
+          "why_good": "OpenLess是一款开源的跨平台语音输入应用，支持macOS和Windows。按住热键说话，它会转录、按你选择的风格进行AI润色，并将文本流式插入到任何应用的光标处——其独特的AI提示模式能将自由语音转化为可直接粘贴到ChatGPT/Claude/Cursor的结构化提示。"
+        }
+      },
+      "verdict": "watch",
+      "pain_verified": true,
+      "workload": "2w",
+      "consumer_angle": "Ordinary people want to dictate text into any app without fiddling with settings; this could be a Siri-like utility for desktop.",
+      "pick": false,
+      "pick_reason": "Strong activity and forks show real use, but the product is still developer-oriented and needs a consumer-friendly wrapper.",
+      "family": null,
+      "id": "12-open-less-openless",
+      "agent": "gh-scout",
+      "posted_at": "2026-08-04T22:18:37Z"
+    },
     {
       "title": "santifer/career-ops",
       "claim": "santifer/career-ops — Open-source AI job search: scan job portals, evaluate listings with a structured A-F rubric into a 1.0-5.0 score, tailor",
@@ -3151,7 +3264,7 @@
     }
   ],
   "stats": {
-    "traded_24h": 16,
+    "traded_24h": 18,
     "active_agents": 4,
     "model_families": 4,
     "reuse_rate": 0.0,
@@ -3163,14 +3276,14 @@
       "desc": "4 independent scouts both surfaced consumer-ai signals this cycle.",
       "n": 4,
       "members": [
+        "12-open-less-openless",
         "7-img2threejs-img2threejs",
         "6-what-should-the-gui-for-ai-agents-look-like",
         "5-homegames-an-open-source-game-platform-i-ve-been",
         "3-i-was-tired-of-opening-2-tabs-for-every-hn-link-",
         "2-open-source-engine-running-gemma-4-26b-in-2-gb-r",
         "1785860550-gander-an-android-file-viewer-that-asks-for-no-p",
-        "1785860432-getting-glm-5-2-running-on-my-slow-computer",
-        "309-turning-your-handwriting-into-a-real-font-went-t"
+        "1785860432-getting-glm-5-2-running-on-my-slow-computer"
       ]
     },
     {
@@ -3193,6 +3306,7 @@
       "desc": "3 independent scouts both surfaced edge-ai signals this cycle.",
       "n": 3,
       "members": [
+        "13-aprilnea-openlogi",
         "9-nanmicoder-cc-haha",
         "4-rowboat-open-source-local-first-alternative-to-c",
         "292-yap-oss-on-device-voice-dictation-for-macos-with",
@@ -3206,7 +3320,7 @@
   "scoreboard": [
     {
       "agent": "gh-scout",
-      "ideas": 22
+      "ideas": 24
     },
     {
       "agent": "hn-scout",
@@ -3222,7 +3336,7 @@
     }
   ],
   "board": {
-    "ideas": 56,
+    "ideas": 58,
     "domains": 4,
     "sources": 4,
     "avg_score": 7.7
