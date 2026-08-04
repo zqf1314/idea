@@ -13,7 +13,7 @@ import os, sys, json, glob, datetime, urllib.request, subprocess
 FIRST_PARTY_AGENTS = {"gh-scout", "hn-scout", "arxiv-scout", "askhn-scout",
                       "producthunt-scout", "reddit-scout", "painpoint-radar"}
 FIRST_PARTY_LOGINS = {"ourword-ai", "github-actions[bot]", "future-scout-bot", "jerryma520"}
-REPO = os.environ.get("GITHUB_REPOSITORY", "ourword-ai/idea")
+REPO = os.environ.get("GITHUB_REPOSITORY", "zqf1314/idea")
 
 def external_issue_signal():
     """Distinct GitHub issue authors who are NOT us = real outside participation."""

@@ -1,86 +1,56 @@
 <p align="center">
-  <b>Idea</b><br>
-  <i>Open-source projects, AI tools and skills worth building — filtered daily.</i>
+  <b>早风依旧 · Idea Radar</b><br>
+  <i>A live radar for AI projects, open-source tools and startup opportunities worth building.</i>
 </p>
 
 <p align="center">
-  🌐 <a href="https://ourword-ai.github.io/idea/">Live board</a> ·
-  🤖 <a href="./llms.txt">llms.txt (for AI agents)</a> ·
+  🌐 <a href="https://zqf1314.github.io/idea/">Live board</a> ·
+  🇨🇳 <a href="./README_CN.md">中文说明</a> ·
   📄 <a href="./docs/PROTOCOL.md">Protocol</a> ·
-  🎯 <a href="./docs/STANDARD.md">Standard</a> ·
   📡 <a href="./docs/RADAR.md">Radar</a>
 </p>
 
 ---
 
-## The radar
+## What this repository does
 
-Alongside the public board, this repo carries the operating state of the daily **pain-point radar** —
-the filter that decides what is worth surfacing at all:
+This is an independently deployable fork of `ourword-ai/idea`. It collects promising projects from public sources, stores findings as JSON, and serves a static bilingual board through GitHub Pages.
 
-- [`docs/RADAR.md`](./docs/RADAR.md) — preference model, excitement bar, evidence standard, data sources
-- [`docs/RADAR-INDEX.md`](./docs/RADAR-INDEX.md) — every direction considered so far (the dedupe baseline)
-- [`docs/RADAR-LOG.md`](./docs/RADAR-LOG.md) — daily change log
+The repository keeps the original scouts and adds:
 
-Migrated here on 2026-08-03; the repo is now the single source of truth.
+- standalone GitHub Pages deployment;
+- automatic Issue finding analysis;
+- local TF-IDF novelty scoring with no API key required;
+- optional OpenAI-compatible embeddings;
+- Chinese issue form and deployment documentation;
+- automated self-tests.
 
-## What this is
+## Site
 
-**Idea** is a live, hourly-updated board of the most promising new open-source projects, AI agents, developer tools and Claude/MCP skills — pulled from **GitHub, Show HN and Product Hunt**. Every item comes with a sharp, plain-English take on *why it could become a real startup*, who would pay for it, and what could kill it. Everything is bilingual (English + 中文), and the strongest items are flagged as **★ editor's picks**.
+- Board: https://zqf1314.github.io/idea/
+- Repository: https://github.com/zqf1314/idea
+- Data feed: https://zqf1314.github.io/idea/findings/feed.json
 
-It runs entirely on GitHub — scouts are GitHub Actions on a cron, the repo is the database, and the site is a static page that reads `findings/feed.json`. No server.
+## Quick setup
 
-## How it works
+1. Enable GitHub Actions for this fork.
+2. In **Settings → Actions → General**, set Workflow permissions to **Read and write**.
+3. In **Settings → Pages**, choose **GitHub Actions** as the source.
+4. Run **Setup standalone Idea Radar** once.
+5. Run **Deploy GitHub Pages** once if it did not start automatically.
 
-```
-GitHub / Show HN / Product Hunt
-      |  hourly GitHub Actions "scouts"
-      v
-candidate projects  ->  LLM curation (GitHub Models)
-      |                   - sharp, specific EN + 中文 copy
-      |                   - why-good / who-pays / risk
-      |                   - strict "buildable & monetizable now?" editor gate
-      v
-findings/*.json  ->  findings/feed.json  ->  GitHub Pages board (this site)
-```
+See [README_CN.md](./README_CN.md) for complete instructions.
 
-- **Lead, don't trail.** Scoring favours early + accelerating projects and de-emphasises what's already huge.
-- **Always bilingual.** New items are translated automatically; an hourly safety-net back-fills anything missed.
-- **Built to be found.** JSON-LD + a crawlable listing make the board discoverable by search engines and AI answer engines (SEO/GEO).
+## Optional embeddings
 
-## Sources
+Create repository Action secrets:
 
-| Source | Status |
-|---|---|
-| GitHub (star velocity, fresh repos) | live |
-| Show HN (Hacker News) | live |
-| Product Hunt | live |
-| Reddit · arXiv · Ask HN | scouts written, dormant |
+- `EMBED_API_KEY`
+- `EMBED_API_URL` (optional; defaults to OpenAI embeddings endpoint)
+- `EMBED_MODEL` (optional; defaults to `text-embedding-3-small`)
 
-## Read it
-
-- **Humans:** <https://ourword-ai.github.io/idea/>
-- **Machines:** `findings/feed.json` · [`llms.txt`](./llms.txt)
-
-## Contribute a finding (optional)
-
-Agents and humans can add a signal via the [finding issue template](../../issues/new?template=finding.yml) or the API:
-
-```bash
-gh issue create --repo ourword-ai/idea \
-  --title "finding: <one line>" \
-  --label finding \
-  --body-file finding.md
-```
-
-## Open vs. closed
-
-| Open (this repo, MIT) | Closed (private engine) |
-|---|---|
-| Finding schema & protocol | Ranking / novelty scoring |
-| Scouts & issue templates | Curation & anti-gaming logic |
-| The static website | |
+Without these secrets, the system automatically uses the built-in local similarity engine.
 
 ## License
 
-Protocol, scouts, templates and website: [MIT](./LICENSE).
+The inherited open-source files remain under their original MIT license. Custom deployment files in this fork are also MIT licensed.

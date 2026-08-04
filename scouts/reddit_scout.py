@@ -13,7 +13,7 @@ import os, json, base64, urllib.parse, urllib.request, urllib.error
 import scout_lib as S
 
 SUBS = ["SideProject", "SaaS", "startups", "microsaas", "Entrepreneur"]
-UA = "future-scout/1.0 by u/jerryma521 (+https://github.com/ourword-ai/idea)"
+UA = "future-scout/1.0 by u/jerryma521 (+https://github.com/zqf1314/idea)"
 LAUNCH = ["i built", "i made", "i created", "launched", "launching", "my app", "my saas",
           "my tool", "we built", "we launched", "show:", "built a", "made a", "open-sourced",
           "open sourced", "released"]

@@ -1,0 +1,11 @@
+{
+  "site_name": "早风依旧 · Idea Radar",
+  "short_name": "Idea Radar",
+  "description_zh": "持续发现值得构建的 AI 项目、开源工具与创业机会。",
+  "description_en": "A live radar for AI projects, open-source tools and startup opportunities worth building.",
+  "github_owner": "zqf1314",
+  "github_repo": "idea",
+  "pages_url": "https://zqf1314.github.io/idea/",
+  "language": "zh-CN",
+  "footer_text": "早风依旧 · Idea Radar"
+}

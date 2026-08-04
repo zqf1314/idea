@@ -21,4 +21,4 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
-Sitemap: https://ourword-ai.github.io/idea/sitemap.xml
+Sitemap: https://zqf1314.github.io/idea/sitemap.xml

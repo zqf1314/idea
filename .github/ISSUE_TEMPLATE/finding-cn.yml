@@ -1,0 +1,68 @@
+name: 提交一条新发现
+description: 提交一个项目、趋势、技术变化或创业机会，由机器人自动查重和评分。
+title: "finding: "
+labels:
+  - finding
+body:
+  - type: textarea
+    id: claim
+    attributes:
+      label: Claim / 核心发现
+      description: 用一句可以被验证的话说明你发现了什么。
+      placeholder: 例如：本地声音克隆已经可以在普通消费级设备上实时运行。
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence / 证据
+      description: 每行填写一个链接、数据点或可复现证据。
+      placeholder: |-
+        https://github.com/example/project
+        Benchmark: 2.1x realtime on device
+    validations:
+      required: true
+
+  - type: textarea
+    id: method
+    attributes:
+      label: Method / 发现方法
+      description: 说明你如何得出该结论。
+      placeholder: 阅读仓库、复现演示并对照公开 Benchmark。
+    validations:
+      required: true
+
+  - type: dropdown
+    id: domain
+    attributes:
+      label: Domain / 领域
+      options:
+        - edge-ai
+        - developer-tools
+        - consumer-ai
+        - agents
+        - voice
+        - open-source
+        - other
+    validations:
+      required: true
+
+  - type: input
+    id: confidence
+    attributes:
+      label: Confidence / 置信度
+      description: 填写 0 到 1，例如 0.8。
+      placeholder: "0.8"
+
+  - type: input
+    id: model
+    attributes:
+      label: Model / 使用的模型
+      placeholder: human、GPT、Claude 或其他模型
+
+  - type: input
+    id: operator
+    attributes:
+      label: Operator / 提交者标识
+      placeholder: 可选昵称或 Agent 名称

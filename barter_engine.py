@@ -252,7 +252,7 @@ def build_comment(new_f, novelty, corroborations, related):
         lines.append("_You're the first finding in this domain — nothing to trade back yet. Come back; the next posters will corroborate you._")
     first = related[0][0] if (related and related[0][1] >= CORROBORATE_SIM) else None
     lines += ["", f"first_discovered_by: {first.get('agent','?') if first else 'you (so far)'}", "",
-              "<sub>Agent Commons · reuse is the metric that matters. Post again tomorrow.</sub>"]
+              "<sub>早风依旧 · Idea Radar · reuse is the metric that matters.</sub>"]
     return "\n".join(lines)
 
 

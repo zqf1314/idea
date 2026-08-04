@@ -1,10 +1,13 @@
-name: barter
+name: Analyze submitted finding
+
 on:
   issues:
     types: [opened, edited]
+
 concurrency:
-  group: barter-commit     # serialise: two findings posted seconds apart used to race and one was silently dropped
+  group: barter-commit
   cancel-in-progress: false
+
 jobs:
   barter:
     if: contains(join(github.event.issue.labels.*.name, ','), 'finding')
@@ -13,45 +16,56 @@ jobs:
       issues: write
       contents: write
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - name: Checkout default branch
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-      - name: Run barter engine
+
+      - name: Run finding engine
         env:
           ISSUE_BODY: ${{ github.event.issue.body }}
           ISSUE_NUMBER: ${{ github.event.issue.number }}
           ISSUE_AUTHOR: ${{ github.event.issue.user.login }}
+          EMBED_API_KEY: ${{ secrets.EMBED_API_KEY }}
+          EMBED_API_URL: ${{ secrets.EMBED_API_URL }}
+          EMBED_MODEL: ${{ secrets.EMBED_MODEL }}
         run: python barter_engine.py
-      - name: Commit finding + feed (conflict-safe; feed regenerated from merged set)
+
+      - name: Commit finding and feed
+        env:
+          BRANCH: ${{ github.event.repository.default_branch }}
         run: |
-          git config user.name "agent-commons-bot"
-          git config user.email "agent-commons-bot@users.noreply.github.com"
+          git config user.name "idea-radar[bot]"
+          git config user.email "idea-radar[bot]@users.noreply.github.com"
           git add findings/*.json 2>/dev/null || true
-          git reset -q -- findings/feed.json 2>/dev/null || true
-          git checkout -q -- findings/feed.json 2>/dev/null || true
-          if git diff --cached --quiet; then echo "no new finding"; exit 0; fi
-          git commit -m "finding: issue #${{ github.event.issue.number }}"
-          ok=0
-          for i in $(seq 1 8); do
-            if git pull --rebase --autostash origin main && git push; then ok=1; break; fi
-            echo "finding push retry $i"; sleep $(( (RANDOM % 5) + 2 ))
+          if git diff --cached --quiet; then
+            echo "No finding file was generated."
+            exit 0
+          fi
+          git commit -m "finding: analyze issue #${{ github.event.issue.number }}"
+          success=0
+          for attempt in $(seq 1 6); do
+            if git pull --rebase --autostash origin "$BRANCH" && git push origin "HEAD:$BRANCH"; then
+              success=1
+              break
+            fi
+            echo "Push retry $attempt"
+            sleep $((attempt * 2))
           done
-          [ "$ok" = 1 ] || { echo "::error::finding push failed after 8 attempts"; exit 1; }
-          python -c "import sys;sys.path.insert(0,'scouts');import scout_lib as s;s.refresh()"
-          git add findings/feed.json
-          if git diff --cached --quiet; then echo "feed unchanged"; exit 0; fi
-          git commit -m "finding: rebuild feed (issue #${{ github.event.issue.number }})"
-          for i in $(seq 1 8); do
-            if git push; then echo "feed pushed"; exit 0; fi
-            git fetch origin main && git reset -q --hard origin/main
-            python -c "import sys;sys.path.insert(0,'scouts');import scout_lib as s;s.refresh()"
-            git add findings/feed.json
-            git diff --cached --quiet || git commit -m "finding: rebuild feed (issue #${{ github.event.issue.number }})"
-            echo "feed push retry $i"; sleep $(( (RANDOM % 5) + 2 ))
-          done
-          echo "::error::feed push failed after 8 attempts"; exit 1
-      - name: Comment the payment
+          test "$success" = "1"
+
+      - name: Comment analysis result
+        if: always()
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh issue comment ${{ github.event.issue.number }} --repo "$GITHUB_REPOSITORY" --body-file comment.md
+        run: |
+          if test -f comment.md; then
+            gh issue comment "${{ github.event.issue.number }}"               --repo "$GITHUB_REPOSITORY"               --body-file comment.md
+          else
+            gh issue comment "${{ github.event.issue.number }}"               --repo "$GITHUB_REPOSITORY"               --body "❌ 分析流程未生成结果，请查看 Actions 日志。"
+          fi
