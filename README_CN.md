@@ -1,16 +1,3 @@
-<div align="center">
-
-# 早风依旧 · Idea Radar
-
-**持续发现值得构建的 AI 产品、开源工具、真实痛点与创业机会。**
-
-[在线看板](https://zqf1314.github.io/idea/) ·
-[JSON 数据源](https://zqf1314.github.io/idea/findings/feed.json) ·
-[维护文档](./docs/MAINTENANCE.md) ·
-[数据协议](./docs/PROTOCOL.md)
-
-</div>
-
 ## 项目简介
 
 Idea Radar 是一个完全运行在 GitHub 上的自动化创意雷达。它持续从公开数据源发现项目与需求信号，判断这些信号是否代表真实、可构建、可落地的机会，将结果保存为结构化 JSON，并通过 GitHub Pages 发布为中英双语静态看板。

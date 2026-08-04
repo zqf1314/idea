@@ -1,15 +1,3 @@
-<div align="center">
-
-# 早风依旧 · Idea Radar
-
-**A GitHub-native radar for AI products, open-source tools, user pain points, and buildable opportunities.**
-
-[Live Board](https://zqf1314.github.io/idea/) ·
-[中文文档](./README_CN.md) ·
-[JSON Feed](https://zqf1314.github.io/idea/findings/feed.json) ·
-[Maintenance](./docs/MAINTENANCE.md)
-
-</div>
 
 ## Overview
 
