@@ -1,10 +1,11 @@
 name: scout-hn
 on:
   schedule:
-    - cron: "15 * * * *"    # twice an hour (:15 & :45) — redundancy vs GitHub dropping scheduled runs
+    - cron: "15 * * * *"
     - cron: "45 * * * *"
   workflow_dispatch:
 permissions:
+  actions: write
   issues: write
   contents: write
   models: read
@@ -33,7 +34,9 @@ jobs:
           LEGACY_LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
           LEGACY_LLM_MODEL: ${{ vars.LLM_MODEL }}
         run: python tools/run_scout_with_provider.py scouts/hn_scout.py
-      - name: Commit (conflict-safe; feed regenerated from merged set)
+      - name: Commit findings, rebuild feed, and deploy Pages
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           git config user.name "future-scout-bot"
           git config user.email "future-scout-bot@users.noreply.github.com"
@@ -53,7 +56,13 @@ jobs:
           if git diff --cached --quiet; then echo "feed unchanged"; exit 0; fi
           git commit -m "scout(hn): rebuild feed"
           for i in $(seq 1 8); do
-            if git push; then echo "feed pushed"; exit 0; fi
+            if git push; then
+              echo "feed pushed"
+              echo "dispatching Deploy GitHub Pages"
+              gh workflow run pages.yml --ref main --repo "$GITHUB_REPOSITORY"
+              echo "Pages deployment dispatched"
+              exit 0
+            fi
             git fetch origin main && git reset -q --hard origin/main
             python -c "import sys;sys.path.insert(0,'scouts');import scout_lib as s;s.refresh()"
             git add findings/feed.json
