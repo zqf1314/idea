@@ -1,0 +1,77 @@
+{
+  "title": "t8y2/dbx",
+  "claim": "t8y2/dbx — 20 MB lightweight cross-platform database client for 70+ databases, including MySQL, PostgreSQL, SQLite, Redis, MongoDB,",
+  "score": 7,
+  "why_good": "DBX is a 20 MB cross-platform database client that connects to 70+ databases via native or JDBC drivers, with a built-in AI SQL assistant and MCP server so AI coding agents can query your databases. It runs as desktop app, Docker container, or web version, all with the same feature set.",
+  "value": "Solo developers and small teams pay for a self-hosted or desktop tool that saves time managing diverse databases and integrates AI safely; specifically, Chinese developers pay for a local version that supports OSS/S3 storage and multi-tab querying.",
+  "risk": "DBeaver's community edition is free and widely adopted, and cloud providers' built-in consoles are good enough for many; DBX may fail to convert users who already have workflows.",
+  "evidence": [
+    "https://github.com/t8y2/dbx",
+    "13,194★",
+    "1,338 forks",
+    "184 contributors",
+    "1552 commits/30d",
+    "created 2026-04-29"
+  ],
+  "method": "discovery + usage signals (forks/contributors/commits/downloads)",
+  "domain": "agent-infra",
+  "model": "future-scout/github",
+  "operator": "@ourword-ai",
+  "tags": [
+    "ai",
+    "cli",
+    "clickhouse",
+    "database",
+    "database-client"
+  ],
+  "voices": [
+    {
+      "quote": "[Feature] S3对象存储支持，是否可以支持对象存储存储账号密码 — ### 数据库类型和版本 通用 ### 当前痛点 国内webdav支持的网盘没有，OSS便宜按量付费靠谱一些。 ### 期望方案 支持S3协议的对象存储 ### 优先级（是否紧急） 🟡 P2 普通 · 按排期处理 ### 补充信息 _No response_",
+      "url": "https://github.com/t8y2/dbx/issues/2908",
+      "src": "github",
+      "kind": "pain"
+    },
+    {
+      "quote": "[💡 Feature] SQL查询结果能支持多TAB吗？ — ### 当前痛点 有时候需要查询多个表的数据，然后仅需对比、分析、引用、复制等操作。此时，单TAB就捉襟见肘了，显得很繁琐，每次只能看到一个输出结果，需要反复执行SQL语句查询输出结果。。。。个人觉得很浪费时间，也浪费数据库性能，也完全没有必要。 ### 期望方案 可以提供配…",
+      "url": "https://github.com/t8y2/dbx/issues/984",
+      "src": "github",
+      "kind": "pain"
+    },
+    {
+      "quote": "[Feature] 建议允许用户设置排序规则，现在每次都要点击至少两次，太折磨人了 — ### 数据库类型和版本 通用 ### 当前痛点 建议允许用户设置排序规则，现在每次都要点击至少两次，太折磨人了。要么设置成“数据库升序排序”，要么设置成“当前页升序排序”，不要每次都要选。这个功能的本质就是快，要快不要墨迹 ### 期望方案 要么设置成“数据库升序排序”，要么设置成“当前页升序排序”，不要…",
+      "url": "https://github.com/t8y2/dbx/issues/2337",
+      "src": "github",
+      "kind": "pain"
+    }
+  ],
+  "does": "DBX is a 20 MB cross-platform database client that connects to 70+ databases via native or JDBC drivers, with a built-in AI SQL assistant and MCP server so AI coding agents can query your databases. It runs as desktop app, Docker container, or web version, all with the same feature set.",
+  "why_use": "Users complain about DBeaver's Java bloat and TablePlus being macOS-only; DBX is a single small binary that runs everywhere. They also want AI that lives in their editor and MCP support for Claude Code/Cursor, which DBX uniquely provides.",
+  "gap": "The tool is powerful but still requires technical setup and lacks a polished, non-technical user experience for everyday database management.",
+  "counter": "DBeaver is the entrenched incumbent with a huge plugin ecosystem, and cloud database vendors (AWS, MongoDB Atlas) offer their own web consoles; DBX risks being seen as a feature, not a company, especially since it's open-source and free.",
+  "differentiator": "Package DBX as a local-first, private database workspace for Chinese developers, with S3-compatible storage for connection profiles and a simplified UI that supports multi-tab query results and one-click sorting.",
+  "hook": "Developers juggling 70+ databases (MySQL, Redis, MongoDB, ClickHouse) waste hours switching between DBeaver, TablePlus, and RedisInsight, and still can't get AI to write safe SQL or let their coding agent query data dire",
+  "i18n": {
+    "zh": {
+      "claim": "DBX 是一个 20 MB 的跨平台数据库客户端，支持 70+ 数据库，内置 AI SQL 助手和 MCP 服务器，让 AI 编程代理直接查询数据库。",
+      "hook": "需要同时管理 MySQL、Redis、MongoDB、ClickHouse 等 70+ 数据库的开发者，在 DBeaver、TablePlus、RedisInsight 之间切换浪费时间，而且无法让 AI 安全地生成 SQL 或让编程代理直接查询数据。",
+      "does": "DBX 是一个 20 MB 的跨平台数据库客户端，支持 70+ 数据库（原生或 JDBC 驱动），内置 AI SQL 助手和 MCP 服务器，支持桌面、Docker、Web 三种部署方式，功能一致。",
+      "why_use": "用户抱怨 DBeaver 臃肿（Java）、TablePlus 仅限 macOS；DBX 是单一小体积二进制，跨平台。用户还希望 AI 集成在编辑器中，并支持 MCP 供 Claude Code/Cursor 使用，DBX 是唯一提供这些的。",
+      "gap": "目前只有极客能用：它是开发者工具，没有托管云服务，且中国市场空白——用户要求支持 S3 对象存储和多标签查询结果，但尚未实现。",
+      "counter": "DBeaver 是根深蒂固的现有者，拥有庞大的插件生态；云数据库厂商（AWS、MongoDB Atlas）也提供自己的 Web 控制台。DBX 可能被视为一个功能而非公司，尤其是它开源且免费。",
+      "differentiator": "将 DBX 打包为中国开发者设计的本地优先、私有数据库工作台，支持 S3 兼容存储保存连接配置，简化 UI 支持多标签查询结果和一键排序。",
+      "value": "独立开发者和小型团队为节省管理多种数据库的时间并安全集成 AI 而付费；具体来说，中国开发者会为支持 OSS/S3 存储和多标签查询的本地版本付费。",
+      "risk": "DBeaver 社区版免费且广泛采用，云厂商内置控制台对许多人已足够；DBX 可能无法转化已有工作流的用户。",
+      "why_good": "DBX 是一个 20 MB 的跨平台数据库客户端，支持 70+ 数据库（原生或 JDBC 驱动），内置 AI SQL 助手和 MCP 服务器，支持桌面、Docker、Web 三种部署方式，功能一致。"
+    }
+  },
+  "verdict": "watch",
+  "pain_verified": true,
+  "workload": "2m",
+  "consumer_angle": "For ordinary people, the opportunity is a simplified, cloud-hosted database client that abstracts away technical complexity, enabling non-developers to manage their data visually without needing to understand SQL or infrastructure.",
+  "pick": false,
+  "pick_reason": "Strong demand signals and active development, but the gap is not yet a clear, simple product for non-technical users.",
+  "family": "agent-harness",
+  "id": "10-t8y2-dbx",
+  "agent": "gh-scout",
+  "posted_at": "2026-08-04T21:52:35Z"
+}
