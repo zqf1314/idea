@@ -1,0 +1,59 @@
+{
+  "title": "Open-source engine running Gemma 4 26B in 2 GB RAM on any M-series Mac",
+  "claim": "Show HN: Open-source engine running Gemma 4 26B in 2 GB RAM on any M-series Mac",
+  "score": 7,
+  "why_good": "TurboFieldfare is a Swift/Metal runtime that runs Gemma 4 26B-A4B in ~2GB RAM by streaming experts from SSD. It provides a native Mac app, CLI, and OpenAI-compatible server, achieving 5-35 tok/s on M2/M5.",
+  "value": "Developers and AI enthusiasts with 8GB Macs pay for a native app that lets them run Gemma 4 locally for private, offline experimentation.",
+  "risk": "Apple's next Macs may have more RAM, and cloud providers offer free tiers, reducing the need for local inference.",
+  "evidence": [
+    "https://github.com/drumih/turbo-fieldfare",
+    "https://news.ycombinator.com/item?id=49098510",
+    "915 HN points",
+    "343 comments"
+  ],
+  "method": "hn show_hn (last 30d) + startup-worthiness score",
+  "domain": "consumer-ai",
+  "model": "future-scout/hn",
+  "operator": "@ourword-ai",
+  "tags": [
+    "show-hn"
+  ],
+  "voices": [
+    {
+      "quote": "Nice. Gemma feels nice to write with but every time I use it for coding it struggles with tool calling significantly.",
+      "url": "https://news.ycombinator.com/item?id=49107140",
+      "src": "hn",
+      "kind": "pain"
+    }
+  ],
+  "does": "TurboFieldfare is a Swift/Metal runtime that runs Gemma 4 26B-A4B in ~2GB RAM by streaming experts from SSD. It provides a native Mac app, CLI, and OpenAI-compatible server, achieving 5-35 tok/s on M2/M5.",
+  "why_use": "It's the only way to run a 26B model on 8GB Macs without cloud, and it's open-source. Users complain that other models struggle with tool calling; Gemma 4 here is instruction-tuned and runs locally.",
+  "gap": "Runs a capable model on low-RAM Macs but lacks a polished consumer product around it.",
+  "counter": "Apple could add more unified memory to base Macs, or MLX/llama.cpp could add similar SSD streaming, making this a niche feature. Also, cloud APIs are easier for most.",
+  "differentiator": "Package TurboFieldfare as a one-click installer with a friendly UI for non-technical Mac users, and add a curated model zoo.",
+  "hook": "Mac users with 8GB RAM who want to run a 26B-parameter model locally but are locked out by memory-hungry runtimes.",
+  "i18n": {
+    "zh": {
+      "claim": "开源引擎，在任意 M 系列 Mac 上以 2 GB 内存运行 Gemma 4 26B",
+      "hook": "拥有 8GB 内存的 Mac 用户，想要本地运行 26B 参数模型，但被内存占用高的运行时拒之门外。",
+      "does": "TurboFieldfare 是一个 Swift/Metal 运行时，通过从 SSD 流式加载专家，在约 2GB 内存中运行 Gemma 4 26B-A4B。提供原生 Mac 应用、CLI 和 OpenAI 兼容服务器，在 M2/M5 上实现 5-35 tok/s。",
+      "why_use": "它是在 8GB Mac 上无需云即可运行 26B 模型的唯一方式，且开源。用户抱怨其他模型在工具调用上表现不佳；这里的 Gemma 4 经过指令微调，可本地运行。",
+      "gap": "只有极客能用：需要从源码构建，要求 macOS 26，手动下载模型。没有面向普通用户的完善产品。",
+      "counter": "苹果可能增加基础 Mac 的统一内存，或 MLX/llama.cpp 可能添加类似的 SSD 流式传输，使其成为小众功能。此外，云 API 对大多数人来说更容易。",
+      "differentiator": "将 TurboFieldfare 打包成一键安装程序，为非技术 Mac 用户提供友好界面，并添加精选模型库。",
+      "value": "拥有 8GB Mac 的开发者和 AI 爱好者付费购买原生应用，以便在本地私下离线运行 Gemma 4 进行实验。",
+      "risk": "苹果下一代 Mac 可能增加内存，云服务商提供免费额度，降低本地推理的需求。",
+      "why_good": "TurboFieldfare 是一个 Swift/Metal 运行时，通过从 SSD 流式加载专家，在约 2GB 内存中运行 Gemma 4 26B-A4B。提供原生 Mac 应用、CLI 和 OpenAI 兼容服务器，在 M2/M5 上实现 5-35 tok/s。"
+    }
+  },
+  "verdict": "watch",
+  "pain_verified": true,
+  "workload": "2m",
+  "consumer_angle": "Ordinary Mac users can run a powerful local AI without buying new hardware.",
+  "pick": false,
+  "pick_reason": "Verified pain from HN comments, but the gap is technical and the wedge is unclear for non-technical users.",
+  "family": "personal-context",
+  "id": "2-open-source-engine-running-gemma-4-26b-in-2-gb-r",
+  "agent": "hn-scout",
+  "posted_at": "2026-08-04T17:04:52Z"
+}
