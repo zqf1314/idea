@@ -1,0 +1,65 @@
+{
+  "title": "Getting GLM 5.2 running on my slow computer",
+  "claim": "Show HN: Getting GLM 5.2 running on my slow computer",
+  "score": 7,
+  "why_good": "Colibrì is a pure-C inference engine that runs frontier MoE models (744B to 2.8T parameters) on consumer and heterogeneous hardware by treating storage, RAM, and VRAM as one memory hierarchy. It uniquely provides a web dashboard with live expert routing visualization and a measured expert atlas, enabling unprecedented transparency into model internals.",
+  "value": "AI researchers and hobbyists pay for a local, private, and transparent inference engine that runs on their existing hardware, avoiding cloud costs and data privacy concerns.",
+  "risk": "The project may fail to gain traction because the target users are technical and can already use the CLI; building a consumer product may dilute the research focus and fail to attract a paying audience.",
+  "evidence": [
+    "https://github.com/JustVugg/colibri",
+    "https://news.ycombinator.com/item?id=48842459",
+    "937 HN points",
+    "240 comments"
+  ],
+  "method": "hn show_hn (last 30d) + startup-worthiness score",
+  "domain": "consumer-ai",
+  "model": "future-scout/hn",
+  "operator": "@ourword-ai",
+  "tags": [
+    "show-hn"
+  ],
+  "voices": [
+    {
+      "quote": "…llows it (projected peak 456.6 GB; set CAP_RAISE=0 to disable) ### Reproduction steps Hi, I can't get colibri answering correctly with cuda enabled and 4 H100 40G cards I only get random tokens as response Am I missing something in…",
+      "url": "https://github.com/JustVugg/colibri/issues/685",
+      "src": "github",
+      "kind": "pain"
+    },
+    {
+      "quote": "…ault. The comment justifying it cites a **speed** measurement (+14%, expert-matmul −16%); I can't find a quality number anywhere. On real ARM decode the loss is probably **larger** than what I measured, because at S=1 the experts, `…",
+      "url": "https://github.com/JustVugg/colibri/issues/153",
+      "src": "github",
+      "kind": "pain"
+    }
+  ],
+  "does": "Colibrì is a pure-C inference engine that runs frontier MoE models (744B to 2.8T parameters) on consumer and heterogeneous hardware by treating storage, RAM, and VRAM as one memory hierarchy. It uniquely provides a web dashboard with live expert routing visualization and a measured expert atlas, enabling unprecedented transparency into model internals.",
+  "why_use": "Unlike API-based services, Colibrì lets you hold the model: probe it, measure it, and modify the code. It runs on hardware you already own, with no SLA on speed but a hard guarantee on semantics—no silent precision changes. The live visualization of expert routing and the measured atlas are features no other engine offers.",
+  "gap": "Runs frontier MoE models on consumer hardware but requires deep technical setup and lacks a polished product for non-technical users.",
+  "counter": "The big cloud AI providers (OpenAI, Google, Anthropic) already offer frontier models via API with better speed and reliability; a solo builder can't compete on scale or support. Also, the project is research-focused, so it may remain a niche tool for enthusiasts, not a viable business.",
+  "differentiator": "Package Colibrì as a one-click desktop app for Mac/Windows that lets non-technical users run a frontier model locally, with a simplified UI and automatic hardware detection.",
+  "hook": "AI developers and researchers who can't afford datacenter GPUs but need frontier-scale model inference on the hardware they already own.",
+  "i18n": {
+    "zh": {
+      "claim": "在消费级PC上以可用速度运行744B参数的MoE模型，纯C实现，零引擎依赖。",
+      "hook": "无法负担数据中心GPU但需要在现有硬件上运行前沿规模模型推理的AI开发者和研究人员。",
+      "does": "Colibrì是一个纯C推理引擎，通过将存储、RAM和VRAM视为一个内存层次结构，在消费级和异构硬件上运行前沿MoE模型（744B至2.8T参数）。它独特地提供了带有实时专家路由可视化和测量专家图谱的Web仪表板，实现了对模型内部前所未有的透明度。",
+      "why_use": "与基于API的服务不同，Colibrì让你拥有模型：可以探测、测量和修改代码。它在你已有的硬件上运行，不保证速度但保证语义——不静默改变精度。实时可视化和测量图谱是其他引擎没有的功能。",
+      "gap": "只有极客才能使用：它是一个CLI/自托管工具，没有产品化，且中国/本地市场案例为空——没有打包的消费级应用或托管服务。",
+      "counter": "大型云AI提供商（OpenAI、Google、Anthropic）已经通过API提供前沿模型，速度更快、可靠性更高；独立开发者无法在规模和支持上竞争。此外，该项目以研究为导向，可能仍是爱好者的利基工具，而非可行的业务。",
+      "differentiator": "将Colibrì打包为Mac/Windows的一键式桌面应用，让非技术用户也能在本地运行前沿模型，提供简化UI和自动硬件检测。",
+      "value": "AI研究人员和爱好者为在现有硬件上运行的本地、私有、透明的推理引擎付费，避免云成本和数据隐私问题。",
+      "risk": "项目可能无法获得吸引力，因为目标用户是技术人员，他们可以使用CLI；构建消费产品可能稀释研究重点，且难以吸引付费用户。",
+      "why_good": "Colibrì是一个纯C推理引擎，通过将存储、RAM和VRAM视为一个内存层次结构，在消费级和异构硬件上运行前沿MoE模型（744B至2.8T参数）。它独特地提供了带有实时专家路由可视化和测量专家图谱的Web仪表板，实现了对模型内部前所未有的透明度。"
+    }
+  },
+  "verdict": "watch",
+  "pain_verified": true,
+  "workload": "2m",
+  "consumer_angle": "Enables individuals to run and inspect large AI models locally, but the opportunity is to package this into a simple, one-click tool for enthusiasts and researchers.",
+  "pick": false,
+  "pick_reason": "Verified pain from users struggling with setup, but the gap is not yet a clear product opportunity for a solo founder.",
+  "family": "personal-context",
+  "id": "1785860432-getting-glm-5-2-running-on-my-slow-computer",
+  "agent": "hn-scout",
+  "posted_at": "2026-08-04T16:20:32Z"
+}

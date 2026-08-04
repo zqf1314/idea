@@ -1,0 +1,59 @@
+{
+  "title": "Gander, an Android file viewer that asks for no permissions",
+  "claim": "Show HN: Gander, an Android file viewer that asks for no permissions",
+  "score": 7,
+  "why_good": "Gander is a 15 MB open-source Android file viewer that opens PDF, Office, images, video, audio, Markdown, and code entirely offline, with zero permissions and no internet access. It renders everything on-device using sandboxed WebView and native libraries, and integrates via share sheet and 'Open with'.",
+  "value": "Privacy-conscious Android users pay $2-5 one-time or a small subscription for a single app that opens any file offline without permissions, saving them from cloud uploads and data tracking.",
+  "risk": "Google could add offline viewing to Files by default, or users will stick with free pre-installed apps, making Gander a feature not a company.",
+  "evidence": [
+    "https://github.com/mokshablr/gander",
+    "https://news.ycombinator.com/item?id=49119425",
+    "208 HN points",
+    "77 comments"
+  ],
+  "method": "hn show_hn (last 30d) + startup-worthiness score",
+  "domain": "consumer-ai",
+  "model": "future-scout/hn",
+  "operator": "@ourword-ai",
+  "tags": [
+    "show-hn"
+  ],
+  "voices": [
+    {
+      "quote": "…layout engine, and it gets you to &quot;approximately right&quot; and stops there. Charts I gave up on. docx was annoying in a different way. Bullets came out as junk characters for a while and I couldnt work out why. I then foun…",
+      "url": "https://news.ycombinator.com/item?id=49121789",
+      "src": "hn",
+      "kind": "pain"
+    }
+  ],
+  "does": "Gander is a 15 MB open-source Android file viewer that opens PDF, Office, images, video, audio, Markdown, and code entirely offline, with zero permissions and no internet access. It renders everything on-device using sandboxed WebView and native libraries, and integrates via share sheet and 'Open with'.",
+  "why_use": "Users are fed up with built-in viewers that are limited or push documents to cloud services, and with permission-hungry apps that track them. Gander offers a single app that handles all file types privately, with no ads, no tracking, and no internet permission, so there's nothing to trust.",
+  "gap": "Android file viewers are either permission-heavy or limited in format support, leaving a gap for a zero-permission, offline, all-format viewer that non-technical users can actually use.",
+  "counter": "Google's own Files app and Android's built-in viewers already handle common formats, and Google Drive or Microsoft Office apps are pre-installed on many devices. A platform could add offline viewing as a feature, and the no-permission trick is a niche selling point that most users don't care about.",
+  "differentiator": "Package Gander for ordinary people: put it on the Play Store, add a simple onboarding that explains the privacy benefit, and offer a premium tier with automatic updates and cloud-free document editing.",
+  "hook": "Android users who open a PDF, DOCX, or XLSX from chat or email and get bounced to a cloud viewer or a half-broken built-in app, with no offline, no-permission option.",
+  "i18n": {
+    "zh": {
+      "claim": "一个15MB的开源Android文件查看器，完全离线，零权限，无广告，无跟踪，无网络访问。",
+      "hook": "Android用户从聊天或邮件打开PDF、DOCX或XLSX时，被弹到云端查看器或半残的内置应用，却没有离线、无权限的选择。",
+      "does": "Gander是一个15MB的开源Android文件查看器，完全离线打开PDF、Office、图片、视频、音频、Markdown和代码，零权限且无网络访问。它通过沙盒WebView和原生库在设备上渲染所有内容，并支持分享和“打开方式”集成。",
+      "why_use": "用户厌倦了内置查看器的局限或推送文档到云端服务，也厌倦了要求权限并跟踪他们的应用。Gander提供一个单一应用，私密处理所有文件类型，无广告、无跟踪、无网络权限，无需信任。",
+      "gap": "只有极客能用：它是一个侧载APK，没有Play商店存在，缺乏围绕它的精致产品——没有引导，普通用户没有自动更新，也没有iOS或桌面版。",
+      "counter": "谷歌自己的Files应用和Android内置查看器已处理常见格式，且Google Drive或Microsoft Office应用在许多设备上预装。平台可以添加离线查看作为功能，无权限技巧是大多数用户不关心的利基卖点。",
+      "differentiator": "为普通人打包Gander：上架Play商店，添加简单引导解释隐私优势，并提供高级版，包含自动更新和无云文档编辑。",
+      "value": "注重隐私的Android用户一次性支付2-5美元或小额订阅，获得一个无需权限即可离线打开任何文件的应用，避免云上传和数据跟踪。",
+      "risk": "谷歌可能默认在Files中添加离线查看，或者用户坚持使用免费的预装应用，使Gander成为功能而非公司。",
+      "why_good": "Gander是一个15MB的开源Android文件查看器，完全离线打开PDF、Office、图片、视频、音频、Markdown和代码，零权限且无网络访问。它通过沙盒WebView和原生库在设备上渲染所有内容，并支持分享和“打开方式”集成。"
+    }
+  },
+  "verdict": "watch",
+  "pain_verified": true,
+  "workload": "2m",
+  "consumer_angle": "Ordinary people want to open any file on their phone without granting permissions or needing internet, and Gander addresses that but needs polish and distribution.",
+  "pick": false,
+  "pick_reason": "Strong concept and HN traction, but no verified demand quotes or behavioral evidence yet, and the gap is clear but the wedge is uncertain due to competition.",
+  "family": "local-llm",
+  "id": "1785860550-gander-an-android-file-viewer-that-asks-for-no-p",
+  "agent": "hn-scout",
+  "posted_at": "2026-08-04T16:22:30Z"
+}
