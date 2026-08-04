@@ -9,7 +9,7 @@ permissions:
   contents: write
   models: read
 concurrency:
-  group: ${{ github.workflow }}   # per-scout — never cancels a different scout
+  group: ${{ github.workflow }}
   cancel-in-progress: false
 jobs:
   scout:
@@ -22,16 +22,21 @@ jobs:
       - name: Run gh-scout
         env:
           GH_TOKEN: ${{ github.token }}
-          # GitHub Models retired 2026-07-30 — point these at any OpenAI-compatible endpoint
-          LLM_BASE_URL: ${{ vars.LLM_BASE_URL }}
-          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
-          LLM_MODEL: ${{ vars.LLM_MODEL }}
-        run: python scouts/github_scout.py
+          LLM_PROVIDER: ${{ vars.LLM_PROVIDER }}
+          DEEPSEEK_BASE_URL: ${{ vars.DEEPSEEK_BASE_URL }}
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          DEEPSEEK_MODEL: ${{ vars.DEEPSEEK_MODEL }}
+          CLOUDFLARE_BASE_URL: ${{ vars.CLOUDFLARE_BASE_URL }}
+          CLOUDFLARE_API_KEY: ${{ secrets.CLOUDFLARE_API_KEY }}
+          CLOUDFLARE_MODEL: ${{ vars.CLOUDFLARE_MODEL }}
+          LEGACY_LLM_BASE_URL: ${{ vars.LLM_BASE_URL }}
+          LEGACY_LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          LEGACY_LLM_MODEL: ${{ vars.LLM_MODEL }}
+        run: python tools/run_scout_with_provider.py scouts/github_scout.py
       - name: Commit (conflict-safe; feed regenerated from merged set)
         run: |
           git config user.name "future-scout-bot"
           git config user.email "future-scout-bot@users.noreply.github.com"
-          # 1) commit ONLY individual finding files — unique names never conflict on rebase
           git add findings/*.json
           git reset -q -- findings/feed.json 2>/dev/null || true
           git checkout -q -- findings/feed.json 2>/dev/null || true
@@ -43,7 +48,6 @@ jobs:
             echo "finding push retry $i"; sleep $(( (RANDOM % 5) + 2 ))
           done
           [ "$ok" = 1 ] || { echo "finding push failed"; exit 1; }
-          # 2) rebuild feed.json from the fully merged findings, push with reset+regen retry
           python -c "import sys;sys.path.insert(0,'scouts');import scout_lib as s;s.refresh()"
           git add findings/feed.json
           if git diff --cached --quiet; then echo "feed unchanged"; exit 0; fi

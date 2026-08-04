@@ -9,7 +9,7 @@ permissions:
   contents: write
   models: read
 concurrency:
-  group: ${{ github.workflow }}   # per-scout — never cancels a different scout
+  group: ${{ github.workflow }}
   cancel-in-progress: false
 jobs:
   scout:
@@ -22,11 +22,17 @@ jobs:
       - name: Run hn-scout
         env:
           GH_TOKEN: ${{ github.token }}
-          # GitHub Models retired 2026-07-30 — point these at any OpenAI-compatible endpoint
-          LLM_BASE_URL: ${{ vars.LLM_BASE_URL }}
-          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
-          LLM_MODEL: ${{ vars.LLM_MODEL }}
-        run: python scouts/hn_scout.py
+          LLM_PROVIDER: ${{ vars.LLM_PROVIDER }}
+          DEEPSEEK_BASE_URL: ${{ vars.DEEPSEEK_BASE_URL }}
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          DEEPSEEK_MODEL: ${{ vars.DEEPSEEK_MODEL }}
+          CLOUDFLARE_BASE_URL: ${{ vars.CLOUDFLARE_BASE_URL }}
+          CLOUDFLARE_API_KEY: ${{ secrets.CLOUDFLARE_API_KEY }}
+          CLOUDFLARE_MODEL: ${{ vars.CLOUDFLARE_MODEL }}
+          LEGACY_LLM_BASE_URL: ${{ vars.LLM_BASE_URL }}
+          LEGACY_LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          LEGACY_LLM_MODEL: ${{ vars.LLM_MODEL }}
+        run: python tools/run_scout_with_provider.py scouts/hn_scout.py
       - name: Commit (conflict-safe; feed regenerated from merged set)
         run: |
           git config user.name "future-scout-bot"
