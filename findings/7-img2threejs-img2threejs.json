@@ -40,7 +40,8 @@
       "differentiator": "把CLI包装成浏览器UI，设计师上传图片直接下载.glb，隐藏代码。",
       "value": "游戏工作室和电商网站为无需授权费的即时、定制化硬表面资产付费。",
       "risk": "如果不能解决非程序员的“下载”摩擦，就会沦为小众库。",
-      "why_good": "输入参考图，输出TypeScript工厂函数，用Three.js基元和着色器程序化重建物体，支持动画。"
+      "why_good": "输入参考图，输出TypeScript工厂函数，用Three.js基元和着色器程序化重建物体，支持动画。",
+      "claim": "img2threejs/img2threejs — 将参考图像中的物体重建为纯代码、程序化、质量可控、可直接用于动画的 Three.js 模型。Token"
     }
   },
   "verdict": "build",
