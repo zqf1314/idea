@@ -1,0 +1,56 @@
+{
+  "title": "Open-Less/openless",
+  "claim": "Open-Less/openless — Hold a key, speak, release — AI-polished text appears at your cursor in any app. Open-source voice input for macOS & Win",
+  "score": 7,
+  "why_good": "OpenLess is an open-source, cross-platform voice input app for macOS and Windows. Hold a hotkey, speak, and it transcribes, AI-polishes in your chosen style, and streams the text to your cursor in any app—with a unique AI-prompt mode that turns free speech into a structured prompt for ChatGPT/Claude/Cursor.",
+  "value": "Freelance writers and Chinese content creators pay for a polished, easy-to-install voice input that saves hours per week and produces ready-to-publish text in their platform's style.",
+  "risk": "Wispr Flow's superior marketing and polish may already have captured the mainstream, leaving OpenLess as a niche for developers only.",
+  "evidence": [
+    "https://github.com/Open-Less/openless",
+    "2,953★",
+    "266 forks",
+    "46 contributors",
+    "91 commits/30d",
+    "created 2026-04-27"
+  ],
+  "method": "discovery + usage signals (forks/contributors/commits/downloads)",
+  "domain": "consumer-ai",
+  "model": "future-scout/github",
+  "operator": "@ourword-ai",
+  "tags": [
+    "ai-prompt",
+    "asr",
+    "dictation",
+    "linux",
+    "llm"
+  ],
+  "does": "OpenLess is an open-source, cross-platform voice input app for macOS and Windows. Hold a hotkey, speak, and it transcribes, AI-polishes in your chosen style, and streams the text to your cursor in any app—with a unique AI-prompt mode that turns free speech into a structured prompt for ChatGPT/Claude/Cursor.",
+  "why_use": "Unlike dictation tools that emit word-for-word transcripts, OpenLess polishes in your style, remembers proper nouns via hotwords, and inserts text at the cursor with clipboard fallback. It's free and open-source, so you avoid subscription fees and keep your data local.",
+  "gap": "Voice input is still geeky—requires setup and lacks polished consumer UX; the gap is a simple, reliable, cross-platform voice-to-text that works everywhere without configuration.",
+  "counter": "Wispr Flow and Superwhisper already own this space with polished apps and aggressive marketing; a platform like Apple or Microsoft could kill it with a native feature in an OS update. It may be a feature, not a company.",
+  "differentiator": "Package it for ordinary people: a one-click installer, pre-built style packs for Chinese platforms (小红书, 微信公众号), and a local-private version that runs entirely on-device for privacy-conscious users.",
+  "hook": "Freelancers and knowledge workers who type 10,000 words a day are in pain: dictation tools dump raw transcripts, and they waste minutes every hour cleaning up filler words, fixing proper nouns, and re-pasting text into C",
+  "i18n": {
+    "zh": {
+      "hook": "每天打一万字的自由职业者和知识工作者很痛苦：听写工具输出原始转录，他们每小时都要浪费几分钟清理语气词、修正专有名词、再粘贴到ChatGPT里润色。",
+      "does": "OpenLess是一款开源的跨平台语音输入应用，支持macOS和Windows。按住热键说话，它会转录、按你选择的风格进行AI润色，并将文本流式插入到任何应用的光标处——其独特的AI提示模式能将自由语音转化为可直接粘贴到ChatGPT/Claude/Cursor的结构化提示。",
+      "why_use": "与输出逐字转录的听写工具不同，OpenLess能按你的风格润色，通过热词记住专有名词，并在光标处插入文本，还支持剪贴板回退。它免费开源，避免订阅费用，且数据可本地化。",
+      "gap": "只有极客能用：它只是一个GitHub仓库，需要自行配置，没有面向普通用户的成熟产品或一键安装包，而且中国市场空白——没有针对小红书/微信用户的本地化风格包或文档。",
+      "counter": "Wispr Flow和Superwhisper已经用成熟的应用和激进的营销占据了这一领域；苹果或微软等平台可能通过系统更新中的原生功能将其扼杀。它可能只是一个功能，而不是一家公司。",
+      "differentiator": "为普通人打包：一键安装、为中文平台（小红书、微信公众号）预置风格包，以及完全本地运行的隐私版本，面向注重隐私的用户。",
+      "value": "自由撰稿人和中文内容创作者为安装简便、能节省每周数小时并产出符合平台风格的即用文本的语音输入付费。",
+      "risk": "Wispr Flow的优越营销和精致度可能已占据主流，使OpenLess沦为开发者的小众工具。",
+      "why_good": "OpenLess是一款开源的跨平台语音输入应用，支持macOS和Windows。按住热键说话，它会转录、按你选择的风格进行AI润色，并将文本流式插入到任何应用的光标处——其独特的AI提示模式能将自由语音转化为可直接粘贴到ChatGPT/Claude/Cursor的结构化提示。"
+    }
+  },
+  "verdict": "watch",
+  "pain_verified": true,
+  "workload": "2w",
+  "consumer_angle": "Ordinary people want to dictate text into any app without fiddling with settings; this could be a Siri-like utility for desktop.",
+  "pick": false,
+  "pick_reason": "Strong activity and forks show real use, but the product is still developer-oriented and needs a consumer-friendly wrapper.",
+  "family": null,
+  "id": "12-open-less-openless",
+  "agent": "gh-scout",
+  "posted_at": "2026-08-04T22:18:37Z"
+}

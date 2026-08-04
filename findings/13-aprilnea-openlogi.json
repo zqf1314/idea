@@ -1,0 +1,57 @@
+{
+  "title": "AprilNEA/OpenLogi",
+  "claim": "AprilNEA/OpenLogi — ⚡️A native, local-first alternative to Logitech Options+, written in Rust 🦀 — remap buttons, DPI, and SmartShift over HI",
+  "score": 7,
+  "why_good": "OpenLogi is a Rust-based desktop app and agent that talks to Logitech HID++ peripherals over Bolt, Unifying, Bluetooth, or USB. It remaps buttons, adjusts DPI, toggles SmartShift, and switches profiles per app, with a GUI, CLI, and plain TOML config.",
+  "value": "Privacy-conscious Logitech users on Linux or Windows pay for a hassle-free installer and ongoing support to get full mouse control without Options+.",
+  "risk": "Logitech could add Linux support or gesture-button remapping to Options+, making OpenLogi redundant for most users.",
+  "evidence": [
+    "https://github.com/AprilNEA/OpenLogi",
+    "8,193★",
+    "213 forks",
+    "30 contributors",
+    "120 commits/30d",
+    "created 2026-05-24"
+  ],
+  "method": "discovery + usage signals (forks/contributors/commits/downloads)",
+  "domain": "edge-ai",
+  "model": "future-scout/github",
+  "operator": "@ourword-ai",
+  "tags": [
+    "dpi",
+    "gpui",
+    "hid",
+    "hidpp",
+    "local-first"
+  ],
+  "does": "OpenLogi is a Rust-based desktop app and agent that talks to Logitech HID++ peripherals over Bolt, Unifying, Bluetooth, or USB. It remaps buttons, adjusts DPI, toggles SmartShift, and switches profiles per app, with a GUI, CLI, and plain TOML config.",
+  "why_use": "Unlike Options+, OpenLogi runs on Linux, lets you move the gesture button, keeps config in plain text, and is scriptable via CLI—all without telemetry or an account.",
+  "gap": "Logitech Options+ is proprietary and limited to Windows/macOS, leaving Linux and advanced users without a native, local-first alternative.",
+  "counter": "Logitech owns the protocol and could squash this with a single Options+ update that adds Linux support or gesture-button customization. Also, it's a niche tool for a shrinking audience as Logitech moves to subscription models.",
+  "differentiator": "Package OpenLogi as a one-click installer with a friendly GUI and Chinese localization, targeting the underserved Linux and privacy-conscious Logitech users in China.",
+  "hook": "Logitech mouse owners on Linux or those who hate Options+'s bloat and account requirement are stuck with limited remapping or proprietary software.",
+  "i18n": {
+    "zh": {
+      "claim": "OpenLogi 是一个原生、本地优先的 Logitech Options+ 替代品，通过 HID++ 重映射按钮、DPI 和 SmartShift，无需账户或遥测。",
+      "hook": "Linux 上的罗技鼠标用户，或讨厌 Options+ 臃肿和账户要求的人，受限于有限的重新映射或专有软件。",
+      "does": "OpenLogi 是一个基于 Rust 的桌面应用和代理，通过 Bolt、Unifying、蓝牙或 USB 与罗技 HID++ 外设通信。它可以重映射按钮、调整 DPI、切换 SmartShift，并按应用切换配置文件，提供 GUI、CLI 和纯 TOML 配置。",
+      "why_use": "与 Options+ 不同，OpenLogi 支持 Linux，允许移动手势按钮，将配置保存在纯文本中，并可通过 CLI 编写脚本——所有这些都没有遥测或账户。",
+      "gap": "只有极客才能使用：它是一个原始的 GitHub 项目，没有完善的安装程序或支持，中国市场案例为空——没有本地化文档或社区。",
+      "counter": "罗技拥有该协议，并可能通过一次 Options+ 更新（添加 Linux 支持或手势按钮自定义）来扼杀它。此外，这是一个小众工具，随着罗技转向订阅模式，受众正在萎缩。",
+      "differentiator": "将 OpenLogi 打包为一键安装程序，提供友好的 GUI 和中文本地化，瞄准中国 underserved 的 Linux 和隐私意识强的罗技用户。",
+      "value": "隐私意识强的罗技用户（Linux 或 Windows）付费获得无忧安装程序和持续支持，以在无需 Options+ 的情况下获得完整的鼠标控制。",
+      "risk": "罗技可能会在 Options+ 中添加 Linux 支持或手势按钮重新映射，使 OpenLogi 对大多数用户变得多余。",
+      "why_good": "OpenLogi 是一个基于 Rust 的桌面应用和代理，通过 Bolt、Unifying、蓝牙或 USB 与罗技 HID++ 外设通信。它可以重映射按钮、调整 DPI、切换 SmartShift，并按应用切换配置文件，提供 GUI、CLI 和纯 TOML 配置。"
+    }
+  },
+  "verdict": "watch",
+  "pain_verified": true,
+  "workload": "2m",
+  "consumer_angle": "Ordinary users who want to customize their Logitech peripherals without vendor lock-in or cloud dependency.",
+  "pick": false,
+  "pick_reason": "Strong community activity and clear pain, but the gap is niche (Linux/advanced users) and the wedge is not yet a polished consumer product.",
+  "family": null,
+  "id": "13-aprilnea-openlogi",
+  "agent": "gh-scout",
+  "posted_at": "2026-08-04T22:20:43Z"
+}
