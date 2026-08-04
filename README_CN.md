@@ -1,131 +1,168 @@
+<div align="center">
+
 # 早风依旧 · Idea Radar
 
-持续发现值得构建的 AI 项目、开源工具与创业机会。
+**持续发现值得构建的 AI 产品、开源工具、真实痛点与创业机会。**
 
-- 在线看板：https://zqf1314.github.io/idea/
-- GitHub 仓库：https://github.com/zqf1314/idea
-- JSON 数据源：https://zqf1314.github.io/idea/findings/feed.json
+[在线看板](https://zqf1314.github.io/idea/) ·
+[JSON 数据源](https://zqf1314.github.io/idea/findings/feed.json) ·
+[维护文档](./docs/MAINTENANCE.md) ·
+[数据协议](./docs/PROTOCOL.md)
 
-## 这个版本能做什么
+</div>
 
-这个 Fork 保留了原项目的静态看板、采集器和 Finding 数据格式，并补齐了独立部署所需的配置：
+## 项目简介
 
-- GitHub Pages 自动部署；
-- 通过 Issue 提交新发现；
-- 自动计算新颖度、相似发现和佐证数量；
-- 不配置任何 AI 密钥也能使用本地 TF-IDF 相似度算法；
-- 可选接入 OpenAI 兼容的 Embeddings API；
-- 中文 Finding 表单；
-- 自动自检工作流。
+Idea Radar 是一个完全运行在 GitHub 上的自动化创意雷达。它持续从公开数据源发现项目与需求信号，判断这些信号是否代表真实、可构建、可落地的机会，将结果保存为结构化 JSON，并通过 GitHub Pages 发布为中英双语静态看板。
 
-## 首次部署
+整个系统不依赖独立应用服务器或外部数据库：
 
-### 1. 开启 Actions
+- GitHub Actions 负责定时、手动和事件触发；
+- Python 脚本负责采集、筛选、分析、翻译与聚合；
+- `findings/*.json` 保存单条记录；
+- `findings/feed.json` 是看板读取的公开数据源；
+- GitHub Pages 负责发布静态页面；
+- 带有 `finding` 标签的 Issue 可以提交额外发现。
 
-进入仓库的 **Actions** 页面。如果 GitHub 显示 Fork 的工作流已被禁用，点击启用。
+## 一条记录包含什么
 
-### 2. 允许工作流写入仓库
+每条 Finding 通常包含：
 
-进入：
+- 项目、趋势或机会名称；
+- 原始证据与发现方法；
+- 产品能力与目标用户；
+- 已验证的痛点、市场缺口与切入方式；
+- 商业价值与主要风险；
+- 中文与英文说明；
+- 评分、判断、工作量、需求验证状态与编辑状态。
 
-`Settings → Actions → General → Workflow permissions`
+字段协议见 [`docs/PROTOCOL.md`](./docs/PROTOCOL.md)，内容筛选口径见 [`docs/STANDARD.md`](./docs/STANDARD.md) 与 [`docs/RADAR.md`](./docs/RADAR.md)。
 
-选择：
+## 系统流程
 
-`Read and write permissions`
-
-然后保存。
-
-### 3. 选择 Pages 部署来源
-
-进入：
-
-`Settings → Pages → Build and deployment → Source`
-
-选择：
-
-`GitHub Actions`
-
-### 4. 执行初始化
-
-进入 **Actions**，选择：
-
-`Setup standalone Idea Radar`
-
-点击：
-
-`Run workflow`
-
-该工作流会自动：
-
-- 修正原作者仓库和 Pages 链接；
-- 修改网站标题和 SEO 信息；
-- 创建中文投稿模板；
-- 创建 `finding` 标签；
-- 安装 Pages 部署工作流；
-- 安装项目自检工作流；
-- 更新 Issue 自动评分流程。
-
-### 5. 部署网站
-
-初始化完成后，进入 **Actions**，选择：
-
-`Deploy GitHub Pages`
-
-点击 `Run workflow`。部署成功后访问：
-
-https://zqf1314.github.io/idea/
-
-## 测试自动评分
-
-进入仓库 **Issues → New issue**，选择“提交一条新发现”。
-
-也可以使用 API：
-
-```bash
-curl -X POST https://api.github.com/repos/zqf1314/idea/issues \
-  -H "Authorization: Bearer $GITHUB_TOKEN" \
-  -H "Accept: application/vnd.github+json" \
-  -d '{
-    "title": "finding: local voice cloning is now on-device",
-    "labels": ["finding"],
-    "body": "```json\n{ \"claim\": \"On-device voice cloning is now practical on consumer hardware\", \"evidence\": [\"https://example.com/evidence\"], \"method\": \"Reviewed the project repository and benchmark\" }\n```"
-  }'
+```text
+GitHub / Hacker News / Product Hunt / Reddit / arXiv / 人工提交
+                              │
+                              ▼
+                         Scouts 采集
+                              │
+                              ▼
+                  规则 + 证据 + LLM 分析
+                              │
+                              ▼
+                      findings/*.json
+                              │
+                              ▼
+                    findings/feed.json
+                              │
+                              ▼
+                    GitHub Pages 看板
 ```
 
-Issue 创建后，`barter` 工作流会：
+Issue 提交使用另一条入口：
 
-1. 校验 Claim、Evidence 和 Method；
-2. 和现有 Finding 计算相似度；
-3. 返回 `novelty`、`corroborations` 和相关发现；
-4. 将结果保存到 `findings/*.json`；
-5. 更新 `findings/feed.json`。
+```text
+带 finding 标签的 Issue
+          │
+          ▼
+   barter_engine.py
+          │
+          ▼
+新颖度 + 佐证数 + 相似记录
+          │
+          ▼
+       findings
+```
 
-## 可选：接入 Embeddings API
+## 数据来源
 
-进入：
+| 来源 | 工作流 | 运行方式 |
+|---|---|---|
+| GitHub | `scout-github` | 定时、手动 |
+| Hacker News / Show HN | `scout-hn` | 定时、手动 |
+| Product Hunt | `scout-producthunt` | 定时、手动 |
+| Reddit | `scout-reddit` | 手动 |
+| arXiv | `scout-arxiv` | 手动 |
+| Ask HN | `scout-askhn` | 手动 |
+| GitHub Issues | `Analyze submitted finding` | Issue 事件触发 |
 
-`Settings → Secrets and variables → Actions → New repository secret`
+其他工作流负责补齐中文内容、维护编辑字段、记录健康状态、核验预测、生成 Feed、执行自检和发布网页。
 
-可添加：
+## 目录结构
+
+| 路径 | 用途 |
+|---|---|
+| `scouts/` | 数据采集、筛选、内容补全、翻译、监控与 Feed 逻辑 |
+| `tools/` | LLM 供应商选择和辅助工具 |
+| `findings/` | 单条 Finding 与聚合数据源 |
+| `barter_engine.py` | Issue 提交分析与相似度引擎 |
+| `schema/` | Finding JSON Schema |
+| `.github/workflows/` | 定时、事件、自检和 Pages 工作流 |
+| `index.html` | GitHub Pages 主入口 |
+| `site/` | 静态站点副本与相关资源 |
+| `docs/` | 协议、筛选标准、雷达状态与维护文档 |
+| `customization.json` | 站点名称、描述、地址和品牌信息 |
+
+## LLM 供应商
+
+需要大模型的工作流统一通过 `tools/run_scout_with_provider.py` 运行。仓库变量 `LLM_PROVIDER` 决定当前使用的供应商。
+
+支持：
+
+- `deepseek`
+- `cloudflare`
+
+包装器把供应商配置转换为 Scout 代码需要的统一环境，同时把密钥保留在 GitHub Actions Secrets 中。
+
+### Repository variables
+
+| 变量 | 用途 |
+|---|---|
+| `LLM_PROVIDER` | 当前供应商：`deepseek` 或 `cloudflare` |
+| `DEEPSEEK_BASE_URL` | DeepSeek OpenAI 兼容地址 |
+| `DEEPSEEK_MODEL` | DeepSeek 模型名称 |
+| `CLOUDFLARE_BASE_URL` | Cloudflare OpenAI 兼容地址 |
+| `CLOUDFLARE_MODEL` | Cloudflare 模型名称 |
+
+### Repository secrets
 
 | Secret | 用途 |
 |---|---|
-| `EMBED_API_KEY` | API 密钥 |
-| `EMBED_API_URL` | OpenAI 兼容的 Embeddings 地址，可不填 |
-| `EMBED_MODEL` | Embeddings 模型，可不填 |
+| `DEEPSEEK_API_KEY` | DeepSeek API 密钥 |
+| `CLOUDFLARE_API_KEY` | Cloudflare API 密钥 |
+| `PRODUCTHUNT_TOKEN` | Product Hunt 数据源凭据 |
+| `REDDIT_CLIENT_ID` | Reddit 应用 Client ID |
+| `REDDIT_CLIENT_SECRET` | Reddit 应用 Client Secret |
+| `EMBED_API_KEY` | Issue 相似度分析使用的可选 Embeddings 密钥 |
+| `EMBED_API_URL` | 可选 OpenAI 兼容 Embeddings 地址 |
+| `EMBED_MODEL` | 可选 Embeddings 模型 |
 
-不添加密钥时会自动使用本地算法，不影响基本功能。
+密钥只能放在 GitHub Actions Secrets 中，不能写入仓库文件、Issue 或日志。
 
-## 修改名称或地址
+## 本地检查
 
-编辑仓库根目录的 `customization.json`，然后重新运行：
+工作流使用 Python 3.11。
 
-`Setup standalone Idea Radar`
+Windows：
 
-## 注意事项
+```cmd
+py -3 -m compileall -q barter_engine.py scouts tools
+py -3 barter_engine.py --selftest
+```
 
-- Fork 中继承的定时采集工作流可能默认处于关闭状态，需要在 Actions 页面启用。
-- GitHub 的定时任务可能延迟，并不保证准点执行。
-- Product Hunt 等数据源如果要求 Token，需要另外配置对应 Secret。
-- 不要把 API Key 直接写进仓库文件。
+Linux 与 macOS：
+
+```bash
+python -m compileall -q barter_engine.py scouts tools
+python barter_engine.py --selftest
+```
+
+`Self test` 工作流会执行 Python 编译、JSON 校验、相似度引擎测试和站点入口检查。
+
+## 项目维护
+
+仓库权限、工作流时间表、供应商切换、Feed 一致性、网页发布、日志判断和数据回退方式见 [`docs/MAINTENANCE.md`](./docs/MAINTENANCE.md)。
+
+## License
+
+本项目使用 [MIT License](./LICENSE)。
