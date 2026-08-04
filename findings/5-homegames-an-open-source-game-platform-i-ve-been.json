@@ -1,0 +1,58 @@
+{
+  "title": "Homegames. An open-source game platform I've been making for 8 years",
+  "claim": "Show HN: Homegames. An open-source game platform I've been making for 8 years",
+  "score": 9,
+  "why_good": "Homegames is an open-source platform that turns a home server into a multiplayer game hub, enabling users to self-host and manage game sessions directly from their browser.",
+  "value": "Privacy-focused gamers and tech hobbyists pay to keep their gaming data on their own hardware and avoid data harvesting by proprietary launchers.",
+  "risk": "The high maintenance cost of keeping game dependencies and drivers updated for a constantly changing library of 3D titles will burn out a solo founder.",
+  "evidence": [
+    "https://homegames.io",
+    "https://news.ycombinator.com/item?id=48798153",
+    "229 HN points",
+    "56 comments"
+  ],
+  "method": "hn show_hn (last 30d) + startup-worthiness score",
+  "domain": "consumer-ai",
+  "model": "future-scout/hn",
+  "operator": "@ourword-ai",
+  "tags": [
+    "show-hn"
+  ],
+  "voices": [
+    {
+      "quote": "Everytime I try and use one of those Complex 3D web games, all 8 cores of my computer go to 100% and my computer becomes unresponsive until I…",
+      "url": "https://news.ycombinator.com/item?id=48803077",
+      "src": "hn",
+      "kind": "pain"
+    }
+  ],
+  "does": "Homegames is an open-source platform that turns a home server into a multiplayer game hub, enabling users to self-host and manage game sessions directly from their browser.",
+  "why_use": "It offers transparency and control over the game environment, unlike opaque proprietary launchers that consume system resources silently.",
+  "gap": "It is currently a self-hosted sysadmin tool requiring technical setup, rather than a consumer-friendly 'console' experience.",
+  "counter": "Steam Deck and cloud gaming giants already provide superior, integrated game management experiences that render a standalone self-hosted platform redundant for the mass market.",
+  "differentiator": "Build a 'Game Server OS' with a one-click installer that automatically optimizes resource allocation for 3D titles, removing the need for manual configuration.",
+  "hook": "Gamers self-hosting complex 3D web titles who experience total system crashes when their CPU hits 100%.",
+  "i18n": {
+    "zh": {
+      "hook": "那些自托管复杂3D网页游戏的玩家，每当CPU占用率达到100%时就会遭遇系统崩溃。",
+      "does": "Homegames 是一个开源平台，可以将家庭服务器转变为多人游戏中心，让用户可以直接通过浏览器托管和管理游戏会话。",
+      "why_use": "它提供了对游戏环境的透明度和控制权，不像那些悄无声息消耗系统资源的专有启动器。",
+      "gap": "目前的自托管游戏领域被CLI工具主导，需要深厚的技术知识，普通用户无法在不崩溃硬件的情况下运行复杂的3D游戏。",
+      "counter": "Steam Deck和云游戏巨头已经提供了更优越的集成游戏管理体验，使得独立自托管平台对大众市场来说变得多余。",
+      "differentiator": "构建一个带有一键安装程序的'游戏服务器操作系统'，自动优化3D游戏的资源分配，无需手动配置。",
+      "value": "注重隐私的玩家和技术爱好者付费是为了将游戏数据保留在自己的硬件上，并避免被专有启动器收集数据。",
+      "risk": "为不断变化的3D游戏库更新游戏依赖项和驱动程序的高维护成本会让创始人精疲力竭。",
+      "why_good": "Homegames 是一个开源平台，可以将家庭服务器转变为多人游戏中心，让用户可以直接通过浏览器托管和管理游戏会话。"
+    }
+  },
+  "verdict": "build",
+  "pain_verified": true,
+  "workload": "2w",
+  "consumer_angle": "A 'console' for your home network that runs any game without the performance hit of browser-based games.",
+  "pick": true,
+  "pick_reason": "229 HN points prove massive demand; the open source code provides the tech stack for a 2-week 'managed' or 'no-code' wrapper.",
+  "family": null,
+  "id": "5-homegames-an-open-source-game-platform-i-ve-been",
+  "agent": "hn-scout",
+  "posted_at": "2026-08-04T17:59:32Z"
+}
