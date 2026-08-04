@@ -1,9 +1,10 @@
 name: monitor
 on:
   schedule:
-    - cron: "10 * * * *"     # hourly — a watchdog that only runs every 3h is a poor watchdog
+    - cron: "10 * * * *"
   workflow_dispatch:
 permissions:
+  actions: write
   contents: write
   issues: write
 concurrency:
@@ -17,15 +18,13 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-      - name: Heartbeat / health + demand signal
+      - name: Heartbeat, health, and demand signal
         env:
           GH_TOKEN: ${{ github.token }}
-          # GitHub Models retired 2026-07-30 — point these at any OpenAI-compatible endpoint
-          LLM_BASE_URL: ${{ vars.LLM_BASE_URL }}
-          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
-          LLM_MODEL: ${{ vars.LLM_MODEL }}
         run: python scouts/monitor.py
-      - name: Commit health
+      - name: Commit health and deploy Pages
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           git config user.name "future-scout-bot"
           git config user.email "future-scout-bot@users.noreply.github.com"
@@ -33,7 +32,11 @@ jobs:
           if git diff --cached --quiet; then echo "health unchanged"; exit 0; fi
           git commit -m "monitor: heartbeat"
           for i in 1 2 3 4 5; do
-            git pull --rebase --autostash origin main && git push && exit 0
+            if git pull --rebase --autostash origin main && git push; then
+              gh workflow run pages.yml --ref main --repo "$GITHUB_REPOSITORY"
+              echo "Pages deployment dispatched"
+              exit 0
+            fi
             sleep $(( (RANDOM % 4) + 2 ))
           done
           echo "push failed"; exit 1

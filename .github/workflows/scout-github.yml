@@ -30,9 +30,6 @@ jobs:
           CLOUDFLARE_BASE_URL: ${{ vars.CLOUDFLARE_BASE_URL }}
           CLOUDFLARE_API_KEY: ${{ secrets.CLOUDFLARE_API_KEY }}
           CLOUDFLARE_MODEL: ${{ vars.CLOUDFLARE_MODEL }}
-          LEGACY_LLM_BASE_URL: ${{ vars.LLM_BASE_URL }}
-          LEGACY_LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
-          LEGACY_LLM_MODEL: ${{ vars.LLM_MODEL }}
         run: python tools/run_scout_with_provider.py scouts/github_scout.py
       - name: Commit findings, rebuild feed, and deploy Pages
         env:

@@ -1,14 +1,15 @@
 name: translate
 on:
   schedule:
-    - cron: "20 * * * *"    # twice an hour (:20 & :50) — bilingual safety-net, redundant vs dropped runs
+    - cron: "20 * * * *"
     - cron: "50 * * * *"
   workflow_dispatch:
 permissions:
+  actions: write
   contents: write
   models: read
 concurrency:
-  group: translate          # own group — never fights a scout
+  group: translate
   cancel-in-progress: false
 jobs:
   translate:
@@ -18,24 +19,29 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-      - name: Translate any findings missing 中文 (auto, capped)
+      - name: Translate any findings missing Chinese
         env:
           GH_TOKEN: ${{ github.token }}
-          # GitHub Models retired 2026-07-30 — point these at any OpenAI-compatible endpoint
-          LLM_BASE_URL: ${{ vars.LLM_BASE_URL }}
-          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
-          LLM_MODEL: ${{ vars.LLM_MODEL }}
+          LLM_PROVIDER: ${{ vars.LLM_PROVIDER }}
+          DEEPSEEK_BASE_URL: ${{ vars.DEEPSEEK_BASE_URL }}
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          DEEPSEEK_MODEL: ${{ vars.DEEPSEEK_MODEL }}
+          CLOUDFLARE_BASE_URL: ${{ vars.CLOUDFLARE_BASE_URL }}
+          CLOUDFLARE_API_KEY: ${{ secrets.CLOUDFLARE_API_KEY }}
+          CLOUDFLARE_MODEL: ${{ vars.CLOUDFLARE_MODEL }}
           TRANSLATE_CAP: "8"
-        run: python scouts/translate_fill.py
-      - name: Commit (conflict-safe; feed regenerated from merged set)
+        run: python tools/run_scout_with_provider.py scouts/translate_fill.py
+      - name: Commit translations and rebuild feed
+        id: commit_feed
         run: |
+          echo "changed=false" >> "$GITHUB_OUTPUT"
           git config user.name "future-scout-bot"
           git config user.email "future-scout-bot@users.noreply.github.com"
           git add findings/*.json
           git reset -q -- findings/feed.json 2>/dev/null || true
           git checkout -q -- findings/feed.json 2>/dev/null || true
           if git diff --cached --quiet; then echo "nothing to translate"; exit 0; fi
-          git commit -m "translate: fill missing 中文"
+          git commit -m "translate: fill missing Chinese"
           ok=0
           for i in $(seq 1 8); do
             if git pull --rebase --autostash origin main && git push; then ok=1; break; fi
@@ -47,7 +53,11 @@ jobs:
           if git diff --cached --quiet; then echo "feed unchanged"; exit 0; fi
           git commit -m "translate: rebuild feed"
           for i in $(seq 1 8); do
-            if git push; then echo "feed pushed"; exit 0; fi
+            if git push; then
+              echo "feed pushed"
+              echo "changed=true" >> "$GITHUB_OUTPUT"
+              exit 0
+            fi
             git fetch origin main && git reset -q --hard origin/main
             python -c "import sys;sys.path.insert(0,'scouts');import scout_lib as s;s.refresh()"
             git add findings/feed.json
@@ -55,8 +65,10 @@ jobs:
             echo "feed push retry $i"; sleep $(( (RANDOM % 5) + 2 ))
           done
           echo "feed push failed"; exit 1
-      - name: Refresh SEO/GEO static content (JSON-LD + noscript + sitemap)
+      - name: Refresh SEO/GEO static content
+        id: commit_seo
         run: |
+          echo "changed=false" >> "$GITHUB_OUTPUT"
           git config user.name "future-scout-bot"
           git config user.email "future-scout-bot@users.noreply.github.com"
           python -c "import sys;sys.path.insert(0,'scouts');import scout_lib as s;s.build_seo()"
@@ -64,7 +76,19 @@ jobs:
           if git diff --cached --quiet; then echo "seo unchanged"; exit 0; fi
           git commit -m "seo: refresh crawlable index (JSON-LD + noscript)"
           for i in $(seq 1 8); do
-            if git pull --rebase --autostash origin main && git push; then echo "seo pushed"; exit 0; fi
+            if git pull --rebase --autostash origin main && git push; then
+              echo "seo pushed"
+              echo "changed=true" >> "$GITHUB_OUTPUT"
+              exit 0
+            fi
             echo "seo push retry $i"; sleep $(( (RANDOM % 5) + 2 ))
           done
           echo "seo push failed"; exit 1
+      - name: Deploy GitHub Pages after visible changes
+        if: steps.commit_feed.outputs.changed == 'true' || steps.commit_seo.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          echo "dispatching Deploy GitHub Pages"
+          gh workflow run pages.yml --ref main --repo "$GITHUB_REPOSITORY"
+          echo "Pages deployment dispatched"

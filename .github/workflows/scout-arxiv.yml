@@ -1,11 +1,12 @@
 name: scout-arxiv
 on:
-  workflow_dispatch:        # paused during the prediction MVP (run manually if needed)
+  workflow_dispatch:
 permissions:
+  actions: write
   issues: write
   contents: write
 concurrency:
-  group: ${{ github.workflow }}   # per-scout — never cancels a different scout
+  group: ${{ github.workflow }}
   cancel-in-progress: false
 jobs:
   scout:
@@ -18,12 +19,17 @@ jobs:
       - name: Run arxiv-scout
         env:
           GH_TOKEN: ${{ github.token }}
-          # GitHub Models retired 2026-07-30 — point these at any OpenAI-compatible endpoint
-          LLM_BASE_URL: ${{ vars.LLM_BASE_URL }}
-          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
-          LLM_MODEL: ${{ vars.LLM_MODEL }}
-        run: python scouts/arxiv_scout.py
-      - name: Commit (conflict-safe; feed regenerated from merged set)
+          LLM_PROVIDER: ${{ vars.LLM_PROVIDER }}
+          DEEPSEEK_BASE_URL: ${{ vars.DEEPSEEK_BASE_URL }}
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          DEEPSEEK_MODEL: ${{ vars.DEEPSEEK_MODEL }}
+          CLOUDFLARE_BASE_URL: ${{ vars.CLOUDFLARE_BASE_URL }}
+          CLOUDFLARE_API_KEY: ${{ secrets.CLOUDFLARE_API_KEY }}
+          CLOUDFLARE_MODEL: ${{ vars.CLOUDFLARE_MODEL }}
+        run: python tools/run_scout_with_provider.py scouts/arxiv_scout.py
+      - name: Commit findings, rebuild feed, and deploy Pages
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           git config user.name "future-scout-bot"
           git config user.email "future-scout-bot@users.noreply.github.com"
@@ -43,7 +49,12 @@ jobs:
           if git diff --cached --quiet; then echo "feed unchanged"; exit 0; fi
           git commit -m "scout(arxiv): rebuild feed"
           for i in $(seq 1 8); do
-            if git push; then echo "feed pushed"; exit 0; fi
+            if git push; then
+              echo "feed pushed"
+              gh workflow run pages.yml --ref main --repo "$GITHUB_REPOSITORY"
+              echo "Pages deployment dispatched"
+              exit 0
+            fi
             git fetch origin main && git reset -q --hard origin/main
             python -c "import sys;sys.path.insert(0,'scouts');import scout_lib as s;s.refresh()"
             git add findings/feed.json

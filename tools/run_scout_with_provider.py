@@ -37,25 +37,13 @@ def _select_provider() -> tuple[str, str, str, str]:
         )
 
     if provider == "deepseek":
-        base_url = _first(
-            "DEEPSEEK_BASE_URL",
-            "LEGACY_LLM_BASE_URL",
-            default="https://api.deepseek.com",
-        )
-        api_key = _first("DEEPSEEK_API_KEY", "LEGACY_LLM_API_KEY")
-        model = _first(
-            "DEEPSEEK_MODEL",
-            "LEGACY_LLM_MODEL",
-            default="deepseek-v4-flash",
-        )
+        base_url = _first("DEEPSEEK_BASE_URL", default="https://api.deepseek.com")
+        api_key = _first("DEEPSEEK_API_KEY")
+        model = _first("DEEPSEEK_MODEL", default="deepseek-v4-flash")
     else:
-        base_url = _first("CLOUDFLARE_BASE_URL", "LEGACY_LLM_BASE_URL")
-        api_key = _first("CLOUDFLARE_API_KEY", "LEGACY_LLM_API_KEY")
-        model = _first(
-            "CLOUDFLARE_MODEL",
-            "LEGACY_LLM_MODEL",
-            default="@cf/zai-org/glm-4.7-flash",
-        )
+        base_url = _first("CLOUDFLARE_BASE_URL")
+        api_key = _first("CLOUDFLARE_API_KEY")
+        model = _first("CLOUDFLARE_MODEL", default="@cf/zai-org/glm-4.7-flash")
 
     if not base_url:
         raise SystemExit(f"{provider}: API base URL is empty")
