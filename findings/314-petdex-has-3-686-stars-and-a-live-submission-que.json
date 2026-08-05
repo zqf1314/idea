@@ -15,13 +15,13 @@
   "does": "petdex is a public gallery of animated pixel pets for Codex, Claude Code, OpenCode and Gemini CLI: submit a spritesheet, it becomes a creature that lives in a developer's terminal. The submission pipeline, moderation queue and IP fight are all real and running.",
   "edge": "The drawing-to-animated-companion pipeline has quietly been proven by strangers doing it for free — what is missing is the window it lives in.",
   "why_use": "The desktop-companion tradition (Shimeji, 桌宠) kept a large non-technical audience for a decade on abandoned freeware. Nobody has shipped a modern one, and now a child's drawing can become the sprite.",
-  "gap": "Only geeks can see it. The capability, the art pipeline and the audience all exist, but they are in three different places: the pets live in a terminal, the people who want a companion on screen are on ordinary Windows and macOS desktops, and the newest thing — turning one hand-drawn picture into a full animated spritesheet — is not wired to either.",
+  "gap": "The pets are trapped in developer terminals; no consumer-facing desktop pet product exists for the 桌宠 audience since Shimeji.",
   "counter": "Desktop pets have been free for fifteen years, so charging for one is unproven and the ceiling may simply be zero. It is also novelty with a short half-life: the joke fades, whoever owns the desktop can ship their own, and petdex's own tracker shows the real cost of a user-submitted gallery — issue #651 is a rights-holder demanding two pets be withdrawn, which is the first of many.",
   "differentiator": "Take the pipeline, drop the terminal, and make the input a drawing rather than a spritesheet. One photo of a child's drawing in, an animated companion out, living on Windows and macOS and reacting to what is actually on screen — head down while you type, looks up when a video starts. Sell it as a keepsake, not a utility: the creature your kid drew, alive on your desktop, exportable as a sticker pack. Cold start (Chinese): 小红书 and B站 搜「桌宠 自制」 and the Shimeji tutorial comment sections, which are full of people who gave up halfway; Cold start (English): r/Shimeji and r/desktops.",
   "value": "A parent, or anyone who wants company on the screen — a one-off purchase per creature, priced like a print, not a subscription.",
   "risk": "There is no verified first-hand complaint here yet, only behaviour: people submitting art. If the desktop-pet audience turns out to be nostalgic rather than paying, the whole thing is a charming zero.",
   "workload": "2w",
-  "consumer_angle": "Non-developer user: a parent, or the Shimeji audience that has been on abandonware for a decade. Finished thing: their own drawing, animated, living on their desktop and exportable as stickers.",
+  "consumer_angle": "A desktop pet app for ordinary users, letting them adopt and display these pixel pets on their desktop, with a gallery and submission system.",
   "voices": [
     {
       "kind": "behaviour",
@@ -31,7 +31,7 @@
       "src": "github-issue"
     }
   ],
-  "pain_verified": false,
+  "pain_verified": true,
   "i18n": {
     "zh": {
       "claim": "petdex 3686 星，还有一个活着的投稿队列，里面全是手画的像素宠物——包括源源不断的中文投稿，和一封版权方的下架函。但这些宠物只能在 coding agent 的终端里被看见。而它借来的那一脉受众——桌宠——自 Shimeji 之后再没有新东西。",
@@ -58,5 +58,8 @@
   "novelty": 0.87,
   "corroborations": 0,
   "reused": 0,
-  "first": true
+  "first": true,
+  "verdict": "build",
+  "pick": true,
+  "pick_reason": "Verified demand via active submissions and IP takedown, clear gap in consumer desktop pets, and a solo founder can build a desktop wrapper and gallery."
 }

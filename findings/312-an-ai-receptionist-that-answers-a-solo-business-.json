@@ -13,7 +13,7 @@
   "does": "The Western pattern — Estera and peers — answers a business's phone and WhatsApp around the clock, books the appointment, and hands the owner a summary. It assumes the customer dials a number.",
   "edge": "It turns the most expensive failure mode of a one-person shop — the phone ringing while both hands are busy — into a booked appointment, with nobody on payroll.",
   "why_use": "A hair salon, a car-repair bay, a pet groomer or a single dental chair loses the enquiry outright when the hands are occupied or the shutter is down. The enquiry does not wait; it goes to the shop next door.",
-  "gap": "The Chinese-market case is empty and it is not a translation job: the customer does not call, they message a WeChat personal account or a group. Every Western product here is built around a phone number and a calendar API — neither is where Chinese single-shop demand actually lands.",
+  "gap": "The Chinese single-shop market lacks an AI receptionist that works on WeChat, not phone lines.",
   "counter": "WeChat's rules are hostile to automating a personal account, which is very likely why nobody has shipped it — this may be a rules problem wearing the costume of a product problem. Meituan and Dianping also already own booking in the largest verticals.",
   "differentiator": "Do not automate the WeChat account — that is the trap and this board's own integrity line would veto it. Sit beside it: the owner forwards or screenshots after-hours enquiries into one place, and next morning gets a ranked list of who asked what with a drafted reply per person, which they send themselves. One job, no platform violation, no calendar integration. Cold start (Chinese): Xiaohongshu and Douyin comment sections under 单人理发店 and 宠物店 日常 posts, where owners describe losing customers; plus the SmsForwarder issue tracker, where users are already asking for native WeChat and QQ channels. Cold start (English): r/smallbusiness, search 'missed calls after hours solo owner'.",
   "value": "Monthly subscription from a single-shop owner, priced against one lost customer a month.",
@@ -49,5 +49,10 @@
   "corroborations": 0,
   "reused": 0,
   "first": false,
-  "tags": []
+  "tags": [],
+  "verdict": "watch",
+  "pain_verified": true,
+  "consumer_angle": "Small business owners in China can get after-hours customer service and booking via WeChat without hiring staff.",
+  "pick": false,
+  "pick_reason": "Verified pain from SmsForwarder issue, but the gap and wedge need more validation for the Chinese market."
 }

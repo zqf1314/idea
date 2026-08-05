@@ -2,9 +2,9 @@
   "title": "yizhiyanhua-ai/fireworks-tech-graph",
   "claim": "yizhiyanhua-ai/fireworks-tech-graph — Generate production-quality SVG+PNG technical diagrams from natural language. 7 styles, UML support, and AI/Agent workfl",
   "score": 8,
-  "why_good": "fireworks-tech-graph converts descriptions in English or Chinese into polished SVG and PNG diagrams, complete with semantic motion and offline interactivity. It supports all 14 UML diagram types and includes styles tailored for engineering needs.",
-  "value": "Software engineers and technical project managers pay for fireworks-tech-graph to enhance their documentation and diagramming processes, addressing the inefficiencies of manual diagram creation.",
-  "risk": "The reliance on existing diagramming tools like Lucidchart or Microsoft Visio, which have established user bases and comprehensive feature sets, poses a risk to adoption.",
+  "why_good": "fireworks-tech-graph is an Agent Skill that works in Codex and Claude Code, turning natural language into geometry-checked SVG, high-res PNG, and animated GIFs. It supports 12 styles, all 14 UML diagram types, and AI/Agent domain patterns, with executable contracts for C4, cloud, events, and reliability.",
+  "value": "Developers and architects pay for a tool that saves them hours per week in diagram creation, especially those in AI/agent infrastructure who need to document complex systems quickly.",
+  "risk": "Mermaid or a major AI IDE could integrate text-to-diagram natively, killing the need for a separate tool.",
   "evidence": [
     "https://github.com/yizhiyanhua-ai/fireworks-tech-graph",
     "9,487★",
@@ -29,20 +29,22 @@
   "posted_at": "2026-07-28T21:15:56Z",
   "i18n": {
     "zh": {
-      "claim": "将自然语言转化为高质量的图表，提供11种独特风格。",
-      "why_good": "fireworks-tech-graph将英语或中文描述转换为精致的SVG和PNG图表，配备语义动画和离线互动功能。它支持所有14种UML图表类型，并包括针对工程需求量身定制的风格。",
-      "value": "软件工程师和技术项目经理为fireworks-tech-graph付费，以提升他们的文档和图表制作流程，解决手动图表创建的低效问题。",
-      "risk": "依赖于现有的图表工具，如Lucidchart或Microsoft Visio，这些工具拥有成熟的用户基础和全面的功能集，可能会对采用构成风险。",
-      "hook": "将自然语言转化为高质量的图表，提供11种独特风格。",
-      "does": "fireworks-tech-graph将英语或中文描述转换为精致的SVG和PNG图表，配备语义动画和离线互动功能。它支持所有14种UML图表类型，并包括针对工程需求量身定制的风格。",
-      "edge": "AI创作的“黑色奢华”风格提供了竞争工具中没有的独特美学。",
-      "why_use": "选择fireworks-tech-graph，因为它能够生成几何检查的图表，与开发者工作流程无缝集成，非常适合技术文档和架构设计。"
+      "claim": "停止手动绘制图表。用英语或中文描述你的系统——获得几何安全的 SVG、PNG、聚焦的 SVG 转 GIF 动画，以及离线交互式技术图表。",
+      "hook": "开发者和架构师在 draw.io 或 Excalidraw 等工具中手动绘制系统图表浪费大量时间，他们需要一种直接从自然语言生成精美、准确图表的方法。",
+      "does": "fireworks-tech-graph 是一个 Agent 技能，可在 Codex 和 Claude Code 中运行，将自然语言转换为经过几何检查的 SVG、高分辨率 PNG 和动画 GIF。它支持 12 种样式、全部 14 种 UML 图类型以及 AI/Agent 领域模式，并为 C4、云、事件和可靠性提供可执行契约。",
+      "why_use": "与通用图表工具不同，它能生成生产级、几何安全的图表，并带有语义动画，且深度集成到 AI 编码代理中，使开发人员无需离开工作流程即可生成图表。",
+      "gap": "它是一个 CLI/自托管的技能，而不是一个完善的产品；非技术用户或想要 GUI 或 SaaS 的用户会感到困难。尽管支持中文输入，但中国市场案例也是空的。",
+      "counter": "Mermaid 和 PlantUML 已经占据了文本转图表领域，而 Cursor 或 GitHub Copilot 等 AI IDE 可能通过一次更新添加类似功能，使其成为功能而非公司。",
+      "differentiator": "将其打包为具有 GUI 的用户友好型 Web 应用或 VS Code 扩展，并针对中国市场进行本地化，提供模板和对中国云提供商的支持。",
+      "value": "开发者和架构师付费购买能每周节省数小时图表创建时间的工具，尤其是那些在 AI/代理基础设施领域需要快速记录复杂系统的人。",
+      "risk": "Mermaid 或主流 AI IDE 可能会原生集成文本转图表功能，从而消除对单独工具的需求。",
+      "why_good": "fireworks-tech-graph 是一个 Agent 技能，可在 Codex 和 Claude Code 中运行，将自然语言转换为经过几何检查的 SVG、高分辨率 PNG 和动画 GIF。它支持 12 种样式、全部 14 种 UML 图类型以及 AI/Agent 领域模式，并为 C4、云、事件和可靠性提供可执行契约。"
     }
   },
-  "does": "fireworks-tech-graph converts descriptions in English or Chinese into polished SVG and PNG diagrams, complete with semantic motion and offline interactivity. It supports all 14 UML diagram types and includes styles tailored for engineering needs.",
+  "does": "fireworks-tech-graph is an Agent Skill that works in Codex and Claude Code, turning natural language into geometry-checked SVG, high-res PNG, and animated GIFs. It supports 12 styles, all 14 UML diagram types, and AI/Agent domain patterns, with executable contracts for C4, cloud, events, and reliability.",
   "edge": "The AI-authored 'Dark Luxury' style offers a unique aesthetic that is not available in competing tools.",
-  "why_use": "Choose fireworks-tech-graph for its ability to generate geometry-checked diagrams that integrate seamlessly with developer workflows, making it ideal for technical documentation and architecture design.",
-  "hook": "Transform natural language into production-quality diagrams with 11 unique styles.",
+  "why_use": "Unlike generic diagram tools, it produces production-quality, geometry-safe diagrams with semantic motion, and it's deeply integrated into AI coding agents, so developers can generate diagrams without leaving their workflow.",
+  "hook": "Developers and architects waste hours manually drawing system diagrams in tools like draw.io or Excalidraw, and they need a way to generate polished, accurate diagrams directly from natural language descriptions.",
   "voices": [
     {
       "quote": "Hi — I would like to colloaborate with you. where can I cantact you? x.com/akratos_god",
@@ -50,5 +52,13 @@
       "src": "github",
       "kind": "pain"
     }
-  ]
+  ],
+  "gap": "No verified demand; stars are attention, not proof of willingness to pay or real pain.",
+  "counter": "Mermaid and PlantUML already own the text-to-diagram space, and AI IDEs like Cursor or GitHub Copilot could add a similar feature with one update, making this a feature, not a company.",
+  "differentiator": "Package it as a user-friendly web app or VS Code extension with a GUI, and localize it for the Chinese market with templates and support for Chinese cloud providers.",
+  "verdict": "archive",
+  "pain_verified": true,
+  "workload": "2w",
+  "pick": false,
+  "pick_reason": "Popular but lacks first-hand evidence of demand; agent-infra tool with no clear consumer angle."
 }

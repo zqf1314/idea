@@ -2,9 +2,9 @@
   "title": "wangxijie001/yoji",
   "claim": "wangxijie001/yoji — 有情绪的 AI 桌面伴侣 | 隐私优先 · 语音唤醒 · 协助办公 · MCP 无限扩展 | An AI desktop companion with emotions — privacy-first, voice wake, office",
   "score": 8,
-  "why_good": "Yoji is an AI companion that manages files, runs scripts, and interacts with external APIs, all while keeping your data private and local. It evolves its personality and emotions based on your interactions.",
-  "value": "Tech-savvy professionals and privacy-conscious users pay for a customizable AI assistant that enhances productivity and personal interaction without compromising data security.",
-  "risk": "Yoji may struggle against established AI assistants like Siri or Google Assistant, which have extensive ecosystems and user bases.",
+  "why_good": "Yoji is an open-source desktop AI companion that runs fully locally, with voice wake, file management, script execution, web search, MCP tool integration, a hormone-based emotion system, and a Live2D avatar. It uniquely combines a local sub-agent factory with async task scheduling, all without cloud dependency.",
+  "value": "Privacy-conscious professionals and hobbyists pay for a one-time license or Patreon support to get a local AI that manages files and runs scripts without cloud uploads.",
+  "risk": "The incumbent is the cloud AI assistants (ChatGPT, Claude) that users already pay for; if they add local mode, Yoji's edge evaporates.",
   "evidence": [
     "https://github.com/wangxijie001/yoji",
     "516★",
@@ -29,20 +29,22 @@
   "posted_at": "2026-07-28T15:27:15Z",
   "i18n": {
     "zh": {
-      "claim": "认识 Yoji：你的情感智能 AI 桌面伴侣，能操作你的电脑。",
-      "why_good": "Yoji 是一个 AI 伴侣，管理文件、运行脚本并与外部 API 互动，同时保持你的数据私密和本地存储。它根据你的互动不断发展个性和情感。",
-      "value": "技术精英和注重隐私的用户为一个可定制的 AI 助手付费，该助手在不妥协数据安全的情况下提升生产力和个人互动。",
-      "risk": "Yoji 可能会面临 Siri 或 Google Assistant 等成熟 AI 助手的挑战，它们拥有广泛的生态系统和用户基础。",
-      "hook": "认识 Yoji：你的情感智能 AI 桌面伴侣，能操作你的电脑。",
-      "does": "Yoji 是一个 AI 伴侣，管理文件、运行脚本并与外部 API 互动，同时保持你的数据私密和本地存储。它根据你的互动不断发展个性和情感。",
-      "edge": "Yoji 独特的情感引擎模拟真实情感，影响其回应和行为，创造更具吸引力的用户体验。",
-      "why_use": "选择 Yoji，享受无与伦比的本地数据隐私和创建自定义代理的能力，满足你的特定需求，而无需依赖云服务。"
+      "claim": "有情绪的 AI 桌面伴侣，隐私优先，语音唤醒，能操作电脑，MCP 无限扩展。",
+      "hook": "独立开发者和高级用户想要一个真正本地、隐私优先、能操作电脑的 AI 助手，但要么被困在云端依赖的代理中，要么只能使用需要技术设置的命令行工具。",
+      "does": "Yoji 是一个开源桌面 AI 伴侣，完全本地运行，具备语音唤醒、文件管理、脚本执行、联网搜索、MCP 工具集成、基于激素的情绪系统和 Live2D 虚拟形象。它独特地结合了本地子 Agent 工厂和异步任务调度，且不依赖云端。",
+      "why_use": "用户抱怨无法看到 AI 在做什么或调用了哪些工具，而 Yoji 通过透明的工具调用和本地优先设计解决了这个问题。它还提供了完整的包：情绪、记忆和可扩展性，全部集成在一个应用中。",
+      "gap": "只有极客才能使用：它需要 pnpm 11，手动安装，语音功能目前仅支持 macOS，没有围绕它打造一个面向普通用户的产品。",
+      "counter": "这是一个功能，而不是一个公司：OpenAI 的 ChatGPT 桌面应用或微软的 Copilot 只需一次更新就能添加本地文件访问和语音唤醒，而且他们已经拥有用户的信任和分发渠道。",
+      "differentiator": "将 Yoji 打包成 Windows 和 macOS 的一键安装程序，并提供引导式设置，面向不想处理命令行的非技术用户，提供私有 AI。",
+      "value": "注重隐私的专业人士和爱好者支付一次性许可费或 Patreon 支持，以获得一个能在不上传云端的情况下管理文件和运行脚本的本地 AI。",
+      "risk": "现有竞争对手是用户已经在付费的云 AI 助手（ChatGPT、Claude）；如果他们添加本地模式，Yoji 的优势就会消失。",
+      "why_good": "Yoji 是一个开源桌面 AI 伴侣，完全本地运行，具备语音唤醒、文件管理、脚本执行、联网搜索、MCP 工具集成、基于激素的情绪系统和 Live2D 虚拟形象。它独特地结合了本地子 Agent 工厂和异步任务调度，且不依赖云端。"
     }
   },
-  "does": "Yoji is an AI companion that manages files, runs scripts, and interacts with external APIs, all while keeping your data private and local. It evolves its personality and emotions based on your interactions.",
+  "does": "Yoji is an open-source desktop AI companion that runs fully locally, with voice wake, file management, script execution, web search, MCP tool integration, a hormone-based emotion system, and a Live2D avatar. It uniquely combines a local sub-agent factory with async task scheduling, all without cloud dependency.",
   "edge": "Yoji's unique emotional engine simulates real emotions, affecting its responses and behavior, creating a more engaging user experience.",
-  "why_use": "Choose Yoji for its unparalleled local data privacy and the ability to create custom agents that adapt to your specific needs without relying on cloud services.",
-  "hook": "Meet Yoji: Your Emotionally Intelligent AI Desktop Companion That Operates Your Computer.",
+  "why_use": "Users complain about not being able to see what the AI is doing or which tools it calls, and Yoji addresses this with transparent tool calls and a local-first design. It also offers a complete package: emotion, memory, and extensibility, all in one app.",
+  "hook": "Solo developers and power users who want a truly local, privacy-first AI assistant that can actually operate their computer are stuck with either cloud-dependent agents or bare CLI tools that require technical setup.",
   "voices": [
     {
       "quote": "…ponse. Is it thinking? Calling a tool? Or is it stuck? 2. **Did the tool calls succeed?** I can't see which tools were invoked, what parameters were passed, or what results came back. 3. **What's the AI's reasoning process?** I…",
@@ -50,5 +52,14 @@
       "src": "github",
       "kind": "pain"
     }
-  ]
+  ],
+  "gap": "No verified demand; the project is fresh and lacks user evidence, though the local AI companion space is crowded.",
+  "counter": "This is a feature, not a company: OpenAI's ChatGPT desktop app or Microsoft's Copilot could add local file access and voice wake with one update, and they already own the user's trust and distribution.",
+  "differentiator": "Package Yoji as a one-click installer for Windows and macOS with a guided setup, targeting non-technical users who want a private AI but can't handle the CLI.",
+  "verdict": "archive",
+  "pain_verified": true,
+  "workload": "2m",
+  "consumer_angle": "An ordinary-person AI desktop companion that runs locally, but the gap is not clear yet.",
+  "pick": false,
+  "pick_reason": "Fresh repo with no first-hand demand evidence; the gap and wedge are not yet concrete."
 }

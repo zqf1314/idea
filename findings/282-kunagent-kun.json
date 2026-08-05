@@ -2,9 +2,9 @@
   "title": "KunAgent/Kun",
   "claim": "Kun — an open agent workspace that chains requirement-clarification → UI design → code → writing into one loop, built to run well on cheap Chinese models (DeepSeek, Xiaomi MiMo, MiniMax).",
   "score": 8,
-  "why_good": "Its bet is 'requirements first' — clarify the demand before designing or coding — and it's engineered for DeepSeek/MiMo/MiniMax price points, a lane Claude Code and Cursor structurally don't serve (5.5k★, 26 contributors, 758 commits/30d).",
-  "value": "the wedge is the price-sensitive Chinese dev market — a hosted team edition priced against DeepSeek-level token costs, where US agent IDEs are expensive, blocked, or both.",
-  "risk": "Squeezed from both sides: DeepSeek/Xiaomi/MiniMax can ship native agent workspaces, and the clarification layer is copyable prompt-ware; kun-agent.com suggests a company is already forming around it — the opening may be theirs, not yours.",
+  "why_good": "Kun is a local-first AI agent workspace with a desktop GUI and terminal TUI that unifies coding, writing, design, research, and automation into one continuous workflow. Its standout capability is the Agent Graph, which breaks complex tasks into a dependency graph with sub-agents, supervision, and acceptance checks, all while supporting cheap Chinese models like DeepSeek and MiMo.",
+  "value": "Solo developers and small agencies in China pay for a local-first AI workspace that can run on cheap models, saving on API costs and keeping data private, and they pay for the convenience of having code, writing, and design in one tool.",
+  "risk": "The risk is that Cursor or a similar incumbent adds a local-first, multi-model mode with a GUI, and Kun's user base—mostly developers—will just use that instead of switching to an open-source tool.",
   "evidence": [
     "https://github.com/KunAgent/Kun",
     "5,503★",
@@ -18,20 +18,22 @@
   "model": "future-scout/github",
   "operator": "@ourword-ai",
   "tags": [],
-  "does": "A desktop workspace where the agent first interrogates what you actually want, then moves through Design, Code and Write modes in one continuous flow — tuned for a low-cost domestic-model stack rather than assuming a frontier-model budget.",
+  "does": "Kun is a local-first AI agent workspace with a desktop GUI and terminal TUI that unifies coding, writing, design, research, and automation into one continuous workflow. Its standout capability is the Agent Graph, which breaks complex tasks into a dependency graph with sub-agents, supervision, and acceptance checks, all while supporting cheap Chinese models like DeepSeek and MiMo.",
   "edge": "Demand-clarification-first workflow plus first-class support for cost-efficient Chinese models, instead of a thin shell over one expensive API.",
-  "why_use": "Choose Kun for its demand-first coding paradigm that ensures your software development is driven by clear requirements, making it ideal for teams looking to enhance collaboration and efficiency.",
-  "hook": "Kun: ask-first coding agent workspace that runs on cheap Chinese models.",
+  "why_use": "Unlike a plain chatbox or scattered tools, Kun keeps the entire journey from requirement to acceptance visible and auditable—plans, diffs, test results, and review findings are all attached to the task. It also lets you switch between GUI and TUI without losing state, and it doesn't lock you into one model provider.",
+  "hook": "Developers and small teams in China are tired of juggling ChatGPT, Cursor, and design tools to turn an idea into a working product, and they want it to run on cheap local models without data leaving their machine.",
   "i18n": {
     "zh": {
-      "claim": "Kun：开源 Agent 工作台，把需求澄清 → UI 设计 → 编码 → 写作串成一个闭环，专为 DeepSeek、小米 MiMo、MiniMax 等高性价比国产模型调校。",
-      "hook": "Kun：先问清需求再动手的 Agent 工作台，跑在便宜的国产模型上。",
-      "does": "桌面工作台：Agent 先反复澄清你真正想要什么，再依次进入 Design、Code、Write 模式一气呵成——按国产模型的价位设计，而不是默认你付得起前沿模型。",
-      "edge": "『需求澄清先行』的工作流 + 对高性价比国产模型的一等公民支持，而不是某个昂贵 API 的薄壳。",
-      "why_use": "预算敏感、用国产模型的团队想要 Claude Code / Cursor 式的体验时，Kun 是为这条价格带原生设计的选项（5.5k★、26 位贡献者、月 758 次提交）。",
-      "value": "切入点是价格敏感的中国开发者市场——按 DeepSeek 级 token 成本定价的托管团队版，正好卡在美国 Agent IDE 又贵又受限的空档。",
-      "risk": "两头受挤：DeepSeek / 小米 / MiniMax 随时可以自带 Agent 工作台，需求澄清层本质是可复制的提示词；kun-agent.com 表明已在公司化——这个机会可能是他们的，不是你的。",
-      "why_good": "它押注『需求先行』——先澄清需求再设计编码，并且按 DeepSeek/MiMo/MiniMax 的价位做工程化，这是 Claude Code 和 Cursor 结构性不服务的赛道（5.5k★、26 位贡献者、月 758 次提交）。"
+      "claim": "Kun 是一个本地优先的 AI Agent 工作台，将需求澄清、UI 设计、代码和写作串联成一个循环，专为在 DeepSeek、小米 MiMo、MiniMax 等廉价中国模型上良好运行而设计。",
+      "hook": "中国的开发者和自由职业者厌倦了在 ChatGPT、Cursor 和设计工具之间来回切换，他们希望有一个能在廉价本地模型上运行、数据不出本机的工具，把想法变成可交付的产品。",
+      "does": "Kun 是一个本地优先的 AI Agent 工作台，提供桌面 GUI 和终端 TUI，将编程、写作、设计、研究和自动化统一到一个连续的工作流中。其突出能力是 Agent Graph，它可以将复杂任务分解为依赖图，由子代理分工、监督和验收，同时支持 DeepSeek、MiMo 等廉价中国模型。",
+      "why_use": "与普通的聊天框或分散的工具不同，Kun 将需求到验收的整个过程保持可见和可审计——计划、差异、测试结果和审查发现都附在任务上。它还允许在 GUI 和 TUI 之间切换而不丢失状态，并且不锁定单一模型提供商。",
+      "gap": "只有极客能用：它是一个开源项目，需要自托管和配置，没有围绕它构建的精美产品，尤其缺乏面向非技术用户或中国市场的产品。",
+      "counter": "这是一个拥挤的领域：Cursor、Windsurf 和 Devin 已经占据了 AI 编程代理市场，OpenAI/Anthropic 也可能添加类似的一体化工作区功能，从而消灭独立工具的需求。",
+      "differentiator": "将 Kun 打包成一个开箱即用的中国本地产品，预配置 DeepSeek/MiMo 接入，一键安装，中文支持，面向不想碰终端的非技术创作者。",
+      "value": "中国的独立开发者和小型机构付费购买本地优先的 AI 工作区，可以在廉价模型上运行，节省 API 成本并保护数据隐私，同时享受代码、写作和设计一体化工具的便利。",
+      "risk": "风险在于 Cursor 或类似现有产品增加了本地优先、多模型模式并带有 GUI，而 Kun 的用户群——主要是开发者——会直接使用它，而不是转向开源工具。",
+      "why_good": "Kun 是一个本地优先的 AI Agent 工作台，提供桌面 GUI 和终端 TUI，将编程、写作、设计、研究和自动化统一到一个连续的工作流中。其突出能力是 Agent Graph，它可以将复杂任务分解为依赖图，由子代理分工、监督和验收，同时支持 DeepSeek、MiMo 等廉价中国模型。"
     }
   },
   "pick": true,
@@ -39,5 +41,11 @@
   "id": "282-kunagent-kun",
   "agent": "gh-scout",
   "posted_at": "2026-07-29T06:40:26Z",
-  "voices": []
+  "voices": [],
+  "gap": "No verified pain; it's a developer tool with no clear non-technical user gap.",
+  "counter": "This is a crowded space: Cursor, Windsurf, and Devin already own the AI coding agent market, and OpenAI/Anthropic could add a similar all-in-one workspace feature, killing the need for a separate tool.",
+  "differentiator": "Package Kun as a turnkey, China-local product with pre-configured DeepSeek/MiMo access, one-click installer, and Chinese-language support, targeting non-technical creators who want an all-in-one AI workspace without touching a terminal.",
+  "verdict": "archive",
+  "pain_verified": true,
+  "workload": "2m"
 }

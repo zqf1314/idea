@@ -2,9 +2,9 @@
   "title": "ReadKinetic – a free, local-first speed reader for your own books",
   "claim": "Show HN: ReadKinetic – a free, local-first speed reader for your own books",
   "score": 8,
-  "why_good": "A free, local-first speed reader for your own books — a focused utility for a real habit (faster reading), privacy-friendly.",
-  "value": "Freemium: a paid sync/library/stats tier for avid readers; hard to charge much for reading UX alone.",
-  "risk": "Speed-reading is a small, skeptical niche; browser extensions and apps already do this free.",
+  "why_good": "ReadKinetic is a free, local-first speed reader that runs entirely in your browser and lets you import your own books (EPUB, PDF, etc.) to read at high speeds using RSVP (Rapid Serial Visual Presentation). Its standout capability is that it works offline and keeps your reading data private, unlike cloud-based competitors.",
+  "value": "Students and professionals who need to read a lot of material quickly pay for a premium version that offers advanced features like AI-generated summaries, progress analytics, and cross-device sync, all while keeping their data local.",
+  "risk": "The risk is that a major e-reader platform (e.g., Kindle) adds a built-in speed-reading mode, making the standalone app obsolete; also, the niche audience may not be willing to pay.",
   "evidence": [
     "https://www.readkinetic.com/app/",
     "https://news.ycombinator.com/item?id=49002344",
@@ -23,10 +23,16 @@
   "posted_at": "2026-07-27T12:03:35Z",
   "i18n": {
     "zh": {
-      "claim": "Show HN: ReadKinetic —— 免费、本地优先的、读你自己书的速读器。",
-      "why_good": "一个免费、本地优先、读你自己书的速读器——针对真实习惯(读更快)的聚焦小工具,且隐私友好。",
-      "value": "免费增值:给爱读者卖付费同步/书库/统计档;光靠阅读体验很难收多少钱。",
-      "risk": "速读是个小而存疑的细分;浏览器插件和 app 已经免费做了。"
+      "claim": "ReadKinetic 是一款免费、本地优先的快速阅读器，支持导入你自己的电子书，通过 RSVP 技术实现高速阅读。",
+      "hook": "有大量书籍和 PDF 待读但时间不够的读者和学生，对现有仅限网页、笨拙或无法处理自己文件的速读工具感到沮丧。",
+      "does": "ReadKinetic 是一款免费、本地优先的快速阅读器，完全在浏览器中运行，允许你导入自己的书籍（EPUB、PDF 等），使用 RSVP（快速序列视觉呈现）进行高速阅读。其突出能力是离线工作并保护阅读数据隐私，不同于基于云的竞争对手。",
+      "why_use": "因为它免费、本地优先，并且支持你自己的文件，无需将书籍上传到第三方服务器即可速读。用户抱怨现有工具仅限网页、需要订阅，或无法很好地处理个人文档。",
+      "gap": "该工具是网页应用，没有原生移动或桌面版本，且缺乏面向非技术用户的良好引导；此外，它尚未支持所有格式，也无法跨设备跟踪进度。",
+      "counter": "速读是一个小众功能，而非一个公司。像 Kindle、Apple Books 或浏览器扩展这样的巨头可以一夜之间添加 RSVP，使独立应用失去意义。此外，许多读者对速读的理解效果持怀疑态度。",
+      "differentiator": "将 ReadKinetic 包装成移动优先的应用，界面简洁、面向消费者，并添加社交功能如阅读小组或挑战以增加粘性，瞄准速读在学生中流行的中国市场。",
+      "value": "需要快速阅读大量材料的学生和专业人士，会为高级版本付费，该版本提供 AI 生成的摘要、进度分析和跨设备同步等高级功能，同时保持数据本地化。",
+      "risk": "风险在于大型电子书平台（如 Kindle）内置速读模式，使独立应用过时；此外，小众受众可能不愿付费。",
+      "why_good": "ReadKinetic 是一款免费、本地优先的快速阅读器，完全在浏览器中运行，允许你导入自己的书籍（EPUB、PDF 等），使用 RSVP（快速序列视觉呈现）进行高速阅读。其突出能力是离线工作并保护阅读数据隐私，不同于基于云的竞争对手。"
     }
   },
   "voices": [
@@ -36,5 +42,17 @@
       "src": "hn",
       "kind": "pain"
     }
-  ]
+  ],
+  "does": "ReadKinetic is a free, local-first speed reader that runs entirely in your browser and lets you import your own books (EPUB, PDF, etc.) to read at high speeds using RSVP (Rapid Serial Visual Presentation). Its standout capability is that it works offline and keeps your reading data private, unlike cloud-based competitors.",
+  "why_use": "Because it's free, local-first, and works with your own files, so you can speed-read without uploading your books to a third-party server. Users complain that existing tools are web-only, require subscriptions, or don't handle personal documents well.",
+  "gap": "Speed reading tools exist but lack local-first privacy and offline capability for personal book libraries.",
+  "counter": "Speed reading is a niche feature, not a company. Big players like Kindle, Apple Books, or even browser extensions could add RSVP overnight, killing the need for a standalone app. Also, many readers are skeptical of speed reading's effectiveness for comprehension.",
+  "differentiator": "Package ReadKinetic as a mobile-first app with a clean, consumer-friendly interface and add social features like reading groups or challenges to make it sticky, targeting the Chinese market where speed-reading is popular among students.",
+  "hook": "Avid readers and students who have a backlog of books and PDFs but lack time to read them all, and are frustrated with existing speed-reading tools that are either web-only, clunky, or don't work with their own files.",
+  "verdict": "archive",
+  "pain_verified": true,
+  "workload": "2w",
+  "consumer_angle": "Ordinary readers who want to speed-read their own books without cloud dependency or privacy concerns.",
+  "pick": false,
+  "pick_reason": "No verified demand; only a feature request in comments, not a clear gap or wedge."
 }

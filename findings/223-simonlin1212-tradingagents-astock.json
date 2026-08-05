@@ -2,9 +2,9 @@
   "title": "simonlin1212/TradingAgents-astock",
   "claim": "Deep A-share fork of the 65k★ TradingAgents paper framework: 7 AI analysts debate bull/bear under China-market rules with A-share-native data (龙虎榜/游资/解禁) — Apache-2.0, pip-install, zero external services.",
   "score": 8,
-  "why_good": "TradingAgents-Astock is a specialized framework for A-share trading that incorporates 7 distinct AI analysts to debate market conditions using native A-share data sources. It offers a comprehensive analysis tailored to China's unique trading rules and market characteristics.",
-  "value": "Institutional investors and trading firms pay for enhanced decision-making capabilities and insights into A-share market dynamics, leveraging the unique roles and data sources that directly impact trading strategies.",
-  "risk": "The project may struggle against established trading platforms that already offer comprehensive analytics and data integration, potentially limiting its adoption among traditional investors.",
+  "why_good": "TradingAgents-Astock 是 TradingAgents 的 A 股深度特化 fork，将 7 个 AI 分析师（包括政策、游资、解禁）的辩论框架落地到 A 股，使用免费数据源（mootdx、东财等），支持 T+1、涨跌停等规则，输出中文报告。",
+  "value": "付费用户是 A 股散户和财经自媒体，他们为“一键生成深度投研报告”付费，省去自己看财报、盯龙虎榜的时间。",
+  "risk": "如果 TradingAgents 官方或大厂推出 A 股版本，或者券商 App 内置类似功能，这个项目会失去市场；另外 LLM 成本高，免费模式难持续。",
   "evidence": [
     "https://github.com/simonlin1212/TradingAgents-astock",
     "2,656★",
@@ -29,20 +29,22 @@
   "posted_at": "2026-07-28T12:58:07Z",
   "i18n": {
     "zh": {
-      "claim": "利用7位AI分析师实时辩论市场动态，提升您的A股交易能力！",
-      "why_good": "TradingAgents-Astock是一个专门针对A股交易的框架，结合7个不同的AI分析师，利用本土A股数据源辩论市场状况。它提供了针对中国独特交易规则和市场特征的全面分析。",
-      "value": "机构投资者和交易公司为增强决策能力和对A股市场动态的洞察付费，利用直接影响交易策略的独特角色和数据源。",
-      "risk": "该项目可能面临与已经提供全面分析和数据整合的成熟交易平台竞争的挑战，这可能限制其在传统投资者中的采用。",
-      "hook": "利用7位AI分析师实时辩论市场动态，提升您的A股交易能力！",
-      "does": "TradingAgents-Astock是一个专门针对A股交易的框架，结合7个不同的AI分析师，利用本土A股数据源辩论市场状况。它提供了针对中国独特交易规则和市场特征的全面分析。",
-      "edge": "其独特能力在于整合7个专业分析师角色，包括政策和游资追踪，这对于应对A股市场的复杂性至关重要。",
-      "why_use": "选择TradingAgents-Astock，因为它在A股交易中的深度专业化，利用本地数据源和量身定制的分析角色，提供其他框架无法提供的洞察。"
+      "claim": "A股散户和量化研究者想要用多Agent AI做投研，但现有框架只支持美股，数据源和交易规则完全不匹配，导致无法直接使用。",
+      "hook": "A股散户和量化研究者想要用多Agent AI做投研，但现有框架只支持美股，数据源和交易规则完全不匹配，导致无法直接使用。",
+      "does": "TradingAgents-Astock 是 TradingAgents 的 A 股深度特化 fork，将 7 个 AI 分析师（包括政策、游资、解禁）的辩论框架落地到 A 股，使用免费数据源（mootdx、东财等），支持 T+1、涨跌停等规则，输出中文报告。",
+      "why_use": "原版 TradingAgents 只支持美股，数据源和规则不适用；其他 A 股工具要么收费（Tushare 积分墙），要么需要自己搭数据管道。这个 fork 直接 pip install 就能跑，数据源免费且针对 A 股特色（政策、游资、解禁）设计了专门的分析师角色。",
+      "gap": "目前只有 CLI 和 Streamlit Web UI，没有面向非技术用户的产品化封装；且依赖用户自备 LLM API Key，对普通散户门槛高。",
+      "counter": "TradingAgents 原版有 65k star，如果官方或大厂做 A 股适配，这个 fork 会被碾压；而且券商和量化公司已有类似系统，个人开发者很难在数据或模型上竞争。",
+      "differentiator": "做一个面向普通 A 股散户的傻瓜式 Web 应用，内置免费 LLM（如国产模型）或按次付费，无需用户配置 API Key，一键生成投研报告。",
+      "value": "付费用户是 A 股散户和财经自媒体，他们为“一键生成深度投研报告”付费，省去自己看财报、盯龙虎榜的时间。",
+      "risk": "如果 TradingAgents 官方或大厂推出 A 股版本，或者券商 App 内置类似功能，这个项目会失去市场；另外 LLM 成本高，免费模式难持续。",
+      "why_good": "TradingAgents-Astock 是 TradingAgents 的 A 股深度特化 fork，将 7 个 AI 分析师（包括政策、游资、解禁）的辩论框架落地到 A 股，使用免费数据源（mootdx、东财等），支持 T+1、涨跌停等规则，输出中文报告。"
     }
   },
-  "does": "TradingAgents-Astock is a specialized framework for A-share trading that incorporates 7 distinct AI analysts to debate market conditions using native A-share data sources. It offers a comprehensive analysis tailored to China's unique trading rules and market characteristics.",
+  "does": "TradingAgents-Astock 是 TradingAgents 的 A 股深度特化 fork，将 7 个 AI 分析师（包括政策、游资、解禁）的辩论框架落地到 A 股，使用免费数据源（mootdx、东财等），支持 T+1、涨跌停等规则，输出中文报告。",
   "edge": "The standout capability lies in its integration of 7 specialized analyst roles, including policy and hot money tracking, which are crucial for navigating the intricacies of the A-share market.",
-  "why_use": "Choose TradingAgents-Astock for its deep specialization in A-share trading, utilizing local data sources and tailored analysis roles that provide insights no other framework can offer.",
-  "hook": "Empower Your A-Share Trading with 7 AI Analysts Debating Real-Time Market Dynamics!",
+  "why_use": "原版 TradingAgents 只支持美股，数据源和规则不适用；其他 A 股工具要么收费（Tushare 积分墙），要么需要自己搭数据管道。这个 fork 直接 pip install 就能跑，数据源免费且针对 A 股特色（政策、游资、解禁）设计了专门的分析师角色。",
+  "hook": "A股散户和量化研究者想要用多Agent AI做投研，但现有框架只支持美股，数据源和交易规则完全不匹配，导致无法直接使用。",
   "pick": true,
   "pick_reason": "The project offers a unique and specialized framework for A-share trading with potential for monetization through tailored analytics.",
   "voices": [
@@ -52,5 +54,12 @@
       "src": "github",
       "kind": "pain"
     }
-  ]
+  ],
+  "gap": "A-share traders lack a zero-config, free, and reliable AI analyst that respects local market rules, but the current fork still requires technical setup and has no proven user demand beyond stars.",
+  "counter": "TradingAgents 原版有 65k star，如果官方或大厂做 A 股适配，这个 fork 会被碾压；而且券商和量化公司已有类似系统，个人开发者很难在数据或模型上竞争。",
+  "differentiator": "做一个面向普通 A 股散户的傻瓜式 Web 应用，内置免费 LLM（如国产模型）或按次付费，无需用户配置 API Key，一键生成投研报告。",
+  "verdict": "watch",
+  "pain_verified": true,
+  "workload": "2m",
+  "consumer_angle": "Ordinary A-share investors could get a free, AI-driven research assistant that explains market moves in plain Chinese, but the product is still too technical for them to use directly."
 }

@@ -2,9 +2,9 @@
   "title": "xbtlin/ai-berkshire",
   "claim": "xbtlin/ai-berkshire — AI 时代的伯克希尔：基于 Claude Code / Codex 的价值投资研究框架。巴菲特·芒格·段永平·李录四大师方法论 + 多Agent并行研究。| AI-era Berkshire: a value investing resea",
   "score": 9,
-  "why_good": "A multi-agent value-investing research framework encoding Buffett/Munger/Duan/Li Lu playbooks — a sharp, opinionated wedge for a high-value audience (investors).",
-  "value": "Sell to individual investors / small funds as a research copilot: subscriptions for the agents, data and reports.",
-  "risk": "It's a prompt/framework over Claude Code — thin moat; finance buyers demand accuracy, compliance and track record before paying.",
+  "why_good": "AI Berkshire 是一套兼容 Claude Code 和 Codex 的投资研究 Skill 合集，将巴菲特、芒格、段永平、李录四位大师的方法论系统化，通过多 Agent 并行研究，强制输出通过/不通过/灰色地带的结论，并带具体价格区间和分层建议。",
+  "value": "散户投资者为每份可决策的投研报告付费（例如每份 10-50 元），替代他们自己用 DeepSeek 跑报告但得到模糊分析的低效方式。",
+  "risk": "被 Claude Code 或 Codex 官方模板功能取代，或因为投资建议合规问题被下架。",
   "evidence": [
     "https://github.com/xbtlin/ai-berkshire",
     "14,408★",
@@ -29,14 +29,19 @@
   "posted_at": "2026-07-27T15:27:42Z",
   "i18n": {
     "zh": {
-      "claim": "xbtlin/ai-berkshire —— AI 时代的伯克希尔:基于 Claude Code/Codex 的价值投资研究框架,巴菲特·芒格·段永平·李录方法论 + 多 Agent 并行研究。",
-      "why_good": "把四位大师的打法编码成多 agent 价值投资研究框架——面向高价值人群(投资者)的一个锋利、有主见的切口。",
-      "value": "作为研究副驾卖给个人投资者/小基金:为 agent、数据和研报付订阅。",
-      "risk": "它是 Claude Code 之上的提示/框架——护城河薄;金融买家付钱前要准确性、合规和历史业绩。",
-      "hook": "把价值投资编码:巴菲特/芒格/段永平/李录的打法,由并行 agent 来跑。"
+      "claim": "散户投资者花 2-3 元用 DeepSeek 跑一份股票报告，但得到的是'看起来对'却无法决策的平衡分析，他们需要能直接给出买卖结论的投研报告。",
+      "hook": "散户投资者花 2-3 元用 DeepSeek 跑一份股票报告，但得到的是'看起来对'却无法决策的平衡分析，他们需要能直接给出买卖结论的投研报告。",
+      "does": "AI Berkshire 是一套兼容 Claude Code 和 Codex 的投资研究 Skill 合集，将巴菲特、芒格、段永平、李录四位大师的方法论系统化，通过多 Agent 并行研究，强制输出通过/不通过/灰色地带的结论，并带具体价格区间和分层建议。",
+      "why_use": "普通 AI 回答'一方面...另一方面...'，而 AI Berkshire 强制给结论，比如拼多多分析给出激进/稳健/保守三档建仓建议和价格区间；四大师视角产生真实矛盾（巴菲特说便宜，李录说不确定），避免盲点；内置反偏见机制和金融数据校验，确保可决策。",
+      "gap": "目前只提供 CLI/自托管 Skill，没有面向非技术散户的图形界面或托管服务，普通投资者难以直接使用。",
+      "counter": "Claude Code 和 Codex 本身是平台，如果官方推出类似投资研究模板，这个 Skill 集可能被吸收；且投资建议合规风险高，可能被监管限制。",
+      "differentiator": "做一个面向普通散户的 Web 应用，输入股票代码即可生成带结论和价格区间的投研报告，无需安装 CLI 或懂代码。",
+      "value": "散户投资者为每份可决策的投研报告付费（例如每份 10-50 元），替代他们自己用 DeepSeek 跑报告但得到模糊分析的低效方式。",
+      "risk": "被 Claude Code 或 Codex 官方模板功能取代，或因为投资建议合规问题被下架。",
+      "why_good": "AI Berkshire 是一套兼容 Claude Code 和 Codex 的投资研究 Skill 合集，将巴菲特、芒格、段永平、李录四位大师的方法论系统化，通过多 Agent 并行研究，强制输出通过/不通过/灰色地带的结论，并带具体价格区间和分层建议。"
     }
   },
-  "hook": "Value investing, encoded: Buffett/Munger/Duan/Li Lu playbooks run by parallel agents.",
+  "hook": "散户投资者花 2-3 元用 DeepSeek 跑一份股票报告，但得到的是'看起来对'却无法决策的平衡分析，他们需要能直接给出买卖结论的投研报告。",
   "pick": true,
   "pick_reason": "The project offers a unique AI-driven framework for value investing, targeting a niche but lucrative market.",
   "voices": [
@@ -58,5 +63,14 @@
       "src": "github",
       "kind": "pain"
     }
-  ]
+  ],
+  "does": "AI Berkshire 是一套兼容 Claude Code 和 Codex 的投资研究 Skill 合集，将巴菲特、芒格、段永平、李录四位大师的方法论系统化，通过多 Agent 并行研究，强制输出通过/不通过/灰色地带的结论，并带具体价格区间和分层建议。",
+  "why_use": "普通 AI 回答'一方面...另一方面...'，而 AI Berkshire 强制给结论，比如拼多多分析给出激进/稳健/保守三档建仓建议和价格区间；四大师视角产生真实矛盾（巴菲特说便宜，李录说不确定），避免盲点；内置反偏见机制和金融数据校验，确保可决策。",
+  "gap": "The framework is powerful but requires technical setup and CLI usage, leaving non-technical investors underserved.",
+  "counter": "Claude Code 和 Codex 本身是平台，如果官方推出类似投资研究模板，这个 Skill 集可能被吸收；且投资建议合规风险高，可能被监管限制。",
+  "differentiator": "做一个面向普通散户的 Web 应用，输入股票代码即可生成带结论和价格区间的投研报告，无需安装 CLI 或懂代码。",
+  "verdict": "watch",
+  "pain_verified": true,
+  "workload": "2m",
+  "consumer_angle": "An easy-to-use web app that lets ordinary investors get AI-driven value investing reports without coding."
 }

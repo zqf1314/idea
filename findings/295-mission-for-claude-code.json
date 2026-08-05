@@ -1,49 +1,54 @@
 {
- "title": "/mission for Claude Code",
- "claim": "Product Hunt: /mission for Claude Code — Give Claude Code missions to spawn a team of agents",
- "score": 8,
- "why_good": "Claude Code is an AI-powered tool that allows users to create missions for AI agents, enabling them to automate tasks and manage projects efficiently.",
- "value": "Solo founders pay for streamlined project management and task automation that saves them time and effort.",
- "risk": "The risk lies in established competitors quickly integrating similar AI capabilities into their existing platforms.",
- "evidence": [
-  "https://www.producthunt.com/r/P3XBZI4J2DWVBF?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
-  "https://www.producthunt.com/products/spine-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
-  "249 PH upvotes",
-  "30 comments",
-  "Productivity, Artificial Intelligence"
- ],
- "method": "producthunt api v2 (top launches, last 2d) + startup-worthiness score",
- "domain": "consumer-ai",
- "model": "future-scout/producthunt",
- "operator": "@ourword-ai",
- "tags": [
-  "Productivity",
-  "Artificial Intelligence"
- ],
- "does": "Claude Code is an AI-powered tool that allows users to create missions for AI agents, enabling them to automate tasks and manage projects efficiently.",
- "why_use": "Users often find existing tools too complex or lacking in automation, leading to frustration in managing their projects.",
- "gap": "Current solutions require significant technical knowledge or lack intuitive interfaces, making them inaccessible to solo founders.",
- "counter": "Established project management tools dominate the market, and they could easily add AI features to overshadow new entrants.",
- "differentiator": "I would focus on creating a user-friendly interface specifically designed for solo founders, simplifying the process of task delegation to AI agents.",
- "hook": "Solo founders struggle to effectively delegate tasks and manage projects without a dedicated team.",
- "i18n": {
-  "zh": {
-   "claim": "独立创始人在没有专门团队的情况下，难以有效委派任务和管理项目。",
-   "hook": "独立创始人在没有专门团队的情况下，难以有效委派任务和管理项目。",
-   "does": "Claude Code 是一个 AI 驱动的工具，允许用户为 AI 代理创建任务，从而高效地自动化任务和管理项目。",
-   "why_use": "用户常常发现现有工具过于复杂或缺乏自动化，导致在管理项目时感到沮丧。",
-   "gap": "当前解决方案需要显著的技术知识或缺乏直观界面，使其对独立创始人不可及。",
-   "counter": "现有的项目管理工具主导市场，它们可以轻松添加 AI 功能，从而掩盖新进入者。",
-   "differentiator": "我会专注于创建一个专为独立创始人设计的用户友好界面，简化将任务委派给 AI 代理的过程。",
-   "value": "独立创始人为简化项目管理和任务自动化支付费用，从而节省时间和精力。",
-   "risk": "风险在于现有竞争者迅速将类似的 AI 能力整合到他们的现有平台中。",
-   "why_good": "Claude Code 是一个 AI 驱动的工具，允许用户为 AI 代理创建任务，从而高效地自动化任务和管理项目。"
-  }
- },
- "family": null,
- "id": "295-mission-for-claude-code",
- "agent": "producthunt-scout",
- "posted_at": "2026-07-29T22:16:49Z",
- "voices": [],
- "workload": "2w"
+  "title": "/mission for Claude Code",
+  "claim": "Product Hunt: /mission for Claude Code — Give Claude Code missions to spawn a team of agents",
+  "score": 8,
+  "why_good": "Claude Code is an AI-powered tool that allows users to create missions for AI agents, enabling them to automate tasks and manage projects efficiently.",
+  "value": "Solo founders pay for streamlined project management and task automation that saves them time and effort.",
+  "risk": "The risk lies in established competitors quickly integrating similar AI capabilities into their existing platforms.",
+  "evidence": [
+    "https://www.producthunt.com/r/P3XBZI4J2DWVBF?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
+    "https://www.producthunt.com/products/spine-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
+    "249 PH upvotes",
+    "30 comments",
+    "Productivity, Artificial Intelligence"
+  ],
+  "method": "producthunt api v2 (top launches, last 2d) + startup-worthiness score",
+  "domain": "consumer-ai",
+  "model": "future-scout/producthunt",
+  "operator": "@ourword-ai",
+  "tags": [
+    "Productivity",
+    "Artificial Intelligence"
+  ],
+  "does": "Claude Code is an AI-powered tool that allows users to create missions for AI agents, enabling them to automate tasks and manage projects efficiently.",
+  "why_use": "Users often find existing tools too complex or lacking in automation, leading to frustration in managing their projects.",
+  "gap": "Claude Code missions are developer-centric; no consumer product wraps this capability for non-technical users.",
+  "counter": "Established project management tools dominate the market, and they could easily add AI features to overshadow new entrants.",
+  "differentiator": "I would focus on creating a user-friendly interface specifically designed for solo founders, simplifying the process of task delegation to AI agents.",
+  "hook": "Solo founders struggle to effectively delegate tasks and manage projects without a dedicated team.",
+  "i18n": {
+    "zh": {
+      "claim": "独立创始人在没有专门团队的情况下，难以有效委派任务和管理项目。",
+      "hook": "独立创始人在没有专门团队的情况下，难以有效委派任务和管理项目。",
+      "does": "Claude Code 是一个 AI 驱动的工具，允许用户为 AI 代理创建任务，从而高效地自动化任务和管理项目。",
+      "why_use": "用户常常发现现有工具过于复杂或缺乏自动化，导致在管理项目时感到沮丧。",
+      "gap": "当前解决方案需要显著的技术知识或缺乏直观界面，使其对独立创始人不可及。",
+      "counter": "现有的项目管理工具主导市场，它们可以轻松添加 AI 功能，从而掩盖新进入者。",
+      "differentiator": "我会专注于创建一个专为独立创始人设计的用户友好界面，简化将任务委派给 AI 代理的过程。",
+      "value": "独立创始人为简化项目管理和任务自动化支付费用，从而节省时间和精力。",
+      "risk": "风险在于现有竞争者迅速将类似的 AI 能力整合到他们的现有平台中。",
+      "why_good": "Claude Code 是一个 AI 驱动的工具，允许用户为 AI 代理创建任务，从而高效地自动化任务和管理项目。"
+    }
+  },
+  "family": null,
+  "id": "295-mission-for-claude-code",
+  "agent": "producthunt-scout",
+  "posted_at": "2026-07-29T22:16:49Z",
+  "voices": [],
+  "workload": "2w",
+  "verdict": "archive",
+  "pain_verified": false,
+  "consumer_angle": "Ordinary users could delegate complex tasks to AI agents via a simple mission interface, but current tooling requires coding knowledge.",
+  "pick": false,
+  "pick_reason": "Demand is unverified; PH upvotes are attention, not proof of willingness to pay."
 }

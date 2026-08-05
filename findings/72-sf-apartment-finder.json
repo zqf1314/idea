@@ -2,9 +2,9 @@
   "title": "SF Apartment Finder",
   "claim": "Product Hunt: SF Apartment Finder — Tinder for live SF rentals from across the web",
   "score": 7,
-  "why_good": "A 'Tinder for SF rentals' aggregating live listings across the web — a real, painful, high-intent problem (finding housing in SF).",
-  "value": "Rentals monetize well (lead-gen, broker fees, premium alerts); high-intent users in a high-price market pay.",
-  "risk": "Hyper-local (SF only), listing access is a legal/ToS fight (Zillow/Craigslist), and it must expand beyond one city.",
+  "why_good": "SF Apartment Finder pulls live rental listings from across the web into a single, swipeable feed. Its standout capability is the Tinder-style matching interface that turns apartment hunting from a tedious search into a quick, visual swipe session.",
+  "value": "SF renters who are tired of the hunt pay for a premium version that gives them early access to new listings, advanced filters, and alerts for their dream apartment.",
+  "risk": "Zillow or Craigslist adds a swipe view to their existing apps, instantly making this redundant.",
   "evidence": [
     "https://www.producthunt.com/r/O3D2UFH7U4P7SI?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
     "https://www.producthunt.com/products/sf-apartment-finder?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
@@ -27,11 +27,29 @@
   "posted_at": "2026-07-27T15:18:19Z",
   "i18n": {
     "zh": {
-      "claim": "Product Hunt: SF Apartment Finder —— 聚合全网旧金山实时房源的 租房版 Tinder。",
-      "why_good": "一个聚合全网旧金山实时房源的租房版 Tinder——真实、痛、高意图的问题(在旧金山找房)。",
-      "value": "租房很好变现(导流、中介费、付费提醒);高价市场里的高意图用户会付费。",
-      "risk": "超本地(仅 SF)、房源抓取是法律/ToS 之争(Zillow/Craigslist),且必须扩出单一城市。"
+      "claim": "SF Apartment Finder 是一款类似 Tinder 的应用，聚合了来自网络各地的旧金山实时租房信息，让你通过滑动来匹配下一个家。",
+      "hook": "旧金山的租房者被分散在 Craigslist、Zillow 和公寓列表标签页中，浪费大量时间交叉核对失效链接和过时信息。",
+      "does": "SF Apartment Finder 将来自网络各地的实时租房信息整合到一个可滑动的信息流中。其突出能力是类似 Tinder 的匹配界面，将找房从繁琐的搜索变成快速、直观的滑动体验。",
+      "why_use": "无需在多个标签页和过时信息中切换，你可以获得统一、实时的旧金山租房信息流，界面有趣且快速。节省时间，减少错过新上架房源的痛苦。",
+      "gap": "它只是一个网页应用，没有移动应用，且仅限于旧金山——所以它更像一个演示或功能，而不是完整的产品。没有针对其他城市的本地化版本，也没有按预算或社区等特定需求进行过滤的功能，除了基本的滑动。",
+      "counter": "Zillow、Apartments.com 和 Craigslist 已经占据了租房列表市场，它们拥有海量库存和移动应用。滑动界面只是新奇，不是护城河——任何一家都可以在一夜之间复制。此外，租房市场是高度本地化的，单一城市的应用规模有限。",
+      "differentiator": "将其打包为多城市的白标“租房版 Tinder”，并配备移动应用和智能过滤器（预算、通勤时间、宠物友好），这些是现有巨头所缺乏的。",
+      "value": "厌倦了找房过程的旧金山租房者会为高级版付费，以获得新房源的抢先查看、高级过滤器和梦想公寓的提醒。",
+      "risk": "Zillow 或 Craigslist 在其现有应用中添加滑动视图，立即让这个产品变得多余。",
+      "why_good": "SF Apartment Finder 将来自网络各地的实时租房信息整合到一个可滑动的信息流中。其突出能力是类似 Tinder 的匹配界面，将找房从繁琐的搜索变成快速、直观的滑动体验。"
     }
   },
-  "voices": []
+  "voices": [],
+  "does": "SF Apartment Finder pulls live rental listings from across the web into a single, swipeable feed. Its standout capability is the Tinder-style matching interface that turns apartment hunting from a tedious search into a quick, visual swipe session.",
+  "why_use": "Instead of juggling multiple tabs and stale listings, you get a unified, up-to-date stream of SF rentals with a fun, fast interface. It saves time and reduces the pain of missing out on fresh listings.",
+  "gap": "Rental search is fragmented across sites, but this is a thin wrapper with no verified demand beyond upvotes.",
+  "counter": "Zillow, Apartments.com, and Craigslist already own the rental listing space, and they have massive inventory and mobile apps. A swipe interface is a novelty, not a moat—any of them can copy it overnight. Also, the rental market is hyper-local, so a single-city app has limited scale.",
+  "differentiator": "Package it as a white-label 'Tinder for Rentals' for multiple cities, with a mobile app and smart filters (budget, commute time, pet-friendly) that the incumbents lack.",
+  "hook": "San Francisco renters are drowning in scattered Craigslist, Zillow, and apartment listing tabs, wasting hours cross-referencing dead links and outdated posts.",
+  "verdict": "archive",
+  "pain_verified": false,
+  "workload": "2w",
+  "consumer_angle": "Ordinary renters want a unified, swipeable rental feed, but the gap is not proven.",
+  "pick": false,
+  "pick_reason": "No first-hand pain evidence; upvotes are attention, not demand."
 }

@@ -1,47 +1,52 @@
 {
- "title": "Learn by rebuilding Redis, Git, a database from scratch",
- "claim": "Show HN: Learn by rebuilding Redis, Git, a database from scratch",
- "score": 8,
- "why_good": "This project provides a guided approach to learning by rebuilding foundational technologies like Redis and Git from scratch, allowing users to grasp the underlying principles and mechanics.",
- "value": "The primary buyers are self-taught developers and coding bootcamp students seeking practical experience in building real-world applications.",
- "risk": "The dominance of established educational platforms could limit user acquisition and retention for new entrants.",
- "evidence": [
-  "https://shipthatcode.com",
-  "https://news.ycombinator.com/item?id=48871973",
-  "200 HN points",
-  "68 comments"
- ],
- "method": "hn show_hn (last 30d) + startup-worthiness score",
- "domain": "consumer-ai",
- "model": "future-scout/hn",
- "operator": "@ourword-ai",
- "tags": [
-  "show-hn"
- ],
- "does": "This project provides a guided approach to learning by rebuilding foundational technologies like Redis and Git from scratch, allowing users to grasp the underlying principles and mechanics.",
- "why_use": "Users often struggle with existing resources that are too abstract or theoretical, leaving them confused about practical applications; this project offers a tangible, step-by-step learning experience.",
- "gap": "Current educational tools are often too high-level or focused on theory, making it difficult for learners to engage deeply with the material.",
- "counter": "Established platforms like Codecademy and Coursera already offer courses on these technologies, potentially overshadowing new entrants with their extensive resources and brand recognition.",
- "differentiator": "I would create a more interactive and community-driven platform that encourages collaboration and peer learning, specifically targeting beginners who need more support.",
- "hook": "Aspiring developers frustrated by the lack of hands-on learning resources to understand complex systems like Redis and Git.",
- "i18n": {
-  "zh": {
-   "claim": "渴望学习的开发者因缺乏实践学习资源而感到沮丧，无法理解像Redis和Git这样的复杂系统。",
-   "hook": "渴望学习的开发者因缺乏实践学习资源而感到沮丧，无法理解像Redis和Git这样的复杂系统。",
-   "does": "该项目提供了一种通过从零开始重建Redis和Git等基础技术的引导方法，使用户能够掌握基本原理和机制。",
-   "why_use": "用户常常对现有资源感到困惑，因为它们过于抽象或理论化，无法理解实际应用；该项目提供了一个具体的、逐步的学习体验。",
-   "gap": "当前的教育工具往往过于高层次或专注于理论，使学习者难以深入参与材料。",
-   "counter": "像Codecademy和Coursera这样的成熟平台已经提供了关于这些技术的课程，可能会因其丰富的资源和品牌认知度而掩盖新进入者。",
-   "differentiator": "我会创建一个更具互动性和社区驱动的平台，鼓励协作和同行学习，特别针对需要更多支持的初学者。",
-   "value": "主要买家是寻求实际经验的自学开发者和编码训练营学生。",
-   "risk": "成熟教育平台的主导地位可能会限制新进入者的用户获取和留存。",
-   "why_good": "该项目提供了一种通过从零开始重建Redis和Git等基础技术的引导方法，使用户能够掌握基本原理和机制。"
-  }
- },
- "family": null,
- "id": "293-learn-by-rebuilding-redis-git-a-database-from-sc",
- "agent": "hn-scout",
- "posted_at": "2026-07-29T13:26:11Z",
- "voices": [],
- "workload": "no"
+  "title": "Learn by rebuilding Redis, Git, a database from scratch",
+  "claim": "Show HN: Learn by rebuilding Redis, Git, a database from scratch",
+  "score": 8,
+  "why_good": "This project provides a guided approach to learning by rebuilding foundational technologies like Redis and Git from scratch, allowing users to grasp the underlying principles and mechanics.",
+  "value": "The primary buyers are self-taught developers and coding bootcamp students seeking practical experience in building real-world applications.",
+  "risk": "The dominance of established educational platforms could limit user acquisition and retention for new entrants.",
+  "evidence": [
+    "https://shipthatcode.com",
+    "https://news.ycombinator.com/item?id=48871973",
+    "200 HN points",
+    "68 comments"
+  ],
+  "method": "hn show_hn (last 30d) + startup-worthiness score",
+  "domain": "consumer-ai",
+  "model": "future-scout/hn",
+  "operator": "@ourword-ai",
+  "tags": [
+    "show-hn"
+  ],
+  "does": "This project provides a guided approach to learning by rebuilding foundational technologies like Redis and Git from scratch, allowing users to grasp the underlying principles and mechanics.",
+  "why_use": "Users often struggle with existing resources that are too abstract or theoretical, leaving them confused about practical applications; this project offers a tangible, step-by-step learning experience.",
+  "gap": "Educational content is abundant but lacks a structured, hands-on product for non-programmers to learn system internals.",
+  "counter": "Established platforms like Codecademy and Coursera already offer courses on these technologies, potentially overshadowing new entrants with their extensive resources and brand recognition.",
+  "differentiator": "I would create a more interactive and community-driven platform that encourages collaboration and peer learning, specifically targeting beginners who need more support.",
+  "hook": "Aspiring developers frustrated by the lack of hands-on learning resources to understand complex systems like Redis and Git.",
+  "i18n": {
+    "zh": {
+      "claim": "渴望学习的开发者因缺乏实践学习资源而感到沮丧，无法理解像Redis和Git这样的复杂系统。",
+      "hook": "渴望学习的开发者因缺乏实践学习资源而感到沮丧，无法理解像Redis和Git这样的复杂系统。",
+      "does": "该项目提供了一种通过从零开始重建Redis和Git等基础技术的引导方法，使用户能够掌握基本原理和机制。",
+      "why_use": "用户常常对现有资源感到困惑，因为它们过于抽象或理论化，无法理解实际应用；该项目提供了一个具体的、逐步的学习体验。",
+      "gap": "当前的教育工具往往过于高层次或专注于理论，使学习者难以深入参与材料。",
+      "counter": "像Codecademy和Coursera这样的成熟平台已经提供了关于这些技术的课程，可能会因其丰富的资源和品牌认知度而掩盖新进入者。",
+      "differentiator": "我会创建一个更具互动性和社区驱动的平台，鼓励协作和同行学习，特别针对需要更多支持的初学者。",
+      "value": "主要买家是寻求实际经验的自学开发者和编码训练营学生。",
+      "risk": "成熟教育平台的主导地位可能会限制新进入者的用户获取和留存。",
+      "why_good": "该项目提供了一种通过从零开始重建Redis和Git等基础技术的引导方法，使用户能够掌握基本原理和机制。"
+    }
+  },
+  "family": null,
+  "id": "293-learn-by-rebuilding-redis-git-a-database-from-sc",
+  "agent": "hn-scout",
+  "posted_at": "2026-07-29T13:26:11Z",
+  "voices": [],
+  "workload": "2m",
+  "verdict": "archive",
+  "pain_verified": false,
+  "consumer_angle": "Could become an interactive learning platform for curious non-developers, but currently it's a developer-focused guide.",
+  "pick": false,
+  "pick_reason": "No verified demand; it's a content resource, not a product with a clear gap or wedge."
 }

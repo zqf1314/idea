@@ -2,9 +2,9 @@
   "title": "nyblnet/bento",
   "claim": "nyblnet/bento — Bento, the office suite that fits in a file",
   "score": 8,
-  "why_good": "A whole office suite (view/edit/data/collab) packed into a single HTML file — a radically portable, no-install take on documents.",
-  "value": "Freemium: free single-file suite, paid collaboration/hosting/enterprise; portability is a genuine wedge vs cloud suites.",
-  "risk": "Google/Microsoft own docs; 'in one file' is neat but must win real workflows, not just novelty.",
+  "why_good": "Bento is a single HTML file that is a full presentation editor and viewer. It includes morphing animations, live collaboration with end-to-end encryption, built-in charts, and AI-editable JSON, all in a ~560 KB file that works offline.",
+  "value": "Freelance consultants and educators pay for a one-time purchase or a small fee to get a presentation tool that guarantees their decks remain accessible and editable forever, without subscription fees or cloud dependency.",
+  "risk": "The biggest risk is that Microsoft or Google adds a 'save as single file' feature to their existing products, making Bento's core advantage obsolete.",
   "evidence": [
     "https://github.com/nyblnet/bento",
     "2,472★",
@@ -29,11 +29,29 @@
   "posted_at": "2026-07-27T10:50:30Z",
   "i18n": {
     "zh": {
-      "claim": "nyblnet/bento —— 装进一个文件里的办公套件。",
-      "why_good": "把整套办公套件(查看/编辑/数据/协作)塞进一个 HTML 文件——一种极致可移植、免安装的文档做法。",
-      "value": "免费增值:单文件套件免费,协作/托管/企业收费;可移植性相对云套件是真实切口。",
-      "risk": "Google/微软掌控文档;装进一个文件 很妙,但要赢真实工作流,不能只靠新奇。"
+      "claim": "Bento 是一个适合放在文件里的办公套件，它是一个单 HTML 文件，自带查看器、编辑器和演示器，文件本身就是软件。",
+      "hook": "厌倦了 PowerPoint 订阅制和云依赖的顾问和教育工作者，需要一个可以永远拥有、随处打开的文件，即使在 2036 年也能打开。",
+      "does": "Bento 是一个单 HTML 文件，它是一个完整的演示文稿编辑器和查看器。它包含变形动画、端到端加密的实时协作、内置图表和 AI 可编辑的 JSON，全部在一个约 560 KB 的文件中，且支持离线使用。",
+      "why_use": "与 PowerPoint 或 Google Slides 不同，Bento 给你一个自包含且永不过时的文件：无需账户、无需安装、无需云。你可以在任何浏览器中编辑它，它甚至可以在保存时重写自身。它是本地优先的，并且可证明离线，数据是纯 JSON，任何 AI 都可以编辑。",
+      "gap": "当前版本是开发者工具：需要从 GitHub 或网站下载文件，虽然易于使用，但围绕它没有为普通用户打磨的产品，而且中国市场没有本地化版本。",
+      "counter": "微软和谷歌已经用成熟且功能丰富的产品占据了演示市场。Bento 是一个小众工具，可能被视为一个功能而非公司，如果 PowerPoint 增加“单文件导出”选项，它可能会被杀死。",
+      "differentiator": "将 Bento 打包成面向消费者的产品，提供拖拽式模板画廊和一键“制作演示文稿”流程，并提供中文本地化版本，包含适合中国用户的模板和支持。",
+      "value": "自由顾问和教育工作者会为一次性购买或小额费用付费，以获得一个保证他们的演示文稿永远可访问和可编辑的工具，无需订阅费或云依赖。",
+      "risk": "最大的风险是微软或谷歌在其现有产品中添加“另存为单文件”功能，使 Bento 的核心优势变得过时。",
+      "why_good": "Bento 是一个单 HTML 文件，它是一个完整的演示文稿编辑器和查看器。它包含变形动画、端到端加密的实时协作、内置图表和 AI 可编辑的 JSON，全部在一个约 560 KB 的文件中，且支持离线使用。"
     }
   },
-  "voices": []
+  "voices": [],
+  "does": "Bento is a single HTML file that is a full presentation editor and viewer. It includes morphing animations, live collaboration with end-to-end encryption, built-in charts, and AI-editable JSON, all in a ~560 KB file that works offline.",
+  "why_use": "Unlike PowerPoint or Google Slides, Bento gives you a file that is self-contained and future-proof: no account, no installer, no cloud. You can edit it in any browser, and it even rewrites itself on save. It's local-first and provably offline, with a plain JSON data block that any AI can edit.",
+  "gap": "No verified demand; the product is a technical marvel but lacks evidence of real users or pain.",
+  "counter": "Microsoft and Google already own the presentation market with mature, feature-rich products. Bento is a niche tool that may be seen as a feature, not a company, and could be killed if PowerPoint adds a 'single-file export' option.",
+  "differentiator": "Package Bento as a consumer-friendly product with a drag-and-drop template gallery and a one-click 'make a deck' flow, and offer a Chinese-localized version with templates and support for Chinese users.",
+  "hook": "Consultants and educators who are tired of PowerPoint's subscription lock-in and cloud dependency need a deck that they can own forever and open anywhere, even in 2036.",
+  "verdict": "archive",
+  "pain_verified": false,
+  "workload": "2w",
+  "consumer_angle": "Could be a simple way for non-technical users to create and share presentations, but no proof of demand.",
+  "pick": false,
+  "pick_reason": "No first-hand evidence of pain or usage; stars alone are not demand."
 }

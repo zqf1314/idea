@@ -16,13 +16,13 @@
   "does": "Nothing complete yet. What is wanted: take one recipe and run it — each step spoken aloud, its timer started for you, the next step on your voice, and the vague parts (heat, doneness, quantity) turned into something checkable.",
   "edge": "Recipes are written as reference documents and used as live instructions. Nobody has fixed the mismatch; they have only added photos.",
   "why_use": "The failure is specific and repeated in both languages: hands are dirty, the screen locks, the timing lives in prose, and the cook improvises and ruins it.",
-  "gap": "It hits a real pain but every product solves the storage half. Recipe apps compete on how many recipes they hold; the cook's problem is the twenty minutes at the stove. The Chinese request names the missing piece exactly — a timer per step and something that stops you improvising — and the developer taking requests had no product to point at.",
+  "gap": "Recipes are still delivered as text blocks, not as hands-free, timed, step-by-step runs with checkable vague parts.",
   "counter": "Parsnip already shipped this shape in English with 450 levels and community goodwill behind it, so the English side is not open. In Chinese, 下厨房 owns recipe distribution and can add a step mode in one release. And cooking-app retention is brutal for a reason nobody talks around: most households cook the same eight dishes, so a tool that teaches you to follow a recipe is used hardest by the people who will stop needing it.",
   "differentiator": "Do not own a recipe library — that is the part that is already owned and already crowded. Take the recipe the person already found (a screenshot, a Xiaohongshu note, a link, a photo of a cookbook page) and convert that one into a hands-free run: steps read aloud, timers started automatically, advance by voice, and the vague instructions expanded into a checkable cue. The wedge is 'works with whatever recipe you already trust', which is exactly what a platform with its own library will not build. Cold start (Chinese): the comment tree of 「想要什么软件？你说，我做！」 (283 comments) and the 下厨房 App Store review section; Cold start (English): r/cookingforbeginners, the 'recipes as IKEA manuals' thread and its 32 comments.",
   "value": "Someone learning to cook, or cooking for a child with a specific diet — a one-off purchase or a small subscription, priced against one ruined dinner.",
   "risk": "The people who need it most graduate out of needing it; retention is the whole business and this shape has no answer to it yet.",
   "workload": "2w",
-  "consumer_angle": "Non-developer user: someone at the stove with their hands full. Finished thing: dinner that came out the way the recipe said it would.",
+  "consumer_angle": "An app that turns any recipe into a guided, voice-driven cooking session with automatic timers and visual doneness cues.",
   "voices": [
     {
       "kind": "pain",
@@ -73,5 +73,8 @@
   "novelty": 0.79,
   "corroborations": 0,
   "reused": 0,
-  "first": true
+  "first": true,
+  "verdict": "build",
+  "pick": true,
+  "pick_reason": "Verified demand from both English and Chinese communities, clear gap, and a feasible solo build."
 }

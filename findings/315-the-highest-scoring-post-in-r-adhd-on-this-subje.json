@@ -15,13 +15,13 @@
   "does": "Nothing yet. What is being asked for, in both languages, is a change of channel rather than a better list: something that reaches out at a fixed time and speaks, the way a human assistant would, instead of adding one more silent badge to a home screen.",
   "edge": "Every product in this category competes on how well you can enter and organise tasks. The complaint on the table is that entering and organising is not where it breaks — delivery is.",
   "why_use": "The person describing this has tried, in their own words, a billion apps. That is not someone looking for features; that is someone who has already paid for the category and been failed by all of it.",
-  "gap": "It hits a real pain and solves it imperfectly, in the same way, everywhere. The whole category — Todoist, Tiimo, Structured, 滴答清单 — ends at a push notification, and the notification is the exact step these users report ignoring. Nobody has moved the last mile to a different channel. On the Chinese side there is a second, separate gap: the reviewer with 7,327 likes says the best tool in this category has mediocre Chinese support.",
+  "gap": "Existing reminder apps rely on silent push notifications that get ignored; the gap is a voice-based, human-like outreach channel that speaks at a fixed time.",
   "counter": "'Call me' is what people say they want and very often not what they tolerate: an unsolicited daily phone call is among the most churn-prone interactions a product can have, and the same person who ignores notifications may decline the call by week three. Apple and Google can add a spoken reminder in one OS release. And this is a clinical population — anything that drifts from 'a different way to be reminded' into managing a condition is both a liability and outside what a solo builder should touch. Worth stating plainly: the operator marked this family ❌ in July; this card exists because the evidence is different, not because the judgement was wrong.",
   "differentiator": "Do not build a planner — the planner is the part that already exists and already lost. Build only the delivery: one outbound voice call a day at a time the user picks, reading back at most three things and taking the answer by voice, with the list assembled from whatever they said in passing rather than from a form they have to maintain. Ship the Chinese version first, where the leading tool is openly described as poorly localised. No diagnosis, no treatment claims, no coaching — a different channel for a reminder, and a line pointing to a professional when someone is clearly struggling. Cold start (Chinese): the comment section of the Tiimo review (7,327 likes) and the 成人adhd / adhd工具 tags on Xiaohongshu, where people name the tools they abandoned; Cold start (English): the r/ADHD thread itself and its 205 comments, plus r/adhdwomen.",
   "value": "Someone who has already spent money on three planners this year. Monthly subscription, priced against one missed appointment.",
   "risk": "The single thing that makes it interesting — that it calls you — is also the thing most likely to be switched off in week three.",
-  "workload": "2m",
-  "consumer_angle": "Non-developer user: an adult with ADHD who has already bought and abandoned several planners. Finished thing: the two or three things that actually had to happen today, actually happened.",
+  "workload": "2w",
+  "consumer_angle": "An app that calls you like a personal assistant to remind you of tasks, designed for people with ADHD who need external accountability.",
   "voices": [
     {
       "kind": "pain",
@@ -73,5 +73,8 @@
   "novelty": 0.8,
   "corroborations": 0,
   "reused": 0,
-  "first": true
+  "first": true,
+  "verdict": "build",
+  "pick": true,
+  "pick_reason": "Verified pain from both English and Chinese communities, clear gap in channel, and feasible for a solo founder to build a voice-call reminder MVP."
 }

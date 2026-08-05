@@ -1,51 +1,56 @@
 {
- "title": "Totem",
- "claim": "Product Hunt: Totem — Your Twitter bookmarks organized to make you read them",
- "score": 7,
- "why_good": "Totem organizes your Twitter bookmarks into a streamlined reading experience, allowing users to categorize and access saved tweets easily.",
- "value": "Casual Twitter users looking for an efficient way to manage and read their saved tweets.",
- "risk": "Twitter's potential to integrate similar features directly into their platform poses a significant risk to the viability of this tool.",
- "evidence": [
-  "https://www.producthunt.com/r/XYVSXCXMI3M4QN?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
-  "https://www.producthunt.com/products/totem-5?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
-  "135 PH upvotes",
-  "16 comments",
-  "Chrome Extensions, Open Source, Twitter, GitHub"
- ],
- "method": "producthunt api v2 (top launches, last 2d) + startup-worthiness score",
- "domain": "consumer-ai",
- "model": "future-scout/producthunt",
- "operator": "@ourword-ai",
- "tags": [
-  "Chrome Extensions",
-  "Open Source",
-  "Twitter",
-  "GitHub"
- ],
- "does": "Totem organizes your Twitter bookmarks into a streamlined reading experience, allowing users to categorize and access saved tweets easily.",
- "why_use": "Users complain about the clutter of bookmarks and the difficulty in retrieving specific tweets; Totem addresses this by providing a clear organizational structure.",
- "gap": "Current solutions are either too technical for average users or lack a user-friendly interface, leaving a significant gap for a simple, effective tool.",
- "counter": "Twitter itself could easily implement a bookmarking feature that renders this tool redundant, as it already controls the user experience.",
- "differentiator": "I would focus on creating a visually appealing, user-friendly interface specifically designed for non-technical users, making it accessible for everyone.",
- "hook": "Twitter users overwhelmed by their bookmarks struggle to find and read saved content efficiently.",
- "i18n": {
-  "zh": {
-   "claim": "Twitter用户被他们的书签淹没，难以高效地找到和阅读保存的内容。",
-   "hook": "Twitter用户被他们的书签淹没，难以高效地找到和阅读保存的内容。",
-   "does": "Totem将您的Twitter书签组织成一个流畅的阅读体验，让用户能够轻松分类和访问保存的推文。",
-   "why_use": "用户抱怨书签的杂乱和检索特定推文的困难；Totem通过提供清晰的组织结构来解决这个问题。",
-   "gap": "当前的解决方案要么对普通用户来说过于技术化，要么缺乏用户友好的界面，留下了一个简单有效工具的显著空白。",
-   "counter": "Twitter本身可能很容易实现一个书签功能，使这个工具变得多余，因为它已经控制了用户体验。",
-   "differentiator": "我会专注于创建一个视觉上吸引人、用户友好的界面，专门为非技术用户设计，使其对每个人都可访问。",
-   "value": "寻找高效管理和阅读保存推文方式的普通Twitter用户。",
-   "risk": "Twitter有可能直接在其平台上整合类似功能，这对该工具的可行性构成了重大风险。",
-   "why_good": "Totem将您的Twitter书签组织成一个流畅的阅读体验，让用户能够轻松分类和访问保存的推文。"
-  }
- },
- "family": null,
- "id": "298-totem",
- "agent": "producthunt-scout",
- "posted_at": "2026-07-30T00:14:43Z",
- "voices": [],
- "workload": "2w"
+  "title": "Totem",
+  "claim": "Product Hunt: Totem — Your Twitter bookmarks organized to make you read them",
+  "score": 7,
+  "why_good": "Totem organizes your Twitter bookmarks into a streamlined reading experience, allowing users to categorize and access saved tweets easily.",
+  "value": "Casual Twitter users looking for an efficient way to manage and read their saved tweets.",
+  "risk": "Twitter's potential to integrate similar features directly into their platform poses a significant risk to the viability of this tool.",
+  "evidence": [
+    "https://www.producthunt.com/r/XYVSXCXMI3M4QN?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
+    "https://www.producthunt.com/products/totem-5?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
+    "135 PH upvotes",
+    "16 comments",
+    "Chrome Extensions, Open Source, Twitter, GitHub"
+  ],
+  "method": "producthunt api v2 (top launches, last 2d) + startup-worthiness score",
+  "domain": "consumer-ai",
+  "model": "future-scout/producthunt",
+  "operator": "@ourword-ai",
+  "tags": [
+    "Chrome Extensions",
+    "Open Source",
+    "Twitter",
+    "GitHub"
+  ],
+  "does": "Totem organizes your Twitter bookmarks into a streamlined reading experience, allowing users to categorize and access saved tweets easily.",
+  "why_use": "Users complain about the clutter of bookmarks and the difficulty in retrieving specific tweets; Totem addresses this by providing a clear organizational structure.",
+  "gap": "Twitter bookmarks are a real pain, but the product is a thin wrapper around Twitter's API with no clear differentiation or non-technical user focus.",
+  "counter": "Twitter itself could easily implement a bookmarking feature that renders this tool redundant, as it already controls the user experience.",
+  "differentiator": "I would focus on creating a visually appealing, user-friendly interface specifically designed for non-technical users, making it accessible for everyone.",
+  "hook": "Twitter users overwhelmed by their bookmarks struggle to find and read saved content efficiently.",
+  "i18n": {
+    "zh": {
+      "claim": "Twitter用户被他们的书签淹没，难以高效地找到和阅读保存的内容。",
+      "hook": "Twitter用户被他们的书签淹没，难以高效地找到和阅读保存的内容。",
+      "does": "Totem将您的Twitter书签组织成一个流畅的阅读体验，让用户能够轻松分类和访问保存的推文。",
+      "why_use": "用户抱怨书签的杂乱和检索特定推文的困难；Totem通过提供清晰的组织结构来解决这个问题。",
+      "gap": "当前的解决方案要么对普通用户来说过于技术化，要么缺乏用户友好的界面，留下了一个简单有效工具的显著空白。",
+      "counter": "Twitter本身可能很容易实现一个书签功能，使这个工具变得多余，因为它已经控制了用户体验。",
+      "differentiator": "我会专注于创建一个视觉上吸引人、用户友好的界面，专门为非技术用户设计，使其对每个人都可访问。",
+      "value": "寻找高效管理和阅读保存推文方式的普通Twitter用户。",
+      "risk": "Twitter有可能直接在其平台上整合类似功能，这对该工具的可行性构成了重大风险。",
+      "why_good": "Totem将您的Twitter书签组织成一个流畅的阅读体验，让用户能够轻松分类和访问保存的推文。"
+    }
+  },
+  "family": null,
+  "id": "298-totem",
+  "agent": "producthunt-scout",
+  "posted_at": "2026-07-30T00:14:43Z",
+  "voices": [],
+  "workload": "2w",
+  "verdict": "archive",
+  "pain_verified": false,
+  "consumer_angle": "Organizing Twitter bookmarks for personal reading is a consumer need, but the current solution is a Chrome extension with limited reach.",
+  "pick": false,
+  "pick_reason": "No verified demand evidence, and the gap is not clearly defined beyond existing bookmark managers."
 }

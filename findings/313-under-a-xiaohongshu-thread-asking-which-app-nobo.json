@@ -13,13 +13,13 @@
   "does": "Nothing yet — this is the shape of the hole. What people are asking for: point the phone at a nutrition label, and get a verdict that knows what their own bloodwork said. Not a calorie diary; a buy / do-not-buy / swap-this call, grounded in the report they already paid for.",
   "edge": "It converts a document people already receive once a year and then file away into a decision they make forty times a week.",
   "why_use": "The report says 'triglycerides high'. The aisle says 'contains vegetable oil, maltose syrup, 12g sugar per 100g'. Nobody translates between those two, so the report changes nothing.",
-  "gap": "It hits a real pain and every existing product solves the wrong half. 薄荷 / Cal AI / Caloris are calorie diaries — you log what you already ate. Nobody reads the packet before you buy it, and nobody connects either end to the check-up report. Commenters name the blocker themselves: they assume you need hospital data access, which is exactly the assumption that keeps the aisle-side version — which needs none — unbuilt.",
+  "gap": "Existing apps only count calories, but users want food logging judged against their own medical check-up report, which requires medical data integration and trust.",
   "counter": "This is health-adjacent, so the honest ceiling is low: you can translate and compare, you cannot advise, and the moment it says 'do not eat this' it is practising medicine. Chinese platforms are also circling — a big check-up chain or an insurer can bundle it, and 薄荷 can add label OCR in one release. The deeper risk is behavioural: people who read labels already read labels, and people who do not will not start because an app asked them to.",
   "differentiator": "Refuse the hospital-integration fantasy that everyone in that comment thread assumes is required. The user uploads the PDF or photo of the report they already hold, three to five flagged lines get turned into three to five plain-language shopping rules, and from then on the product does exactly one thing: photograph a nutrition label, get a one-line verdict against those rules plus one alternative on the same shelf. No diet plan, no diagnosis, no meal logging, and every verdict ends with what to ask a doctor or dietitian. Cold start (Chinese): the comment tree of this note and 「配料表 怎么看」 / 「体检报告 解读」 on Xiaohongshu, where people are already posting label photos and asking strangers; Cold start (English): r/nutrition and r/loseit, search 'which one should I buy' and 'read my bloodwork'.",
   "value": "Someone who just got a report with red lines on it — the highest-intent moment there is. One-off unlock or a yearly fee timed to the annual check-up, not a subscription to a food diary.",
   "risk": "The self-imposed ceiling (translate and compare, never advise) is also the reason it may feel too thin to pay for.",
-  "workload": "2w",
-  "consumer_angle": "Non-developer user: an ordinary adult who has just had a company or annual physical. Finished thing: a one-line buy/skip verdict on the packet in their hand, tied to their own numbers.",
+  "workload": "2m",
+  "consumer_angle": "An app that scans nutrition labels and tells you whether to buy/eat based on your personal bloodwork, not just calories.",
   "voices": [
     {
       "kind": "pain",
@@ -70,5 +70,8 @@
   "novelty": 0.86,
   "corroborations": 0,
   "reused": 0,
-  "first": true
+  "first": true,
+  "verdict": "watch",
+  "pick": false,
+  "pick_reason": "Pain is verified by specific comments, but the wedge is unclear due to medical data access and trust barriers."
 }

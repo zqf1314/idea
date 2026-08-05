@@ -2,9 +2,9 @@
   "title": "Speechius",
   "claim": "Product Hunt: Speechius — The teleprompter that actually listens",
   "score": 7,
-  "why_good": "A teleprompter that follows your voice and scrolls as you speak — a real, specific improvement for creators and speakers.",
-  "value": "Prosumer subscription for creators, execs and educators; voice-following is a concrete upgrade people pay for.",
-  "risk": "Small niche and easily cloned; existing teleprompter apps can add voice-tracking.",
+  "why_good": "Speechius is a teleprompter app that uses speech recognition to automatically scroll the script as you speak, so you never lose your place. It stands out by listening to your actual words and adjusting the scroll speed in real time, unlike traditional teleprompters that require manual control or a dedicated operator.",
+  "value": "Public speakers, YouTubers, and course creators pay for a subscription to get a teleprompter that automatically follows their speech, saving them time and improving their delivery.",
+  "risk": "The risk is that YouTube or OBS adds a similar feature, making Speechius redundant and killing its market.",
   "evidence": [
     "https://www.producthunt.com/r/D6XV5RID3EJJR3?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
     "https://www.producthunt.com/products/speechius?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
@@ -26,11 +26,29 @@
   "posted_at": "2026-07-27T15:18:38Z",
   "i18n": {
     "zh": {
-      "claim": "Product Hunt: Speechius —— 真正会听的提词器。",
-      "why_good": "一个跟着你的声音滚动的提词器——对创作者和演讲者是真实、具体的改进。",
-      "value": "给创作者、高管、教育者卖专业订阅;跟读滚动是人们愿付费的具体升级。",
-      "risk": "细分小、易被抄;现有提词器 app 能加语音跟踪。"
+      "claim": "Speechius 是一款能听你说话并自动跟随的提词器，无需手动滚动。",
+      "hook": "公开演讲者和内容创作者因为忘记台词而卡壳，他们愿意为能自动跟随语音的提词器付费。",
+      "does": "Speechius 是一款提词器应用，利用语音识别在您说话时自动滚动脚本，让您永不迷失。它通过实时识别您的语音并调整滚动速度，区别于需要手动控制或专人操作的传统提词器。",
+      "why_use": "您应该使用 Speechius，因为它无需手动滚动或雇佣提词器操作员，让您专注于演讲并与观众保持眼神交流。它非常适合独自录制视频或演讲的创作者。",
+      "gap": "当前解决方案不完美，因为它在带口音的语音或快速说话时可能出错，并且没有针对普通话或其他语言优化的本地/中国市场版本。",
+      "counter": "反对的理由：YouTube 和 TikTok 等平台正在内置提词器功能，OBS 插件也能免费实现，Speechius 可能只是一个功能，而非独立产品。",
+      "differentiator": "我会构建一个完全离线、支持本地语音识别的版本，并针对普通话和其他主要语言进行本地化，以服务中国市场。",
+      "value": "公开演讲者、YouTuber 和课程创作者为订阅付费，以获得自动跟随语音的提词器，节省时间并提升演讲效果。",
+      "risk": "风险在于 YouTube 或 OBS 添加类似功能，使 Speechius 变得多余，从而扼杀其市场。",
+      "why_good": "Speechius 是一款提词器应用，利用语音识别在您说话时自动滚动脚本，让您永不迷失。它通过实时识别您的语音并调整滚动速度，区别于需要手动控制或专人操作的传统提词器。"
     }
   },
-  "voices": []
+  "voices": [],
+  "does": "Speechius is a teleprompter app that uses speech recognition to automatically scroll the script as you speak, so you never lose your place. It stands out by listening to your actual words and adjusting the scroll speed in real time, unlike traditional teleprompters that require manual control or a dedicated operator.",
+  "why_use": "You should use Speechius because it removes the need to manually scroll or hire a teleprompter operator, letting you focus on delivery and maintain eye contact with your audience. It's ideal for solo creators and speakers who record videos or give presentations alone.",
+  "gap": "Teleprompters are niche; speech-synced scrolling is a nice feature but not a proven pain point for a broad market.",
+  "counter": "The case against building it: major video platforms like YouTube and TikTok are adding built-in teleprompter features, and OBS with plugins can already do this for free, so Speechius risks being a feature, not a standalone product.",
+  "differentiator": "I would build a local-private version that works fully offline with on-device speech recognition, and localize it for Mandarin and other major languages to serve the Chinese market.",
+  "hook": "Public speakers and content creators who stumble over words because they lose their place in a script are in pain, and they will pay for a teleprompter that automatically follows their speech.",
+  "verdict": "archive",
+  "pain_verified": false,
+  "workload": "2w",
+  "consumer_angle": "For public speakers, YouTubers, and presenters who want a hands-free teleprompter that follows their speech naturally.",
+  "pick": false,
+  "pick_reason": "No direct evidence of demand beyond upvotes; the gap is unclear and the wedge is narrow."
 }

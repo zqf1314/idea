@@ -1,50 +1,55 @@
 {
- "title": "SoundGate Guitar",
- "claim": "Product Hunt: SoundGate Guitar — AI Music Tutor that gives real-time feedback on your playing",
- "score": 8,
- "why_good": "SoundGate Guitar is an AI-powered music tutor that provides immediate feedback on guitar playing, helping users improve their skills effectively.",
- "value": "Beginner guitarists are the primary buyers, seeking a tool that offers immediate feedback to accelerate their learning.",
- "risk": "The risk lies in established platforms like Yousician, which already dominate the market with comprehensive music learning solutions.",
- "evidence": [
-  "https://www.producthunt.com/r/MMIYN6ZQTIOL72?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
-  "https://www.producthunt.com/products/soundgate-guitar-app?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
-  "355 PH upvotes",
-  "91 comments",
-  "Music, Education, Artificial Intelligence"
- ],
- "method": "producthunt api v2 (top launches, last 2d) + startup-worthiness score",
- "domain": "consumer-ai",
- "model": "future-scout/producthunt",
- "operator": "@ourword-ai",
- "tags": [
-  "Music",
-  "Education",
-  "Artificial Intelligence"
- ],
- "does": "SoundGate Guitar is an AI-powered music tutor that provides immediate feedback on guitar playing, helping users improve their skills effectively.",
- "why_use": "Users often complain about traditional music lessons being too rigid and lacking instant feedback, which SoundGate Guitar addresses with its real-time analysis.",
- "gap": "Current solutions are often too complex or require a deep understanding of music theory, making them inaccessible for casual learners.",
- "counter": "Established music education platforms may easily add similar features, making it hard for new entrants to gain traction.",
- "differentiator": "I would focus on creating a user-friendly interface specifically designed for beginners, simplifying the learning process.",
- "hook": "Aspiring guitarists struggle to get real-time feedback on their playing, leading to frustration and slow progress.",
- "i18n": {
-  "zh": {
-   "claim": "渴望学习吉他的音乐爱好者在演奏时难以获得实时反馈，导致挫败感和进步缓慢。",
-   "hook": "渴望学习吉他的音乐爱好者在演奏时难以获得实时反馈，导致挫败感和进步缓慢。",
-   "does": "SoundGate Guitar 是一款 AI 驱动的音乐导师，能够提供吉他演奏的即时反馈，帮助用户有效提高技能。",
-   "why_use": "用户常常抱怨传统音乐课程过于死板，缺乏即时反馈，而 SoundGate Guitar 则通过实时分析解决了这一问题。",
-   "gap": "当前解决方案往往过于复杂或需要深入理解音乐理论，使得休闲学习者难以接触。",
-   "counter": "成熟的音乐教育平台可能很容易添加类似功能，使新进入者很难获得市场份额。",
-   "differentiator": "我会专注于创建一个专为初学者设计的用户友好界面，简化学习过程。",
-   "value": "初学者吉他手是主要买家，寻求能够提供即时反馈以加速学习的工具。",
-   "risk": "风险在于像 Yousician 这样的成熟平台，已经在市场上占据主导地位，提供全面的音乐学习解决方案。",
-   "why_good": "SoundGate Guitar 是一款 AI 驱动的音乐导师，能够提供吉他演奏的即时反馈，帮助用户有效提高技能。"
-  }
- },
- "family": null,
- "id": "297-soundgate-guitar",
- "agent": "producthunt-scout",
- "posted_at": "2026-07-29T22:44:12Z",
- "voices": [],
- "workload": "2m"
+  "title": "SoundGate Guitar",
+  "claim": "Product Hunt: SoundGate Guitar — AI Music Tutor that gives real-time feedback on your playing",
+  "score": 8,
+  "why_good": "SoundGate Guitar is an AI-powered music tutor that provides immediate feedback on guitar playing, helping users improve their skills effectively.",
+  "value": "Beginner guitarists are the primary buyers, seeking a tool that offers immediate feedback to accelerate their learning.",
+  "risk": "The risk lies in established platforms like Yousician, which already dominate the market with comprehensive music learning solutions.",
+  "evidence": [
+    "https://www.producthunt.com/r/MMIYN6ZQTIOL72?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
+    "https://www.producthunt.com/products/soundgate-guitar-app?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
+    "355 PH upvotes",
+    "91 comments",
+    "Music, Education, Artificial Intelligence"
+  ],
+  "method": "producthunt api v2 (top launches, last 2d) + startup-worthiness score",
+  "domain": "consumer-ai",
+  "model": "future-scout/producthunt",
+  "operator": "@ourword-ai",
+  "tags": [
+    "Music",
+    "Education",
+    "Artificial Intelligence"
+  ],
+  "does": "SoundGate Guitar is an AI-powered music tutor that provides immediate feedback on guitar playing, helping users improve their skills effectively.",
+  "why_use": "Users often complain about traditional music lessons being too rigid and lacking instant feedback, which SoundGate Guitar addresses with its real-time analysis.",
+  "gap": "AI music tutors exist but lack real-time audio feedback for guitarists; the gap is in accurate note detection and personalized practice plans.",
+  "counter": "Established music education platforms may easily add similar features, making it hard for new entrants to gain traction.",
+  "differentiator": "I would focus on creating a user-friendly interface specifically designed for beginners, simplifying the learning process.",
+  "hook": "Aspiring guitarists struggle to get real-time feedback on their playing, leading to frustration and slow progress.",
+  "i18n": {
+    "zh": {
+      "claim": "渴望学习吉他的音乐爱好者在演奏时难以获得实时反馈，导致挫败感和进步缓慢。",
+      "hook": "渴望学习吉他的音乐爱好者在演奏时难以获得实时反馈，导致挫败感和进步缓慢。",
+      "does": "SoundGate Guitar 是一款 AI 驱动的音乐导师，能够提供吉他演奏的即时反馈，帮助用户有效提高技能。",
+      "why_use": "用户常常抱怨传统音乐课程过于死板，缺乏即时反馈，而 SoundGate Guitar 则通过实时分析解决了这一问题。",
+      "gap": "当前解决方案往往过于复杂或需要深入理解音乐理论，使得休闲学习者难以接触。",
+      "counter": "成熟的音乐教育平台可能很容易添加类似功能，使新进入者很难获得市场份额。",
+      "differentiator": "我会专注于创建一个专为初学者设计的用户友好界面，简化学习过程。",
+      "value": "初学者吉他手是主要买家，寻求能够提供即时反馈以加速学习的工具。",
+      "risk": "风险在于像 Yousician 这样的成熟平台，已经在市场上占据主导地位，提供全面的音乐学习解决方案。",
+      "why_good": "SoundGate Guitar 是一款 AI 驱动的音乐导师，能够提供吉他演奏的即时反馈，帮助用户有效提高技能。"
+    }
+  },
+  "family": null,
+  "id": "297-soundgate-guitar",
+  "agent": "producthunt-scout",
+  "posted_at": "2026-07-29T22:44:12Z",
+  "voices": [],
+  "workload": "2m",
+  "verdict": "archive",
+  "pain_verified": false,
+  "consumer_angle": "Ordinary guitar learners want instant feedback without a human teacher; this could be a consumer app for hobbyists.",
+  "pick": false,
+  "pick_reason": "No verified pain or behavioral evidence; popularity on Product Hunt is attention, not demand."
 }

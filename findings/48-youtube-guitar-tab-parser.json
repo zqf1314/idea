@@ -2,9 +2,9 @@
   "title": "YouTube Guitar Tab Parser",
   "claim": "Show HN: YouTube Guitar Tab Parser",
   "score": 8,
-  "why_good": "Extracts guitar tabs from YouTube videos — a specific, delightful pain-solver for a large hobbyist audience (guitarists).",
-  "value": "Freemium for musicians: paid accurate transcription, library, export; Ultimate Guitar shows people pay for tabs.",
-  "risk": "Copyright/licensing around music content is thorny, and accuracy of auto-tabbing is hard; niche willingness to pay.",
+  "why_good": "A CLI that downloads a YouTube guitar lesson, uses Claude vision to locate and crop the tab region in each frame, deduplicates by bar number, and stitches the distinct lines into a single PDF. It works out of the box with no configuration.",
+  "value": "Amateur guitarists who follow YouTube lessons pay for a convenient way to get a printable PDF of the tab, saving time and frustration.",
+  "risk": "YouTube could add a native tab download feature, or users might simply use existing tab websites, making this a niche tool with limited demand.",
   "evidence": [
     "https://github.com/marcelpanse/youtube-guitar-tab-parser",
     "https://news.ycombinator.com/item?id=48898154",
@@ -23,11 +23,29 @@
   "posted_at": "2026-07-27T12:03:31Z",
   "i18n": {
     "zh": {
-      "claim": "Show HN: YouTube 吉他谱解析器。",
-      "why_good": "从 YouTube 视频里提取吉他谱——给庞大的爱好者群体(吉他手)解决一个具体、讨喜的痛点。",
-      "value": "给音乐人做免费增值:付费的精准转谱、曲库、导出;Ultimate Guitar 证明有人为谱付费。",
-      "risk": "音乐内容的版权/授权很棘手,自动扒谱的准确度也难;付费意愿偏细分。"
+      "claim": "吉他学习者观看带屏幕标签的YouTube课程时，不得不暂停和滚动来跟上，他们想要一个干净的PDF标签以便离线练习。",
+      "hook": "吉他学习者观看带屏幕标签的YouTube课程时，不得不暂停和滚动来跟上，他们想要一个干净的PDF标签以便离线练习。",
+      "does": "一个命令行工具，下载YouTube吉他课程，使用Claude视觉定位并裁剪每帧中的标签区域，按小节号去重，并将不同的行拼接成单个PDF。开箱即用，无需配置。",
+      "why_use": "它自动化了繁琐的手动过程：暂停视频阅读标签、处理滚动和光标移动。它生成一个干净、可打印的PDF，比视频更容易跟随，并且处理角落覆盖或全宽标签的视频。",
+      "gap": "它只是一个命令行工具，需要Node.js、yt-dlp、ffmpeg和Anthropic API密钥——只有极客才能使用。没有友好的产品，没有GUI，没有托管服务，也不支持其他视频平台或语言。",
+      "counter": "YouTube本身可能会添加“下载标签”功能，而像Ultimate Guitar这样的吉他标签网站已经提供官方标签。独立开发者要对抗免费的标签库和平台自身功能，难度很大。",
+      "differentiator": "将其打包为简单的Web应用或浏览器扩展，用户粘贴YouTube URL即可获得PDF，无需安装任何东西或拥有API密钥。",
+      "value": "跟随YouTube课程学习的业余吉他手会为方便地获得可打印的PDF标签付费，节省时间和挫败感。",
+      "risk": "YouTube可能会添加原生标签下载功能，或者用户可能直接使用现有的标签网站，使这个工具成为小众产品，需求有限。",
+      "why_good": "一个命令行工具，下载YouTube吉他课程，使用Claude视觉定位并裁剪每帧中的标签区域，按小节号去重，并将不同的行拼接成单个PDF。开箱即用，无需配置。"
     }
   },
-  "voices": []
+  "voices": [],
+  "does": "A CLI that downloads a YouTube guitar lesson, uses Claude vision to locate and crop the tab region in each frame, deduplicates by bar number, and stitches the distinct lines into a single PDF. It works out of the box with no configuration.",
+  "why_use": "It automates a tedious manual process: pausing videos to read tabs, dealing with scrolling and cursor movement. It produces a clean, printable PDF that is easier to follow than the video, and it handles videos with corner overlays or full-width tabs.",
+  "gap": "CLI-only, no product around the capability for non-technical guitarists",
+  "counter": "YouTube itself could add a 'download tab' feature, and guitar tab websites like Ultimate Guitar already offer official tabs. A solo builder faces an uphill battle against free tab repositories and the platform's own features.",
+  "differentiator": "Package it as a simple web app or browser extension where a user pastes a YouTube URL and gets a PDF, without needing to install anything or have an API key.",
+  "hook": "Guitar learners who watch YouTube lessons with on-screen tabs are stuck pausing and scrolling to follow along, and want a clean PDF of the tab to practice offline.",
+  "verdict": "archive",
+  "pain_verified": false,
+  "workload": "2w",
+  "consumer_angle": "A web app where a guitarist pastes a YouTube link and gets a clean PDF of the tab, no terminal needed",
+  "pick": false,
+  "pick_reason": "Demand not verified yet; capability signal for a consumer product."
 }

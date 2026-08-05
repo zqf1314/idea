@@ -1,10 +1,10 @@
 {
   "title": "debpalash/OmniVoice-Studio",
   "claim": "debpalash/OmniVoice-Studio — Local voice clone, video dubbing, dictation and audiobook maker. The open-source ElevenLabs alternative.",
-  "hook": "Hand it a 3-second clip and it clones that voice in 646 languages — then dubs a whole video end-to-end, fully on your machine.",
-  "why_good": "Zero-shot clone a voice from a 3-sec clip in 646 languages (ElevenLabs: 32); design a voice from scratch (gender/age/accent/emotion); end-to-end local video dubbing (transcribe → translate → re-voice in the clone → re-time → export MP4); an audiobook maker (EPUB/PDF → .m4b, multi-voice); a system-wide dictation hotkey.",
-  "value": "Buyer: dubbing shops and creators in long-tail languages ElevenLabs covers poorly, and studios that can't send client audio to a cloud. Money: a supported team edition + priced engine/model packs — the value is the workflow (batch, project files, invisible watermarking), not any single model.",
-  "risk": "Who kills it: ElevenLabs or Descript ship a solid offline tier, or one open model gets good enough that the 14-engine hub stops mattering. It's in active beta — reliability across 14 engines and three OSes is the hard part. Watch: does a real 30-min video dub cleanly in one click without hand-fixing timing.",
+  "hook": "Content creators and indie developers are tired of paying monthly for cloud TTS and sending their voice data to servers; they want professional-grade voice cloning and dubbing that runs entirely on their own hardware.",
+  "why_good": "OmniVoice Studio is a desktop app for local voice cloning, video dubbing, dictation, and audiobook creation. Its standout capability is zero-shot voice cloning from a 3-second clip across 646 languages, plus a full pipeline for video dubbing (transcribe, translate, re-voice, export MP4) all offline.",
+  "value": "Freelance video editors and YouTubers pay for a one-time license or donation to get unlimited, private voice cloning and dubbing without recurring cloud fees.",
+  "risk": "The main risk is that ElevenLabs or other cloud providers could add offline modes or lower prices, making the local alternative less compelling; also, the project's beta instability may drive away non-technical users.",
   "score": 8,
   "evidence": [
     "https://github.com/debpalash/OmniVoice-Studio",
@@ -29,20 +29,22 @@
   "pick": true,
   "i18n": {
     "zh": {
-      "claim": "debpalash/OmniVoice-Studio —— 本地音色克隆、视频配音、听写与有声书制作,开源版 ElevenLabs 替代品。",
-      "hook": "丢给它一段 3 秒音频,它就能用 646 种语言克隆这把嗓子——再把整段视频从头到尾配好音,全程只在你本机跑。",
-      "why_good": "用 3 秒音频零样本克隆音色,支持 646 种语言(ElevenLabs 只有 32);从零设计声音(性别/年龄/口音/情绪);端到端本地视频配音(转写→翻译→用克隆音色重配→对齐时间轴→导出 MP4);有声书制作(EPUB/PDF→.m4b、多角色);全局听写快捷键。",
-      "value": "买家:做 ElevenLabs 覆盖不好的长尾语种的配音作坊和创作者,以及不能把客户音频传云的工作室。变现:带支持的团队版 + 付费引擎/模型包——价值在工作流(批量、项目文件、隐形水印),不在某一个模型。",
-      "risk": "谁会杀死它:ElevenLabs 或 Descript 出一个靠谱的离线档,或某个开源模型强到让『14 引擎调度』失去意义。它还是活跃 beta——14 引擎、跨三系统的稳定性才是真难点。看指标:一段真实 30 分钟视频能否一键配好、时间轴不用手工返修。",
-      "does": "用 3 秒音频零样本克隆音色,支持 646 种语言(ElevenLabs 只有 32);从零设计声音(性别/年龄/口音/情绪);端到端本地视频配音(转写→翻译→用克隆音色重配→对齐时间轴→导出 MP4);有声书制作(EPUB/PDF→.m4b、多角色);全局听写快捷键。",
-      "edge": "全本地的端到端配音,底层是 14 个 TTS + 11 个 ASR 引擎的调度中枢——按语言/延迟挑最优模型,不被单一模型锁死;≤8G 显存自动降级、纯 CPU 也能跑。",
-      "why_use": "不订阅、不按字符计费、音频不出本机;646 语种远超云端工具;还自带 MCP server,Claude/Cursor 能直接调它——对需要本地语音管线的人和 AI agent 都实用。"
+      "claim": "OmniVoice Studio 是开源版的 ElevenLabs 替代品，100% 本地运行，支持实时听写、零样本声音克隆和电影级视频配音，覆盖 646 种语言，无需账户、API 密钥或云端。",
+      "hook": "内容创作者和独立开发者厌倦了为云端 TTS 按月付费，并担心声音数据被上传到服务器；他们希望拥有专业级的声音克隆和配音，且完全在自己的硬件上运行。",
+      "does": "OmniVoice Studio 是一款桌面应用，用于本地声音克隆、视频配音、听写和有声书制作。其突出能力是从 3 秒音频片段进行零样本声音克隆，支持 646 种语言，并具备完整的视频配音流程（转录、翻译、重新配音、导出 MP4），全程离线。",
+      "why_use": "与 ElevenLabs 等云服务不同，OmniVoice Studio 将你的声音数据保存在本地，没有使用限制，支持 646 种语言。它还提供了多 TTS 引擎的统一界面，自动检测 GPU，不会静默回退到 CPU，让你拥有控制权和隐私。",
+      "gap": "该项目处于活跃测试阶段，可能在不同版本间出现故障；需要技术设置（最新修复需从源码运行），缺乏针对非技术用户的完善一键安装程序，尤其是在 Windows 和 Linux 上。",
+      "counter": "ElevenLabs 和其他云 TTS 提供商已经以卓越的质量和易用性主导市场；本地开源替代品可能难以在语音质量上匹敌，并可能被视为业余爱好工具而非严肃产品。",
+      "differentiator": "将 OmniVoice Studio 打包为 Windows 和 macOS 的一键安装程序，简化界面，面向非技术内容创作者，他们希望获得隐私和无限使用，而无需云成本。",
+      "value": "自由视频编辑和 YouTuber 支付一次性许可费或捐赠，以获得无限、私密的声音克隆和配音，无需经常性云费用。",
+      "risk": "主要风险是 ElevenLabs 或其他云提供商可能增加离线模式或降低价格，使本地替代品失去吸引力；此外，项目的测试版不稳定性可能吓跑非技术用户。",
+      "why_good": "OmniVoice Studio 是一款桌面应用，用于本地声音克隆、视频配音、听写和有声书制作。其突出能力是从 3 秒音频片段进行零样本声音克隆，支持 646 种语言，并具备完整的视频配音流程（转录、翻译、重新配音、导出 MP4），全程离线。"
     }
   },
   "pick_reason": "Genuinely differentiated local product — 646-language zero-shot cloning and end-to-end offline dubbing over a 14-engine hub, and MCP-drivable.",
-  "does": "Zero-shot clone a voice from a 3-sec clip in 646 languages (ElevenLabs: 32); design a voice from scratch (gender/age/accent/emotion); end-to-end local video dubbing (transcribe → translate → re-voice in the clone → re-time → export MP4); an audiobook maker (EPUB/PDF → .m4b, multi-voice); a system-wide dictation hotkey.",
+  "does": "OmniVoice Studio is a desktop app for local voice cloning, video dubbing, dictation, and audiobook creation. Its standout capability is zero-shot voice cloning from a 3-second clip across 646 languages, plus a full pipeline for video dubbing (transcribe, translate, re-voice, export MP4) all offline.",
   "edge": "Fully local, end-to-end dubbing on a hub of 14 TTS + 11 ASR engines — pick the best model per language/latency instead of being locked to one; auto-offloads on ≤8 GB VRAM and runs on pure CPU.",
-  "why_use": "No subscription, no per-character meter, audio never leaves your machine; 646 languages dwarf cloud tools; and it ships an MCP server, so Claude or Cursor can drive it directly — useful to humans and AI agents that need a local voice pipeline.",
+  "why_use": "Unlike cloud services like ElevenLabs, OmniVoice Studio keeps your voice data on your machine, has no usage limits, and supports 646 languages. It also offers a unified interface for multiple TTS engines, with GPU auto-detection and no silent CPU fallback, giving you control and privacy.",
   "voices": [
     {
       "quote": "…d the repo terms both. This is the condition that most often ends a proposal, and the one I can't resolve for you. 2. **A `SubprocessBackend` sidecar.** Your instinct is right, and it's now a well-worn shape. `docs/engines/omni…",
@@ -56,5 +58,12 @@
       "src": "github",
       "kind": "pain"
     }
-  ]
+  ],
+  "gap": "The tool is powerful but requires technical setup and lacks a polished product for non-technical users.",
+  "counter": "ElevenLabs and other cloud TTS providers already dominate the market with superior quality and ease of use; a local open-source alternative may struggle to match their voice quality and could be seen as a hobbyist tool rather than a serious product.",
+  "differentiator": "Package OmniVoice Studio as a turnkey, one-click installer for Windows and macOS with a simplified UI, targeting non-technical content creators who want privacy and unlimited use without cloud costs.",
+  "verdict": "archive",
+  "pain_verified": true,
+  "workload": "2m",
+  "consumer_angle": "An easy-to-use app for content creators to dub videos and create audiobooks in their own voice, without cloud dependency."
 }

@@ -2,9 +2,9 @@
   "title": "Second Brain for Mac and Windows",
   "claim": "Product Hunt: Second Brain for Mac and Windows — Your AI memory, everywhere you work",
   "score": 8,
-  "why_good": "A cross-platform 'AI memory' that follows you across apps — captures context so your assistant actually remembers, a real recall pain.",
-  "value": "Prosumer subscription for knowledge workers; the wedge is seamless capture + recall across everything you do.",
-  "risk": "Rewind/Limitless and the OS makers (Recall) are here; privacy concerns and platform-native memory are the threats.",
+  "why_good": "It runs locally on Mac and Windows, continuously capturing your screen, clipboard, and app activity, then uses AI to index and make it searchable. Unlike cloud-based tools, it keeps your data private and works offline.",
+  "value": "Privacy-conscious professionals and developers pay for a subscription to get a searchable memory of their work without cloud exposure, saving time and reducing anxiety about forgetting important information.",
+  "risk": "Microsoft Recall or Apple's similar feature could make this obsolete, and the creepy factor of constant screen recording might scare off mainstream users.",
   "evidence": [
     "https://www.producthunt.com/r/6JNYYPRQZ2R2PT?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
     "https://www.producthunt.com/products/second-brain-cloudflare?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
@@ -27,11 +27,29 @@
   "posted_at": "2026-07-27T11:56:21Z",
   "i18n": {
     "zh": {
-      "claim": "Product Hunt: Second Brain for Mac and Windows —— 你的 AI 记忆,随你工作到处都在。",
-      "why_good": "一个跨平台、跟着你在各 app 间走的 AI 记忆——捕捉上下文让助手真的记得住,真实的回忆痛点。",
-      "value": "向知识工作者收专业订阅;切口是在你做的一切之间无缝捕捉 + 回忆。",
-      "risk": "Rewind/Limitless 和操作系统厂商(Recall)都在;隐私担忧和平台原生记忆是威胁。"
+      "claim": "Second Brain for Mac 和 Windows 是一个 AI 记忆层，捕获你在电脑上看到和做的一切，使其可搜索和可操作。",
+      "hook": "知识工作者和开发者被分散的笔记、截图和浏览器标签页淹没，需要一种方式即时回忆他们在电脑上看到或做过的任何事情。",
+      "does": "它在 Mac 和 Windows 上本地运行，持续捕获屏幕、剪贴板和应用程序活动，然后使用 AI 进行索引和搜索。与基于云的工具不同，它保持数据私有并支持离线工作。",
+      "why_use": "无需手动记录，即可获得数字生活的照相记忆。它是私有的、本地的，敏感工作留在你的机器上，并且跨所有应用工作，而不仅仅是一个生态系统。",
+      "gap": "当前解决方案要么是手动的（笔记应用），要么是基于云的（如 Rewind.ai），存在隐私问题；没有一款精致的、本地优先的、跨平台的 AI 记忆工具面向普通用户。",
+      "counter": "Rewind.ai 已经拥有 Mac 的“AI 记忆”叙事，微软的 Recall 即将登陆 Windows，可能以内置功能杀死它。此外，持续屏幕捕获的隐私问题可能限制采用。",
+      "differentiator": "将其包装为本地优先、跨平台的工具，具有强加密和设备端 AI，面向注重隐私的专业人士和开发者，他们不信任云解决方案。",
+      "value": "注重隐私的专业人士和开发者订阅付费，以获得无需云暴露的可搜索工作记忆，节省时间并减少遗忘重要信息的焦虑。",
+      "risk": "微软 Recall 或苹果的类似功能可能使其过时，持续屏幕录制的怪异感可能吓跑主流用户。",
+      "why_good": "它在 Mac 和 Windows 上本地运行，持续捕获屏幕、剪贴板和应用程序活动，然后使用 AI 进行索引和搜索。与基于云的工具不同，它保持数据私有并支持离线工作。"
     }
   },
-  "voices": []
+  "voices": [],
+  "does": "It runs locally on Mac and Windows, continuously capturing your screen, clipboard, and app activity, then uses AI to index and make it searchable. Unlike cloud-based tools, it keeps your data private and works offline.",
+  "why_use": "You get a photographic memory for your digital life without manual logging. It's private and local, so sensitive work stays on your machine, and it works across all apps, not just one ecosystem.",
+  "gap": "Local AI memory capture is still niche; no verified demand beyond upvotes.",
+  "counter": "Rewind.ai already owns the 'AI memory' narrative for Mac, and Microsoft's Recall is coming to Windows, which could kill this with a built-in feature. Also, privacy concerns around continuous screen capture may limit adoption.",
+  "differentiator": "Package it as a local-first, cross-platform tool with strong encryption and on-device AI, targeting privacy-conscious professionals and developers who distrust cloud solutions.",
+  "hook": "Knowledge workers and developers drowning in scattered notes, screenshots, and browser tabs need a way to instantly recall anything they've seen or done on their computer.",
+  "verdict": "archive",
+  "pain_verified": false,
+  "workload": "2m",
+  "consumer_angle": "Ordinary users want private, searchable memory of their work, but this is still a developer-oriented tool.",
+  "pick": false,
+  "pick_reason": "No first-hand pain evidence; upvotes are attention, not demand."
 }

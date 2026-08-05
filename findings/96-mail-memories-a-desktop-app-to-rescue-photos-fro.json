@@ -2,9 +2,9 @@
   "title": "Mail Memories – A desktop app to rescue photos from Gmail",
   "claim": "Show HN: Mail Memories – A desktop app to rescue photos from Gmail",
   "score": 7,
-  "why_good": "A desktop app to extract and rescue photos buried in Gmail — a real, relatable pain (photos trapped in email) with a clear job-to-be-done.",
-  "value": "Cheap paid desktop utility or freemium (bulk export, dedup, albums); people pay to reclaim memories.",
-  "risk": "Narrow one-time job; Google Photos/Takeout partly solve it, and it's easy to clone.",
+  "why_good": "Mail Memories is a desktop app that scans your Gmail, extracts all photo attachments, and organizes them into a local, searchable archive. It stands out by automatically deduplicating and sorting photos by date, making it easy to rediscover and preserve your photo history.",
+  "value": "Non-technical individuals who have years of photos in Gmail and want a simple way to back them up locally or to another service will pay for a one-time fee or subscription for the convenience and peace of mind.",
+  "risk": "Google could easily add a 'download all photos' feature to Gmail, or users might already use Google Photos' auto-import, making this app obsolete.",
   "evidence": [
     "https://mailmemories.com",
     "https://news.ycombinator.com/item?id=48762000",
@@ -23,11 +23,29 @@
   "posted_at": "2026-07-27T15:32:37Z",
   "i18n": {
     "zh": {
-      "claim": "Show HN: Mail Memories —— 从 Gmail 里抢救照片的桌面 app。",
-      "why_good": "一个把埋在 Gmail 里的照片提取、抢救出来的桌面 app——真实、有共鸣的痛点,要做的事清晰。",
-      "value": "便宜的付费桌面工具或免费增值(批量导出、去重、相册);人们愿为找回回忆付费。",
-      "risk": "窄的一次性任务;Google Photos/Takeout 部分解决了,而且易被抄。"
+      "claim": "Mail Memories 是一款桌面应用，能自动从 Gmail 附件中提取并整理照片，为你提供一个可搜索的本地照片档案。",
+      "hook": "那些多年来在 Gmail 附件中积攒了珍贵照片、却难以查找或备份的人，正因担心失去这些回忆而痛苦。",
+      "does": "Mail Memories 是一款桌面应用，能扫描你的 Gmail，提取所有照片附件，并将它们整理成本地可搜索的档案。它的独特之处在于自动去重并按日期排序，让你轻松重新发现和保存照片历史。",
+      "why_use": "与手动下载附件或使用通用邮件搜索不同，Mail Memories 提供了一种专用的自动化解决方案，节省大量繁琐时间，并确保不漏掉任何照片。它为你提供永久、本地的照片副本，不受 Gmail 存储限制或账户问题影响。",
+      "gap": "目前的解决方案是桌面应用，需要技术设置（OAuth、本地安装），只有极客才能使用；没有面向普通用户的简单托管或移动版本。",
+      "counter": "Google Photos 已经自动备份手机照片，并能从 Gmail 导入，因此独立应用对许多用户可能多余。此外，Gmail 的搜索和下载功能足以满足偶尔需求，这使其成为小众工具。",
+      "differentiator": "我会构建一个基于网页的版本，无需安装，只需点击“连接 Gmail”按钮，并提供“一键导出”到 Google Photos 或本地存储，面向非技术用户。",
+      "value": "那些在 Gmail 中有多年照片、希望简单备份到本地或其他服务的非技术个人，会为这种便利和安心支付一次性费用或订阅费。",
+      "risk": "Google 可能轻易在 Gmail 中添加“下载所有照片”功能，或者用户可能已经使用 Google Photos 的自动导入，使此应用过时。",
+      "why_good": "Mail Memories 是一款桌面应用，能扫描你的 Gmail，提取所有照片附件，并将它们整理成本地可搜索的档案。它的独特之处在于自动去重并按日期排序，让你轻松重新发现和保存照片历史。"
     }
   },
-  "voices": []
+  "voices": [],
+  "does": "Mail Memories is a desktop app that scans your Gmail, extracts all photo attachments, and organizes them into a local, searchable archive. It stands out by automatically deduplicating and sorting photos by date, making it easy to rediscover and preserve your photo history.",
+  "why_use": "Unlike manually downloading attachments or using generic email search, Mail Memories provides a dedicated, automated solution that saves hours of tedious work and ensures no photo is missed. It gives you a permanent, local copy of your photos, independent of Gmail's storage limits or account issues.",
+  "gap": "No verified demand; the pain of extracting photos from Gmail is real but unproven, and existing solutions may already serve non-technical users.",
+  "counter": "Google Photos already automatically backs up photos from your phone and can import from Gmail, so a standalone app may be redundant for many users. Also, Gmail's search and download features are adequate for occasional needs, making this a niche tool.",
+  "differentiator": "I would build a web-based version that requires no installation, with a simple 'connect Gmail' button, and offer a 'one-click export' to Google Photos or local storage, targeting non-technical users.",
+  "hook": "People who have years of precious photos buried in Gmail attachments, unable to find or back them up, are in pain because they fear losing these memories.",
+  "verdict": "archive",
+  "pain_verified": false,
+  "workload": "2w",
+  "consumer_angle": "Ordinary people with years of photos buried in Gmail could use a simple tool to reclaim them, but the need is not yet demonstrated.",
+  "pick": false,
+  "pick_reason": "No first-hand evidence of demand, and the space may already have adequate solutions."
 }

@@ -2,9 +2,9 @@
   "title": "snownico0722/PaperTodo",
   "claim": "snownico0722/PaperTodo — 极简 Windows 桌面便签工具。让桌面上有几张安静、可用、不会打扰人的纸。WPF 原生，支持待办与 Markdown。——A minimalist Windows desktop sticky note tool. It puts a ",
   "score": 7,
-  "why_good": "PaperTodo is a minimalist Windows desktop sticky note tool that allows users to create independent notes and to-do lists directly on their desktop without any management interface. It supports Markdown for enhanced note-taking.",
-  "value": "Individual users seeking a distraction-free note-taking experience pay for the ability to jot down thoughts and tasks instantly, without the overhead of traditional apps.",
-  "risk": "Established productivity tools like Microsoft OneNote or Evernote dominate the market, posing a challenge for user adoption due to their extensive feature sets.",
+  "why_good": "PaperTodo is a minimalist Windows desktop sticky note tool that creates independent paper-like windows for todos and notes, with Markdown support, capsule mode that collapses to screen edges, and multi-monitor support. It uniquely offers a script capsule that runs PowerShell scripts directly from a note.",
+  "value": "Power users with multiple monitors pay for a sticky note tool that lets them instantly move notes to any screen without dragging, saving time and frustration.",
+  "risk": "Windows Sticky Notes is free and pre-installed, and the multi-screen feature is a small addition that Microsoft could easily copy, making PaperTodo's edge irrelevant.",
   "evidence": [
     "https://github.com/snownico0722/PaperTodo",
     "1,282★",
@@ -29,20 +29,22 @@
   "posted_at": "2026-07-28T15:27:20Z",
   "i18n": {
     "zh": {
-      "claim": "体验 PaperTodo 的极简桌面便签，享受无杂乱工作空间——已有 1,282 个星标！",
-      "why_good": "PaperTodo 是一款极简的 Windows 桌面便签工具，允许用户在桌面上直接创建独立的便签和待办事项，而无需管理界面。它支持 Markdown，增强了记笔记的体验。",
-      "value": "寻求无干扰记笔记体验的个人用户为能够即时记录想法和任务而付费，无需传统应用的复杂性。",
-      "risk": "微软 OneNote 或 Evernote 等成熟的生产力工具主导市场，因其丰富的功能集，用户采用面临挑战。",
-      "hook": "体验 PaperTodo 的极简桌面便签，享受无杂乱工作空间——已有 1,282 个星标！",
-      "does": "PaperTodo 是一款极简的 Windows 桌面便签工具，允许用户在桌面上直接创建独立的便签和待办事项，而无需管理界面。它支持 Markdown，增强了记笔记的体验。",
-      "edge": "每张便签作为独立窗口操作，使用户能够快速访问和互动，而无需多余的点击或干扰。",
-      "why_use": "选择 PaperTodo，因其简单性和对即时可用性的关注，与其他需要复杂设置和账号管理的记事应用不同。"
+      "claim": "一个极简的 Windows 桌面便签工具，让桌面上有几张安静、可用、不打扰人的纸，原生 WPF 实现，没有主窗口、没有账号、没有管理器。",
+      "hook": "多显示器的 Windows 用户很烦恼，不能轻松地将便签胶囊发送到另一个屏幕，只能手动拖动，太麻烦了。",
+      "does": "PaperTodo 是一个极简的 Windows 桌面便签工具，创建独立的纸片窗口，支持待办和笔记，支持 Markdown，胶囊模式可折叠到屏幕边缘，并支持多屏。独特的是，它有一个脚本胶囊，可以直接从笔记运行 PowerShell 脚本。",
+      "why_use": "用户抱怨将胶囊移动到另一个屏幕太麻烦，希望右键主胶囊能像任务栏图标一样有功能列表，并添加“发送到其他屏幕”的功能。PaperTodo 已经支持拖动胶囊到其他显示器，但用户希望更快捷的方式。",
+      "gap": "只有极客能用：多屏胶囊移动只能手动拖动，没有“发送到其他屏幕”的快捷命令，对多屏用户来说不够完善。",
+      "counter": "便签是大众化产品；Windows 自带便签和许多跨平台应用已覆盖基本需求。PaperTodo 独特的脚本胶囊是小众功能，而多屏问题只是一个小 UX 缺口，可能被一个功能修复，不足以成为公司。",
+      "differentiator": "添加“发送到其他屏幕”的右键菜单项，并让主胶囊菜单与托盘菜单一致，使多屏工作流对普通用户无缝。",
+      "value": "多显示器的重度用户付费购买便签工具，希望无需拖动即可将笔记即时发送到任何屏幕，节省时间并减少挫败感。",
+      "risk": "Windows 自带便签免费且预装，多屏功能是微软可以轻松复制的小功能，使 PaperTodo 的差异化优势消失。",
+      "why_good": "PaperTodo 是一个极简的 Windows 桌面便签工具，创建独立的纸片窗口，支持待办和笔记，支持 Markdown，胶囊模式可折叠到屏幕边缘，并支持多屏。独特的是，它有一个脚本胶囊，可以直接从笔记运行 PowerShell 脚本。"
     }
   },
-  "does": "PaperTodo is a minimalist Windows desktop sticky note tool that allows users to create independent notes and to-do lists directly on their desktop without any management interface. It supports Markdown for enhanced note-taking.",
+  "does": "PaperTodo is a minimalist Windows desktop sticky note tool that creates independent paper-like windows for todos and notes, with Markdown support, capsule mode that collapses to screen edges, and multi-monitor support. It uniquely offers a script capsule that runs PowerShell scripts directly from a note.",
   "edge": "Each note operates as an independent window, enabling quick access and interaction without unnecessary clicks or distractions.",
-  "why_use": "Choose PaperTodo for its simplicity and focus on immediate usability, unlike other note-taking apps that require complex setups and account management.",
-  "hook": "Experience a clutter-free workspace with PaperTodo's minimalist sticky notes—1,282 stars strong!",
+  "why_use": "Users complain that moving a capsule to another screen is too troublesome, and they want a right-click menu on the main capsule like the taskbar icon. PaperTodo already supports dragging capsules to other monitors, but the user wants a quicker way, such as a 'send to other screen' option.",
+  "hook": "Windows users with multiple monitors are frustrated that they can't easily move a sticky note capsule to another screen without dragging it manually.",
   "voices": [
     {
       "quote": "…右键主胶囊能够有像右键任务托盘中软件图标一样的功能列表， > > 希望右键胶囊能够添加一个发送到其他屏幕的功能，可以选择发送到不同的显示屏，我有两个屏幕，如果要设置到另一个屏幕有点太麻烦了，希望能便捷一些。，如果不行的话是否能在设置里设置胶囊显示的主屏幕。 右键主胶囊的任务列表可以考虑一下 正常如果需要在某个屏幕新建，直接用快捷键在鼠标下创建就好了吧，会自动创建在对应屏幕。 进行移动的话，直接拖拽比右键在快捷键选择某个屏幕的左侧、右侧，要快很…",
@@ -56,5 +58,14 @@
       "src": "github",
       "kind": "pain"
     }
-  ]
+  ],
+  "gap": "Multi-monitor users lack a simple way to move sticky notes between screens, and the capsule lacks a right-click menu for quick actions.",
+  "counter": "Sticky notes are a commodity; Windows Sticky Notes and many cross-platform apps already cover basic needs. PaperTodo's unique script capsule is niche, and the multi-screen issue is a minor UX gap that could be fixed by a single feature, not a company.",
+  "differentiator": "Package a 'send to other screen' right-click menu item and a main capsule menu that mirrors the tray, making multi-monitor workflow seamless for ordinary users.",
+  "verdict": "watch",
+  "pain_verified": true,
+  "workload": "2w",
+  "consumer_angle": "Ordinary Windows users who want a quiet, paper-like sticky note that works across multiple monitors without fiddly settings.",
+  "pick": false,
+  "pick_reason": "Verified pain from user requests, but the gap is incremental and the wedge is not clearly differentiated from existing sticky note tools."
 }

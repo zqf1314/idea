@@ -1,50 +1,55 @@
 {
- "title": "ClinicFrame",
- "claim": "Product Hunt: ClinicFrame — Like Granola, but for healthcare. Fully HIPAA-compliant.",
- "score": 7,
- "why_good": "ClinicFrame is a HIPAA-compliant tool that automates patient documentation and record management for small clinics, offering seamless integration with existing workflows and ensuring compliance without additional overhead.",
- "value": "Small clinic owners and managers pay to reduce compliance risks and save staff time on documentation, ensuring smooth operations without hiring additional personnel.",
- "risk": "Major EHR incumbents could integrate similar features, or small clinics may opt for manual processes to avoid additional costs.",
- "evidence": [
-  "https://www.producthunt.com/r/DBV5VMI6JYIDKZ?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
-  "https://www.producthunt.com/products/clinic-scribe-clinicframe?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
-  "183 PH upvotes",
-  "46 comments",
-  "Artificial Intelligence, Medical, Health"
- ],
- "method": "producthunt api v2 (top launches, last 2d) + startup-worthiness score",
- "domain": "agent-infra",
- "model": "future-scout/producthunt",
- "operator": "@ourword-ai",
- "tags": [
-  "Artificial Intelligence",
-  "Medical",
-  "Health"
- ],
- "does": "ClinicFrame is a HIPAA-compliant tool that automates patient documentation and record management for small clinics, offering seamless integration with existing workflows and ensuring compliance without additional overhead.",
- "why_use": "Unlike generic tools, ClinicFrame is tailored for healthcare providers, focusing specifically on compliance and documentation needs, reducing manual errors and saving time for overburdened staff.",
- "gap": "Current solutions are either too expensive for small clinics or require technical expertise to set up and maintain, leaving a significant portion of the market underserved.",
- "counter": "Large EHR systems like Epic and Cerner dominate the market and could easily add lightweight compliance features, making standalone solutions redundant.",
- "differentiator": "Package a simple, affordable, and plug-and-play solution specifically for small clinics that lack IT resources, focusing on ease of use and affordability.",
- "hook": "Small healthcare clinics struggle with managing patient documentation while staying HIPAA-compliant, causing inefficiencies and risks.",
- "i18n": {
-  "zh": {
-   "hook": "小型医疗诊所在管理患者文档时难以保持HIPAA合规，导致效率低下和风险增加。",
-   "does": "ClinicFrame是一款符合HIPAA标准的工具，可自动化患者文档和记录管理，为小型诊所提供无缝集成现有工作流程的功能，同时确保合规且无需额外负担。",
-   "why_use": "与通用工具不同，ClinicFrame专为医疗服务提供商设计，专注于合规和文档需求，减少人工错误并节省过度负担员工的时间。",
-   "gap": "当前解决方案要么对小型诊所来说过于昂贵，要么需要技术专业知识来设置和维护，导致市场中很大一部分需求未被满足。",
-   "counter": "像Epic和Cerner这样的大型电子病历系统主导市场，可以轻松添加轻量级合规功能，使独立解决方案变得多余。",
-   "differentiator": "为缺乏IT资源的小型诊所提供一个简单、经济、即插即用的解决方案，专注于易用性和经济性。",
-   "value": "小型诊所的所有者和管理者支付费用以减少合规风险，节省员工在文档处理上的时间，从而确保运营顺畅而无需额外雇用人员。",
-   "risk": "主要电子病历系统可能会整合类似功能，或者小型诊所可能选择手动流程以避免额外成本。",
-   "why_good": "ClinicFrame是一款符合HIPAA标准的工具，可自动化患者文档和记录管理，为小型诊所提供无缝集成现有工作流程的功能，同时确保合规且无需额外负担。",
-   "claim": "Product Hunt: ClinicFrame — 像 Granola，但专为医疗行业打造。完全符合 HIPAA 标准。"
-  }
- },
- "family": null,
- "id": "296-clinicframe",
- "agent": "producthunt-scout",
- "posted_at": "2026-07-29T22:17:09Z",
- "voices": [],
- "workload": "2m"
+  "title": "ClinicFrame",
+  "claim": "Product Hunt: ClinicFrame — Like Granola, but for healthcare. Fully HIPAA-compliant.",
+  "score": 7,
+  "why_good": "ClinicFrame is a HIPAA-compliant tool that automates patient documentation and record management for small clinics, offering seamless integration with existing workflows and ensuring compliance without additional overhead.",
+  "value": "Small clinic owners and managers pay to reduce compliance risks and save staff time on documentation, ensuring smooth operations without hiring additional personnel.",
+  "risk": "Major EHR incumbents could integrate similar features, or small clinics may opt for manual processes to avoid additional costs.",
+  "evidence": [
+    "https://www.producthunt.com/r/DBV5VMI6JYIDKZ?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
+    "https://www.producthunt.com/products/clinic-scribe-clinicframe?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
+    "183 PH upvotes",
+    "46 comments",
+    "Artificial Intelligence, Medical, Health"
+  ],
+  "method": "producthunt api v2 (top launches, last 2d) + startup-worthiness score",
+  "domain": "agent-infra",
+  "model": "future-scout/producthunt",
+  "operator": "@ourword-ai",
+  "tags": [
+    "Artificial Intelligence",
+    "Medical",
+    "Health"
+  ],
+  "does": "ClinicFrame is a HIPAA-compliant tool that automates patient documentation and record management for small clinics, offering seamless integration with existing workflows and ensuring compliance without additional overhead.",
+  "why_use": "Unlike generic tools, ClinicFrame is tailored for healthcare providers, focusing specifically on compliance and documentation needs, reducing manual errors and saving time for overburdened staff.",
+  "gap": "HIPAA-compliant documentation automation for small clinics lacks a turnkey product that non-technical staff can adopt without IT overhead.",
+  "counter": "Large EHR systems like Epic and Cerner dominate the market and could easily add lightweight compliance features, making standalone solutions redundant.",
+  "differentiator": "Package a simple, affordable, and plug-and-play solution specifically for small clinics that lack IT resources, focusing on ease of use and affordability.",
+  "hook": "Small healthcare clinics struggle with managing patient documentation while staying HIPAA-compliant, causing inefficiencies and risks.",
+  "i18n": {
+    "zh": {
+      "hook": "小型医疗诊所在管理患者文档时难以保持HIPAA合规，导致效率低下和风险增加。",
+      "does": "ClinicFrame是一款符合HIPAA标准的工具，可自动化患者文档和记录管理，为小型诊所提供无缝集成现有工作流程的功能，同时确保合规且无需额外负担。",
+      "why_use": "与通用工具不同，ClinicFrame专为医疗服务提供商设计，专注于合规和文档需求，减少人工错误并节省过度负担员工的时间。",
+      "gap": "当前解决方案要么对小型诊所来说过于昂贵，要么需要技术专业知识来设置和维护，导致市场中很大一部分需求未被满足。",
+      "counter": "像Epic和Cerner这样的大型电子病历系统主导市场，可以轻松添加轻量级合规功能，使独立解决方案变得多余。",
+      "differentiator": "为缺乏IT资源的小型诊所提供一个简单、经济、即插即用的解决方案，专注于易用性和经济性。",
+      "value": "小型诊所的所有者和管理者支付费用以减少合规风险，节省员工在文档处理上的时间，从而确保运营顺畅而无需额外雇用人员。",
+      "risk": "主要电子病历系统可能会整合类似功能，或者小型诊所可能选择手动流程以避免额外成本。",
+      "why_good": "ClinicFrame是一款符合HIPAA标准的工具，可自动化患者文档和记录管理，为小型诊所提供无缝集成现有工作流程的功能，同时确保合规且无需额外负担。",
+      "claim": "Product Hunt: ClinicFrame — 像 Granola，但专为医疗行业打造。完全符合 HIPAA 标准。"
+    }
+  },
+  "family": null,
+  "id": "296-clinicframe",
+  "agent": "producthunt-scout",
+  "posted_at": "2026-07-29T22:17:09Z",
+  "voices": [],
+  "workload": "2m",
+  "verdict": "archive",
+  "pain_verified": false,
+  "consumer_angle": "Patients benefit indirectly through reduced errors and faster visits, but the direct buyer is the clinic.",
+  "pick": false,
+  "pick_reason": "No first-hand demand evidence; PH upvotes are attention, not verified pain."
 }

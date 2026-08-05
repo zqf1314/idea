@@ -13,7 +13,7 @@
   "does": "SmsForwarder watches incoming SMS, calls and app notifications on an Android phone and relays them, by user-written rules, to DingTalk / WeCom / Feishu / Bark / Telegram bots.",
   "edge": "It is the only widely used thing in China that treats 'this particular message must reach me, wherever I am' as a first-class rule rather than a notification setting.",
   "why_use": "Chinese mobile numbers receive dozens of marketing texts a day. The handful that carry a real deadline look identical in the notification shade, and the cost of missing one is concrete: a towed car, a forfeited hospital slot, a parcel returned to sender.",
-  "gap": "Only geeks can run it. Setup means choosing a bot channel, holding a webhook, and — per the maintainer's own tracker — fighting Xiaomi/OnePlus battery killers with Magisk scripts just to keep it alive. An ordinary car owner never gets through that. Nobody has built the one-job version: read my texts, decide which two matter, and shout at me in a way I cannot miss.",
+  "gap": "Only geeks can use it: requires Magisk and technical setup, no consumer product around the capability.",
   "counter": "Carriers and OEMs could ship this as a system feature tomorrow, and Chinese ROMs already do crude SMS categorisation. SMS is also a declining channel — the same urgent notices increasingly arrive via WeChat service accounts, so a text-only product may be aimed at a shrinking surface.",
   "differentiator": "Do not build a forwarding engine; build triage that needs zero configuration. One job: classify each message as 'has a deadline and a cost' or not, then escalate the rare true ones by voice call or repeated alarm instead of another silent banner. Classification runs on-device so the body never leaves the phone. Cold start (Chinese): the SmsForwarder issue tracker and its 27k stargazers, who are already describing the scenarios, plus Xiaohongshu searches for 挪车短信 没看到 and 医院叫号 错过. Cold start (English): r/AndroidQuestions and r/tasker, search 'urgent SMS alert override silent'.",
   "value": "A one-time paid Android utility; the buyer is a car owner or parent who has already lost money to one missed message.",
@@ -56,5 +56,10 @@
   "corroborations": 0,
   "reused": 0,
   "first": true,
-  "tags": []
+  "tags": [],
+  "verdict": "build",
+  "pain_verified": true,
+  "consumer_angle": "A simple app that automatically forwards urgent SMS (parking fines, hospital calls, courier) to a loud alarm or voice call, with zero setup for non-technical users.",
+  "pick": true,
+  "pick_reason": "Verified pain from real users, clear gap in usability, and a solo-founder-friendly wedge."
 }

@@ -2,9 +2,9 @@
   "title": "MaximeRivest/riddle",
   "claim": "MaximeRivest/riddle — The diary of Tom Riddle for the reMarkable Paper Pro — write with your pen, the page drinks your ink and answers in a fl",
   "score": 8,
-  "why_good": "Turns the reMarkable e-ink tablet into a 'magic diary' that writes back — a delightful, novel AI-on-paper interaction.",
-  "value": "Niche prosumer add-on for reMarkable owners; hard to charge much, but a charming wedge into AI-augmented paper.",
-  "risk": "Tiny hardware niche (reMarkable), dependent on their platform; a whimsical demo more than a scalable business.",
+  "why_good": "Riddle is a diary app for the reMarkable Paper Pro that lets you write with your pen, then the page 'drinks' your ink, fades it, and an AI (OpenAI-compatible) writes back in a flowing handwritten style. It uses a full-screen takeover mode for instant ink and remembers past pages for context.",
+  "value": "reMarkable Paper Pro owners who want a unique, handwriting-based AI journaling experience pay for the emotional satisfaction and novelty.",
+  "risk": "reMarkable itself could release a similar feature, or the small market of Paper Pro owners may not be enough to sustain a business.",
   "evidence": [
     "https://github.com/MaximeRivest/riddle",
     "1,739★",
@@ -29,11 +29,29 @@
   "posted_at": "2026-07-27T10:50:45Z",
   "i18n": {
     "zh": {
-      "claim": "MaximeRivest/riddle —— reMarkable Paper Pro 上的 汤姆·里德尔的日记:用笔写,书页会回应。",
-      "why_good": "把 reMarkable 墨水屏变成会回话的 魔法日记——一个讨喜、新颖的 AI 在纸上 交互。",
-      "value": "给 reMarkable 用户的小众专业插件;很难收多少钱,但是切入 AI 增强纸张 的迷人切口。",
-      "risk": "极小的硬件细分(reMarkable)、依赖其平台;更像奇思演示而非可规模化生意。"
+      "claim": "为 reMarkable Paper Pro 用户提供一种用笔书写、AI 以手写体回复的魔法日记体验。",
+      "hook": "reMarkable Paper Pro 的用户想要一个 AI 伴侣，但希望保留纸上书写的质感，而不是在聊天框里打字。",
+      "does": "Riddle 是 reMarkable Paper Pro 上的日记应用，让你用笔书写，然后页面会“喝掉”你的墨水，淡出，AI（兼容 OpenAI）以流畅的手写体回复。它采用全屏接管模式实现即时墨水显示，并记住过去的页面以提供上下文。",
+      "why_use": "它是唯一能将 reMarkable 的电子墨水屏变成魔法般、基于手写的 AI 界面的应用，避免了冰冷的聊天 UI。用笔书写并看到回复以你自己的笔迹出现，这种体验独特而令人愉悦。",
+      "gap": "它需要 reMarkable Paper Pro 处于开发者模式并安装启动器，这对非技术用户来说是一个障碍；没有为普通用户提供简单的安装方式。",
+      "counter": "reMarkable 可能会原生添加类似的 AI 功能，或者出现更精致的应用；这是一个小众设备上的小众功能，用户基数很小。",
+      "differentiator": "将其打包为 reMarkable Paper Pro 的一键安装，提供简单的设置向导，无需 SSH 或开发者模式知识。",
+      "value": "reMarkable Paper Pro 用户想要独特的、基于手写的 AI 日记体验，他们为情感满足和新奇感付费。",
+      "risk": "reMarkable 本身可能发布类似功能，或者 Paper Pro 用户的小众市场不足以支撑业务。",
+      "why_good": "Riddle 是 reMarkable Paper Pro 上的日记应用，让你用笔书写，然后页面会“喝掉”你的墨水，淡出，AI（兼容 OpenAI）以流畅的手写体回复。它采用全屏接管模式实现即时墨水显示，并记住过去的页面以提供上下文。"
     }
   },
-  "voices": []
+  "voices": [],
+  "does": "Riddle is a diary app for the reMarkable Paper Pro that lets you write with your pen, then the page 'drinks' your ink, fades it, and an AI (OpenAI-compatible) writes back in a flowing handwritten style. It uses a full-screen takeover mode for instant ink and remembers past pages for context.",
+  "why_use": "It's the only app that turns the reMarkable's e-ink display into a magical, handwriting-based AI interface, avoiding the sterile chat UI. The gesture of writing and seeing a reply appear in your own handwriting is unique and delightful.",
+  "gap": "No verified demand; the niche of AI-powered handwriting on reMarkable is unproven.",
+  "counter": "reMarkable could add a similar AI feature natively, or a more polished app could emerge; it's a niche feature for a niche device, and the user base is small.",
+  "differentiator": "Package it as a one-click install for the reMarkable Paper Pro, with a simple setup wizard that doesn't require SSH or developer mode knowledge.",
+  "hook": "Owners of the reMarkable Paper Pro who want an AI companion with the feel of writing on paper, not typing into a chat box.",
+  "verdict": "archive",
+  "pain_verified": false,
+  "workload": "2w",
+  "consumer_angle": "An ordinary person could use it as a magical journaling experience, but it's currently a niche tool for reMarkable owners.",
+  "pick": false,
+  "pick_reason": "Fresh repo with stars but no behavioral evidence or quotes; the gap and wedge are unclear."
 }
