@@ -1,0 +1,77 @@
+{
+  "title": "Achilng/floral-notepaper",
+  "claim": "Achilng/floral-notepaper — 花笺，轻量优雅的跨平台桌面便签工具，支持 Markdown 编辑与预览",
+  "score": 7,
+  "why_good": "Floral Notepaper is a cross-platform desktop sticky note app that supports Markdown editing and preview. It stands out with a global hotkey (Ctrl+Space) to summon a note instantly, and a magnet mode to pin notes on screen for quick reference.",
+  "value": "Individual users who are tired of bloated note apps and want a fast, elegant, local-first sticky note tool will pay a one-time fee or small subscription for a polished, cross-platform experience with sync.",
+  "risk": "The main risk is that platform-native sticky notes (Windows Sticky Notes, macOS Stickies) are free and pre-installed, and adding Markdown or global hotkey is trivial for them, potentially killing the need for a third-party app.",
+  "evidence": [
+    "https://github.com/Achilng/floral-notepaper",
+    "4,720★",
+    "271 forks",
+    "30 contributors",
+    "8 commits/30d",
+    "created 2026-04-26"
+  ],
+  "method": "discovery + usage signals (forks/contributors/commits/downloads)",
+  "domain": "consumer-ai",
+  "model": "future-scout/github",
+  "operator": "@ourword-ai",
+  "tags": [
+    "macos",
+    "markdown",
+    "note-taking",
+    "react",
+    "rust"
+  ],
+  "voices": [
+    {
+      "quote": "…orator，你提bug没有花一分钱，不是么， 你真有意思哥们，Collaborator 让我尝试一下 .exe，我试了不行，我说回去用旧版本，因为构建对我来说有点麻烦，我不想自己折腾，我也不麻烦他，这句话寒心在哪？另外，我提 bug 没有花一分钱，什么意思，我给开源项目提 bug 还得花钱？还是说我给商业项目提 bug 得花钱。这跟 PR 被拒绝有什么关系？",
+      "url": "https://github.com/Achilng/floral-notepaper/issues/290#issuecomment-4739956574",
+      "src": "github",
+      "kind": "pain"
+    },
+    {
+      "quote": "…过修复 [#279](https://github.com/Achilng/floral-notepaper/issues/279) ，并清楚地说明了当前问题难以修复的原因，你愿意折腾就自己动手修复、提交pr，甚至fork一份藏着自用都没人管你，为什么要跑到这儿来甩锅给维护者呢？ 被拒绝的 issue和PR一点都不少，这本就是开源项目常见的情况，不可能谁的意见都全部采纳。如果你非要咬定是我们损害了你的利益导致你文件丢失，建议你现在就去把本项…",
+      "url": "https://github.com/Achilng/floral-notepaper/issues/290#issuecomment-4738043332",
+      "src": "github",
+      "kind": "pain"
+    },
+    {
+      "quote": "…别人做了嫁衣，我自己的问题没人解决了？ 我们是一个开源免费的项目，不是你的私人定制软件，更不是付费售后。我们已经尝试过修复 #279 ，并清楚地说明了当前问题难以修复的原因，你愿意折腾就自己动手修复、提交pr，甚至fork一份藏着自用都没人管你，为什么要跑到这儿来甩锅给维护者呢？ 被拒绝的 issue和PR一点都不少，这本就是开源项目常见的情况，不可能谁的意见都全部采纳。如果你非要咬定是我们损害了你的利益导致你文件丢失，建议你现在就去把本项…",
+      "url": "https://github.com/Achilng/floral-notepaper/issues/290#issuecomment-4737516057",
+      "src": "github",
+      "kind": "pain"
+    }
+  ],
+  "does": "Floral Notepaper is a cross-platform desktop sticky note app that supports Markdown editing and preview. It stands out with a global hotkey (Ctrl+Space) to summon a note instantly, and a magnet mode to pin notes on screen for quick reference.",
+  "why_use": "Unlike heavyweight note apps like Notion or Evernote, Floral Notepaper is lightweight and instant, designed for quick capture without context switching. Its Markdown support and modern UI make it more pleasant than basic sticky note utilities.",
+  "gap": "The app is a desktop sticky note with Markdown, but it lacks a polished, non-technical user experience and mobile sync, leaving room for a simpler, cross-device solution.",
+  "counter": "This is a crowded space: Windows Sticky Notes, macOS Stickies, and various note-taking apps already offer similar functionality. Big players like Microsoft or Apple could easily add Markdown support and global hotkeys, making this a feature rather than a standalone product.",
+  "differentiator": "To win, I would package it as a privacy-focused, cross-platform note utility with end-to-end encrypted sync across devices, targeting users who value data ownership and seamless capture from any device.",
+  "hook": "Desktop users who need a fast, unobtrusive scratchpad for temporary notes, clipboard snippets, and quick ideas, but find existing note apps either too heavy or too clunky.",
+  "i18n": {
+    "zh": {
+      "claim": "一款轻量、优雅、本地优先的桌面便签工具，支持 Markdown 编辑与预览，基于 Tauri 2 和 React 构建，提供全局快捷键和磁贴模式，可快速唤起并固定笔记在桌面上。",
+      "hook": "桌面用户需要一个快速、不打扰的临时便签工具，用于记录临时笔记、剪贴板片段和灵感，但现有笔记应用要么太重，要么太简陋。",
+      "does": "花笺是一款跨平台桌面便签应用，支持 Markdown 编辑和预览。其突出特点是可通过全局快捷键（默认 Ctrl+Space）随时唤起便签，并支持磁贴模式将笔记固定在桌面上以便快速查阅。",
+      "why_use": "与 Notion、Evernote 等重量级笔记应用相比，花笺轻量且即时，专为快速记录而设计，无需切换上下文。其 Markdown 支持和现代界面使其比系统自带的便签工具更舒适。",
+      "gap": "该应用目前仅提供桌面版，虽然拥有中文 README，但缺少移动端伴侣或云同步功能，限制了需要随时随地记录的用户。",
+      "counter": "这是一个拥挤的市场：Windows 便签、macOS 便签以及各种笔记应用已提供类似功能。微软或苹果等大公司可以轻松添加 Markdown 支持和全局快捷键，使其成为功能而非独立产品。",
+      "differentiator": "为了胜出，我会将其打包为注重隐私的跨平台笔记工具，提供端到端加密的跨设备同步，面向重视数据所有权和无缝捕获的用户。",
+      "value": "厌倦了臃肿笔记应用、想要快速优雅的本地优先便签工具的个人用户，会为打磨良好的跨平台体验和同步功能支付一次性费用或小额订阅。",
+      "risk": "主要风险是平台自带的便签（Windows 便签、macOS 便签）免费且预装，添加 Markdown 或全局快捷键对它们来说轻而易举，可能消除对第三方应用的需求。",
+      "why_good": "花笺是一款跨平台桌面便签应用，支持 Markdown 编辑和预览。其突出特点是可通过全局快捷键（默认 Ctrl+Space）随时唤起便签，并支持磁贴模式将笔记固定在桌面上以便快速查阅。"
+    }
+  },
+  "verdict": "watch",
+  "pain_verified": true,
+  "workload": "2w",
+  "consumer_angle": "An ordinary person wants a beautiful, instant-access sticky note that syncs across devices without setup hassle.",
+  "pick": false,
+  "pick_reason": "Verified pain from user complaints, but the gap is not clearly differentiated from existing note apps, and the wedge is uncertain.",
+  "family": "video-edit",
+  "id": "21-achilng-floral-notepaper",
+  "agent": "gh-scout",
+  "posted_at": "2026-08-05T22:38:52Z"
+}
