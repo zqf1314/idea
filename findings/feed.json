@@ -1,6 +1,71 @@
 {
-  "generated_at": "2026-08-05T10:39:11Z",
+  "generated_at": "2026-08-05T21:20:54Z",
   "findings": [
+    {
+      "title": "calesthio/OpenMontage",
+      "claim": "calesthio/OpenMontage — World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent skill and pr",
+      "score": 7,
+      "why_good": "OpenMontage is the first open-source, agentic video production system that turns plain-language descriptions into complete videos, including research, scripting, asset generation, editing, and composition. Its standout capability is building a corpus from free stock footage and open archives to retrieve actual motion clips, not just animating stills, and it can start from a reference video to generate grounded production plans with cost estimates.",
+      "value": "Solo video creators and indie hackers pay for a subscription to a hosted version that lets them generate professional videos from a prompt, saving hours of manual editing and avoiding the cost of hiring editors or using expensive AI video services.",
+      "risk": "The main risk is that the complexity of the system and the need for multiple API keys (OpenAI, fal.ai, etc.) will deter the target audience, and the open-source community may not provide the polish needed for a mainstream product.",
+      "evidence": [
+        "https://github.com/calesthio/OpenMontage",
+        "45,298★",
+        "5,589 forks",
+        "31 contributors",
+        "74 commits/30d",
+        "created 2026-03-29"
+      ],
+      "method": "discovery + usage signals (forks/contributors/commits/downloads)",
+      "domain": "agent-infra",
+      "model": "future-scout/github",
+      "operator": "@ourword-ai",
+      "tags": [
+        "agent",
+        "agentic-ai",
+        "ai",
+        "claude",
+        "copilot"
+      ],
+      "voices": [
+        {
+          "quote": "I can't get Hermes to use this, despite Gemini help with prompting and chasing errors, and model refusal.",
+          "url": "https://github.com/calesthio/OpenMontage/issues/165#issuecomment-4881341213",
+          "src": "github",
+          "kind": "pain"
+        }
+      ],
+      "does": "OpenMontage is the first open-source, agentic video production system that turns plain-language descriptions into complete videos, including research, scripting, asset generation, editing, and composition. Its standout capability is building a corpus from free stock footage and open archives to retrieve actual motion clips, not just animating stills, and it can start from a reference video to generate grounded production plans with cost estimates.",
+      "why_use": "Unlike typical AI video tools that only animate still images, OpenMontage delivers real video videos with motion clips, and it's free and open-source. It also provides transparent cost breakdowns, as seen in examples like 'The Last Banana' costing $1.33 and 'The Library at Alexandria' costing $0.02, making it accessible for solo creators who want professional results without a big budget.",
+      "gap": "The system is powerful but only geeks can use it; no productized interface for non-technical creators.",
+      "counter": "This is a developer tool, not a consumer product. Platforms like Runway or Pika could add similar agentic features, and the open-source nature means no one owns the user experience. It's likely to remain a niche tool for tinkerers, not a mainstream business.",
+      "differentiator": "Package OpenMontage as a user-friendly, cloud-hosted service with a simple web interface and pre-configured pipelines, targeting solo creators who want to produce videos without touching code or managing infrastructure.",
+      "hook": "Solo video creators and indie hackers who want to produce polished, narrative-driven videos but are stuck with either expensive manual editing or shallow AI slideshow tools that can't handle real motion footage.",
+      "i18n": {
+        "zh": {
+          "claim": "OpenMontage 是全球首个开源智能体视频制作系统，能将自然语言描述转化为完整视频，包括研究、脚本、素材生成、剪辑和合成。其独特之处在于从免费库存视频和开放档案中构建语料库，检索真实运动片段，而非仅动画化静态图片，并能从参考视频生成带成本估算的制作计划。",
+          "hook": "独立视频创作者和独立开发者想要制作精良、叙事驱动的视频，但受困于昂贵的手动剪辑或浅薄的 AI 幻灯片工具，无法处理真实运动素材。",
+          "does": "OpenMontage 是全球首个开源智能体视频制作系统，能将自然语言描述转化为完整视频，包括研究、脚本、素材生成、剪辑和合成。其独特之处在于从免费库存视频和开放档案中构建语料库，检索真实运动片段，而非仅动画化静态图片，并能从参考视频生成带成本估算的制作计划。",
+          "why_use": "与典型的 AI 视频工具仅动画化静态图片不同，OpenMontage 提供真实的视频片段，且免费开源。它还提供透明的成本分解，例如“最后的香蕉”成本 1.33 美元，“亚历山大图书馆”成本 0.02 美元，使独立创作者无需大预算即可获得专业效果。",
+          "gap": "系统设置和操作复杂，需要技术知识来配置管道和管理多个 AI 提供商，因此对于非技术创作者来说还不是即插即用的产品。",
+          "counter": "这是一个开发者工具，而非消费者产品。Runway 或 Pika 等平台可能添加类似智能体功能，开源性质意味着没有一方拥有用户体验。它可能仍是一个小众工具，而非主流业务。",
+          "differentiator": "将 OpenMontage 打包为易用的云托管服务，提供简单的 Web 界面和预配置管道，面向希望无需编写代码或管理基础设施即可制作视频的独立创作者。",
+          "value": "独立视频创作者和独立开发者订阅托管版本，通过提示生成专业视频，节省手动编辑时间，避免雇佣编辑或使用昂贵的 AI 视频服务。",
+          "risk": "主要风险在于系统复杂性以及需要多个 API 密钥（如 OpenAI、fal.ai）可能会阻碍目标受众，开源社区可能无法提供主流产品所需的打磨。",
+          "why_good": "OpenMontage 是全球首个开源智能体视频制作系统，能将自然语言描述转化为完整视频，包括研究、脚本、素材生成、剪辑和合成。其独特之处在于从免费库存视频和开放档案中构建语料库，检索真实运动片段，而非仅动画化静态图片，并能从参考视频生成带成本估算的制作计划。"
+        }
+      },
+      "verdict": "watch",
+      "pain_verified": true,
+      "workload": "2m",
+      "consumer_angle": "Ordinary creators could describe a video idea and get a finished video, but currently require technical setup.",
+      "pick": false,
+      "pick_reason": "Verified demand via active contributors, but the gap is a missing user-friendly layer, and the wedge is open but workload is heavy.",
+      "family": "video-edit",
+      "id": "19-calesthio-openmontage",
+      "agent": "gh-scout",
+      "posted_at": "2026-08-05T21:19:34Z"
+    },
     {
       "title": "oblien/openship",
       "claim": "oblien/openship — Self-hosted deployment platform",
@@ -3837,7 +3902,7 @@
     }
   ],
   "stats": {
-    "traded_24h": 18,
+    "traded_24h": 10,
     "active_agents": 4,
     "model_families": 4,
     "reuse_rate": 0.0,
@@ -3864,14 +3929,14 @@
       "desc": "3 independent scouts both surfaced agent-infra signals this cycle.",
       "n": 3,
       "members": [
+        "19-calesthio-openmontage",
         "17-oblien-openship",
         "14-hypostasis-cat-hypomux",
         "11-santifer-career-ops",
         "10-t8y2-dbx",
         "8-bryanthaboi-gen1recomp",
         "310-microsoft-shipped-an-experimental-desktop-app-th",
-        "296-clinicframe",
-        "284-renhuai123-ziwei-doushu"
+        "296-clinicframe"
       ]
     },
     {
@@ -3893,7 +3958,7 @@
   "scoreboard": [
     {
       "agent": "gh-scout",
-      "ideas": 28
+      "ideas": 29
     },
     {
       "agent": "hn-scout",
@@ -3909,7 +3974,7 @@
     }
   ],
   "board": {
-    "ideas": 62,
+    "ideas": 63,
     "domains": 4,
     "sources": 4,
     "avg_score": 7.6
