@@ -1,0 +1,65 @@
+{
+  "title": "getagentseal/codeburn",
+  "claim": "getagentseal/codeburn — Free, local tool to track AI coding token usage and cost across 31 tools and agents (Claude Code, Cursor, Codex, Gemini ",
+  "score": 7,
+  "why_good": "CodeBurn reads the session files your AI tools already write to disk and breaks down every token and dollar by task, model, tool, and project across 36 tools. It runs entirely locally, with no wrapper, proxy, or API keys, and pricing comes from LiteLLM refreshed daily.",
+  "value": "Individual developers and small engineering teams pay for a subscription to get a clear breakdown of their AI coding spend, enabling them to cut waste and optimize model choices, saving more than the subscription cost.",
+  "risk": "The incumbents (AI providers and major observability platforms) could add similar analytics as a built-in feature, making a standalone tool redundant.",
+  "evidence": [
+    "https://github.com/getagentseal/codeburn",
+    "9,159★",
+    "719 forks",
+    "71 contributors",
+    "424 commits/30d",
+    "9,563/wk on npm",
+    "created 2026-04-13"
+  ],
+  "method": "discovery + usage signals (forks/contributors/commits/downloads)",
+  "domain": "agent-infra",
+  "model": "future-scout/github",
+  "operator": "@ourword-ai",
+  "tags": [
+    "ai-coding",
+    "claude-code",
+    "cli",
+    "codex",
+    "cost-tracking"
+  ],
+  "voices": [
+    {
+      "quote": "## Follow-on work after #847 — five decisions I can't make alone #847 is the first of three changes I've prepared against `feat/core-extraction`. It's build/release/CI only, no `src/` chan…",
+      "url": "https://github.com/getagentseal/codeburn/issues/809#issuecomment-5097385166",
+      "src": "github",
+      "kind": "pain"
+    }
+  ],
+  "does": "CodeBurn reads the session files your AI tools already write to disk and breaks down every token and dollar by task, model, tool, and project across 36 tools. It runs entirely locally, with no wrapper, proxy, or API keys, and pricing comes from LiteLLM refreshed daily.",
+  "why_use": "Unlike your provider's bill, CodeBurn shows exactly where your AI spend goes—per task, model, and project—so you can spot waste like files re-read across sessions, low read:edit ratios, unused MCP servers, and bloated CLAUDE.md files. It's free, open-source, and local-first, so your data never leaves your machine.",
+  "gap": "It's a developer tool with no consumer-facing product around the cost-tracking capability.",
+  "counter": "AI coding tools themselves (Anthropic, OpenAI, etc.) could add usage analytics natively, and existing observability platforms like Datadog or New Relic could integrate AI usage tracking, potentially killing a standalone tool.",
+  "differentiator": "Package CodeBurn as a simple desktop app with a GUI dashboard and automated weekly email reports, targeting non-CLI-savvy developers and small teams who want visibility without touching a terminal.",
+  "hook": "Developers and teams using Claude Code, Cursor, Codex, and other AI tools are blindsided by their monthly AI bills—they know the total but not that half went to conversation instead of code, or that an expensive model bu",
+  "i18n": {
+    "zh": {
+      "claim": "CodeBurn 是一款免费、开源、本地优先的工具，可追踪 36 种工具和代理的 AI 编码 token 使用量和成本，并按模型、项目和任务细分。",
+      "hook": "使用 Claude Code、Cursor、Codex 等 AI 工具的开发者和小团队对每月 AI 账单感到困惑——他们只知道总额，却不知道一半花在了对话而非代码上，或者昂贵的模型浪费了预算在更便宜的模型就能一次完成的工作上。",
+      "does": "CodeBurn 读取 AI 工具已写入磁盘的会话文件，并按任务、模型、工具和项目细分 36 种工具的每个 token 和美元。它完全在本地运行，无需包装器、代理或 API 密钥，定价来自 LiteLLM 每日刷新。",
+      "why_use": "与提供商的账单不同，CodeBurn 准确显示 AI 支出的去向——按任务、模型和项目——以便发现浪费，如跨会话重复读取的文件、低读取/编辑比、未使用的 MCP 服务器和臃肿的 CLAUDE.md 文件。它免费、开源、本地优先，数据永不离开你的机器。",
+      "gap": "当前工具是 CLI 优先且自托管的，限制了不熟悉终端的开发者的采用；没有为不太懂技术的用户或团队提供精美的产品包装。",
+      "counter": "AI 编码工具本身（如 Anthropic、OpenAI）可以原生添加使用分析，而现有可观测性平台（如 Datadog 或 New Relic）可以集成 AI 使用跟踪，从而可能扼杀独立工具。",
+      "differentiator": "将 CodeBurn 打包为简单的桌面应用，带有 GUI 仪表板和自动每周电子邮件报告，面向不熟悉 CLI 的开发者和希望无需接触终端即可获得可见性的小团队。",
+      "value": "个人开发者和小型工程团队付费订阅，以获得清晰的 AI 编码支出明细，从而削减浪费并优化模型选择，节省的费用超过订阅成本。",
+      "risk": "现有巨头（AI 提供商和主要可观测性平台）可能将类似分析作为内置功能添加，使独立工具变得多余。",
+      "why_good": "CodeBurn 读取 AI 工具已写入磁盘的会话文件，并按任务、模型、工具和项目细分 36 种工具的每个 token 和美元。它完全在本地运行，无需包装器、代理或 API 密钥，定价来自 LiteLLM 每日刷新。"
+    }
+  },
+  "verdict": "watch",
+  "pain_verified": true,
+  "workload": "2w",
+  "pick": false,
+  "pick_reason": "Verified demand via active contributors, but the gap is unclear for ordinary users and the wedge is limited to developers.",
+  "family": null,
+  "id": "24-getagentseal-codeburn",
+  "agent": "gh-scout",
+  "posted_at": "2026-08-06T06:38:51Z"
+}

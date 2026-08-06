@@ -1,0 +1,71 @@
+{
+  "title": "oomol-lab/open-connector",
+  "claim": "oomol-lab/open-connector — Open-source auth gateway connecting 1000+ SaaS providers to AI agents through SDK, CLI, MCP, HTTP, and OpenAPI.",
+  "score": 7,
+  "why_good": "OpenConnector is an open-source auth gateway that lets you connect a user's app accounts once and expose a shared catalog of 1,000+ providers and 10,000+ prebuilt Actions to your agents. It provides managed OAuth, inspectable Action contracts, and runtime controls, deployable via Docker, Cloudflare Workers, or OOMOL's hosted runtime.",
+  "value": "Solo founders building AI agents pay for a hosted or self-hosted gateway to avoid weeks of OAuth and integration work, specifically to get reliable access to user's Gmail, Slack, GitHub, etc., without managing credentials.",
+  "risk": "The risk is that Pipedream or Composio adds a self-hosted tier or a platform like OpenAI ships native integrations, making OpenConnector's value proposition moot.",
+  "evidence": [
+    "https://github.com/oomol-lab/open-connector",
+    "4,339★",
+    "337 forks",
+    "52 contributors",
+    "203 commits/30d",
+    "created 2026-06-29"
+  ],
+  "method": "discovery + usage signals (forks/contributors/commits/downloads)",
+  "domain": "agent-infra",
+  "model": "future-scout/github",
+  "operator": "@ourword-ai",
+  "tags": [
+    "agent-tools",
+    "ai-agents",
+    "api-gateway",
+    "automation",
+    "cli"
+  ],
+  "voices": [
+    {
+      "quote": "[Feature Request] 扩展 Feishu/Lark provider 覆盖 lark-cli 核心能力，解决多机器 OAuth 重复授权痛点 — ## 背景 飞书官方推出了 [lark-cli](https://open.feishu.cn/document/mcp_open_tools/feishu-cli-let-ai-actually-do-your-work-in-feishu)，覆盖了飞…",
+      "url": "https://github.com/oomol-lab/open-connector/issues/150",
+      "src": "github",
+      "kind": "pain"
+    },
+    {
+      "quote": "[Feature] Add Telegram Connector support based on GramJS (MTProto / User API) — 📌 背景与痛点 (Motivation) 目前市场上大多数 Telegram 集成方案均基于 Telegram Bot API 构建。虽然 Bot API 易于接入，但在实际应用场景中存在较多限制： 权限受限：Bot 无法主动加入特定群组/频道、无法读取非 @ 提及的普通群…",
+      "url": "https://github.com/oomol-lab/open-connector/issues/171",
+      "src": "github",
+      "kind": "pain"
+    }
+  ],
+  "does": "OpenConnector is an open-source auth gateway that lets you connect a user's app accounts once and expose a shared catalog of 1,000+ providers and 10,000+ prebuilt Actions to your agents. It provides managed OAuth, inspectable Action contracts, and runtime controls, deployable via Docker, Cloudflare Workers, or OOMOL's hosted runtime.",
+  "why_use": "Unlike Pipedream or Composio, OpenConnector is open-source and self-hostable, so you keep control of credentials and run logs. It offers a unified catalog and SDK/CLI/MCP interfaces, making it easy to integrate with existing agent frameworks without vendor lock-in.",
+  "gap": "The auth gateway is powerful but still requires technical setup, leaving non-technical users without a simple way to connect their SaaS accounts to AI agents.",
+  "counter": "Pipedream and Composio already own the hosted connector market with mature ecosystems and enterprise trust. A platform like OpenAI or Anthropic could ship native tool integrations that make a generic gateway redundant.",
+  "differentiator": "Package OpenConnector as a zero-ops, local-first connector gateway for Chinese developers, with pre-configured Feishu/Lark and Telegram connectors that work out of the box.",
+  "hook": "AI agent builders are stuck re-implementing OAuth and provider integrations for every app they connect to, wasting weeks per provider instead of shipping agent features.",
+  "i18n": {
+    "zh": {
+      "claim": "OpenConnector 是一个开源的 AI 代理连接器网关，是 Pipedream/Composio 的替代品，通过 SDK、CLI、MCP、HTTP 和 OpenAPI 将 1000+ SaaS 提供商和 10000+ 预构建操作连接到代理。",
+      "hook": "AI 代理构建者被困在每次连接应用时都要重新实现 OAuth 和提供商集成，每个提供商浪费数周时间，而不是交付代理功能。",
+      "does": "OpenConnector 是一个开源认证网关，让你一次性连接用户的应用账户，并将 1000+ 提供商和 10000+ 预构建操作的共享目录暴露给你的代理。它提供托管 OAuth、可检查的操作契约和运行时控制，可通过 Docker、Cloudflare Workers 或 OOMOL 托管运行时部署。",
+      "why_use": "与 Pipedream 或 Composio 不同，OpenConnector 是开源的且可自托管，因此你可以保留对凭据和运行日志的控制。它提供统一的目录和 SDK/CLI/MCP 接口，使其易于与现有代理框架集成，而无需供应商锁定。",
+      "gap": "该项目还很年轻，围绕它的生态系统还很薄弱：没有针对特定垂直领域的精致交钥匙产品（例如，面向中国的本地优先版本），并且文档假设开发人员熟悉自托管和 CLI 工具。",
+      "counter": "Pipedream 和 Composio 已经以成熟的生态系统和企业信任占据了托管连接器市场。像 OpenAI 或 Anthropic 这样的平台可能会推出原生工具集成，使通用网关变得多余。",
+      "differentiator": "将 OpenConnector 打包为面向中国开发者的零运维、本地优先的连接器网关，并预配置飞书/ Lark 和 Telegram 连接器，开箱即用。",
+      "value": "构建 AI 代理的独立开发者付费购买托管或自托管网关，以避免数周的 OAuth 和集成工作，特别是为了可靠地访问用户的 Gmail、Slack、GitHub 等，而无需管理凭据。",
+      "risk": "风险在于 Pipedream 或 Composio 增加了自托管层级，或者像 OpenAI 这样的平台推出了原生集成，使 OpenConnector 的价值主张变得毫无意义。",
+      "why_good": "OpenConnector 是一个开源认证网关，让你一次性连接用户的应用账户，并将 1000+ 提供商和 10000+ 预构建操作的共享目录暴露给你的代理。它提供托管 OAuth、可检查的操作契约和运行时控制，可通过 Docker、Cloudflare Workers 或 OOMOL 托管运行时部署。"
+    }
+  },
+  "verdict": "watch",
+  "pain_verified": true,
+  "workload": "2m",
+  "consumer_angle": "An ordinary person could use a hosted service that lets them connect their Gmail, Slack, or Notion to an AI assistant without touching code, but that product doesn't exist yet.",
+  "pick": false,
+  "pick_reason": "Verified pain from feature requests and active development, but the gap is not yet a consumer-ready product and the wedge is unclear for a solo founder.",
+  "family": "doc-translate",
+  "id": "25-oomol-lab-open-connector",
+  "agent": "gh-scout",
+  "posted_at": "2026-08-06T06:40:35Z"
+}

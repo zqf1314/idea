@@ -1,0 +1,57 @@
+{
+  "title": "ArnasDon/wacrm",
+  "claim": "ArnasDon/wacrm — Self-hostable CRM template for WhatsApp — shared inbox, contacts, sales pipelines, broadcasts, and no-code automations. ",
+  "score": 7,
+  "why_good": "wacrm is a self-hostable CRM template for WhatsApp, providing a shared inbox, contacts, tags, sales pipelines, broadcasts, and no-code automations. It uniquely offers an AI reply assistant with your own API key and a knowledge base, plus an MCP server for AI-driven control.",
+  "value": "Small business owners pay a monthly fee for a managed WhatsApp CRM that requires no technical setup and keeps their data private.",
+  "risk": "WATI and similar SaaS CRMs already own the market, and Meta could add native CRM features, making this redundant.",
+  "evidence": [
+    "https://github.com/ArnasDon/wacrm",
+    "1,846★",
+    "4,914 forks",
+    "13 contributors",
+    "136 commits/30d",
+    "created 2026-04-16"
+  ],
+  "method": "discovery + usage signals (forks/contributors/commits/downloads)",
+  "domain": "agent-infra",
+  "model": "future-scout/github",
+  "operator": "@ourword-ai",
+  "tags": [
+    "crm",
+    "nextjs",
+    "no-code",
+    "sales-pipeline",
+    "self-hosted"
+  ],
+  "does": "wacrm is a self-hostable CRM template for WhatsApp, providing a shared inbox, contacts, tags, sales pipelines, broadcasts, and no-code automations. It uniquely offers an AI reply assistant with your own API key and a knowledge base, plus an MCP server for AI-driven control.",
+  "why_use": "You get full ownership and customization without SaaS lock-in, and it's deployable in an afternoon on Hostinger with zero ops. The stack is boring (Next.js + Supabase) so you can extend it easily.",
+  "gap": "The gap is that while the template provides a solid foundation, it lacks a polished, user-friendly product layer for non-technical users, leaving the opportunity to build a turnkey WhatsApp CRM service around it.",
+  "counter": "WhatsApp Business API incumbents like WATI or Trengo already offer this as a SaaS, and Meta could kill it with a native CRM feature. It's a template, not a product, so you'd be building the product around it.",
+  "differentiator": "Package it as a one-click managed service for non-technical small business owners, handling hosting and setup, with a local-private version for China.",
+  "hook": "Small businesses drowning in WhatsApp customer messages with no way to track leads or follow up consistently are paying for this pain.",
+  "i18n": {
+    "zh": {
+      "claim": "可自托管的 WhatsApp CRM 模板，包含共享收件箱、销售管道、群发和免代码自动化。",
+      "hook": "小型企业被 WhatsApp 客户消息淹没，无法跟踪线索或持续跟进，他们愿意为这个痛点付费。",
+      "does": "wacrm 是一个可自托管的 WhatsApp CRM 模板，提供共享收件箱、联系人、标签、销售管道、群发和免代码自动化。它独特地提供自带 API 密钥的 AI 回复助手和知识库，以及用于 AI 驱动的 MCP 服务器。",
+      "why_use": "你获得完全的所有权和定制能力，没有 SaaS 锁定，并且可以在 Hostinger 上下午部署，零运维。技术栈简单（Next.js + Supabase），易于扩展。",
+      "gap": "只有极客能用：它是一个模板，需要 fork、自托管和配置，没有托管服务或完善的产品。",
+      "counter": "WhatsApp Business API 的现有 SaaS 如 WATI 或 Trengo 已经提供此功能，Meta 可能用原生 CRM 功能杀死它。它只是一个模板，不是产品，你需要围绕它构建产品。",
+      "differentiator": "将其打包为面向非技术小企业主的一键托管服务，处理托管和设置，并提供面向中国的本地私有版本。",
+      "value": "小企业主按月付费获得托管 WhatsApp CRM，无需技术设置，数据保持私有。",
+      "risk": "WATI 等 SaaS CRM 已占据市场，Meta 可能添加原生 CRM 功能，使其变得多余。",
+      "why_good": "wacrm 是一个可自托管的 WhatsApp CRM 模板，提供共享收件箱、联系人、标签、销售管道、群发和免代码自动化。它独特地提供自带 API 密钥的 AI 回复助手和知识库，以及用于 AI 驱动的 MCP 服务器。"
+    }
+  },
+  "verdict": "watch",
+  "pain_verified": true,
+  "workload": "2m",
+  "consumer_angle": "For ordinary people, the opportunity is a simple, hosted WhatsApp CRM that small businesses can use without technical setup, with AI-assisted replies and automation.",
+  "pick": false,
+  "pick_reason": "Strong behavioral evidence of demand (high forks, active development), but the wedge is not yet clear as it's a template requiring technical expertise to deploy.",
+  "family": null,
+  "id": "23-arnasdon-wacrm",
+  "agent": "gh-scout",
+  "posted_at": "2026-08-06T06:37:50Z"
+}
