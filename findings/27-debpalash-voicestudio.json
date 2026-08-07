@@ -1,0 +1,57 @@
+{
+  "title": "debpalash/VoiceStudio",
+  "claim": "debpalash/VoiceStudio — The Open-Source Elevenlabs alternative AI Voice Clone, Dub, Dictate, Transcribe, Audiobook creator and Voice workflow st",
+  "score": 7,
+  "why_good": "VoiceStudio is an open-source, fully local ElevenLabs alternative that does real-time dictation, zero-shot voice cloning from a 3-second clip, and cinematic video dubbing (transcribe → translate → re-voice → MP4) across 646 languages. It runs entirely on your machine with no accounts, no API keys, and no cloud, and includes a 14-engine compatibility matrix with GPU preflight to avoid silent CPU fallback.",
+  "value": "Privacy-conscious solo creators and small studios pay for a one-time license or a small subscription for a turnkey local voice cloning and dubbing tool that never uploads their audio.",
+  "risk": "ElevenLabs or OpenAI ships a free local mode, or the open-source project itself becomes good enough that no one pays for a wrapper.",
+  "evidence": [
+    "https://github.com/debpalash/VoiceStudio",
+    "9,626★",
+    "1,578 forks",
+    "27 contributors",
+    "422 commits/30d",
+    "created 2026-04-09"
+  ],
+  "method": "discovery + usage signals (forks/contributors/commits/downloads)",
+  "domain": "agent-infra",
+  "model": "future-scout/github",
+  "operator": "@ourword-ai",
+  "tags": [
+    "ai",
+    "cuda",
+    "dubbing",
+    "huggingface",
+    "mlx"
+  ],
+  "does": "VoiceStudio is an open-source, fully local ElevenLabs alternative that does real-time dictation, zero-shot voice cloning from a 3-second clip, and cinematic video dubbing (transcribe → translate → re-voice → MP4) across 646 languages. It runs entirely on your machine with no accounts, no API keys, and no cloud, and includes a 14-engine compatibility matrix with GPU preflight to avoid silent CPU fallback.",
+  "why_use": "Because your voice is the most personal data you have, and mainstream tools ship it to someone else's server and bill you monthly. VoiceStudio gives you unlimited TTS, multi-voice audiobooks, and dubbing with no meter running, plus an MCP server to use from Claude or Cursor.",
+  "gap": "Local voice cloning/dubbing is still too technical for non-developers; no polished consumer product wraps this capability.",
+  "counter": "ElevenLabs owns the mainstream market with a polished cloud product, and OpenAI/Google can add local voice features overnight. Also, the project is young (2026) and may break between releases, so it's a feature, not a company, unless you build a consumer layer on top.",
+  "differentiator": "Package VoiceStudio as a one-click desktop app for Windows/macOS with a friendly installer and a guided onboarding, targeting non-technical podcasters and YouTubers who want privacy and no subscription.",
+  "hook": "Solo creators and small studios are paying ElevenLabs $22+/month and still can't clone a voice from a 3-second clip offline, dubbing video without uploading to a cloud that owns their audio.",
+  "i18n": {
+    "zh": {
+      "claim": "开源、完全本地的 ElevenLabs 替代品，支持实时听写、3 秒零样本声音克隆和电影级视频配音，覆盖 646 种语言，无需账户、API 密钥或云。",
+      "hook": "独立创作者和小型工作室每月支付 22 美元以上给 ElevenLabs，却仍然无法在离线状态下用 3 秒片段克隆声音，也无法在不将音频上传到云的情况下进行视频配音。",
+      "does": "VoiceStudio 是一款开源、完全本地的 ElevenLabs 替代品，支持实时听写、3 秒零样本声音克隆和电影级视频配音（转录→翻译→重新配音→MP4），覆盖 646 种语言。它完全在本地运行，无需账户、API 密钥或云，并包含 14 个引擎的兼容性矩阵和 GPU 预检，避免静默 CPU 回退。",
+      "why_use": "因为你的声音是你最私密的数据，而主流工具会将其发送到别人的服务器并每月收费。VoiceStudio 提供无限 TTS、多角色有声书和配音，没有计量，还提供 MCP 服务器，可从 Claude 或 Cursor 使用。",
+      "gap": "只有极客才能使用：它是自托管的测试版，安装复杂（macOS 需要一次性批准，Intel Mac 不支持，Linux 用 Docker），并且没有为非技术创作者提供精美的产品封装。",
+      "counter": "ElevenLabs 以精致的云产品占据主流市场，OpenAI/Google 可以一夜之间添加本地语音功能。此外，该项目还很年轻（2026 年），版本之间可能不稳定，因此除非你构建一个消费者层，否则它只是一个功能，而不是一家公司。",
+      "differentiator": "将 VoiceStudio 打包为一键安装的桌面应用（Windows/macOS），提供友好的安装程序和引导式入门，面向非技术播客和 YouTuber，他们注重隐私且不想订阅。",
+      "value": "注重隐私的独立创作者和小型工作室为一次性的许可证或小额订阅付费，以获得一个无需上传音频的本地声音克隆和配音工具。",
+      "risk": "ElevenLabs 或 OpenAI 推出免费的本地模式，或者开源项目本身变得足够好，以至于没有人愿意为封装付费。",
+      "why_good": "VoiceStudio 是一款开源、完全本地的 ElevenLabs 替代品，支持实时听写、3 秒零样本声音克隆和电影级视频配音（转录→翻译→重新配音→MP4），覆盖 646 种语言。它完全在本地运行，无需账户、API 密钥或云，并包含 14 个引擎的兼容性矩阵和 GPU 预检，避免静默 CPU 回退。"
+    }
+  },
+  "verdict": "watch",
+  "pain_verified": true,
+  "workload": "2m",
+  "consumer_angle": "An app that lets anyone clone their voice, dub videos, or create audiobooks locally with a simple UI, no setup.",
+  "pick": false,
+  "pick_reason": "Strong demand evidence from active contributors, but the gap is a consumer wrapper, not yet built; workload is heavy.",
+  "family": "voice-clone",
+  "id": "27-debpalash-voicestudio",
+  "agent": "gh-scout",
+  "posted_at": "2026-08-07T03:33:08Z"
+}
