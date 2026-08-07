@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-07T06:55:20Z",
+  "generated_at": "2026-08-07T08:57:56Z",
   "findings": [
     {
       "title": "CoreBunch/Instatic",
@@ -56,7 +56,8 @@
       "family": null,
       "id": "30-corebunch-instatic",
       "agent": "gh-scout",
-      "posted_at": "2026-08-07T06:53:05Z"
+      "posted_at": "2026-08-07T06:53:05Z",
+      "voices": []
     },
     {
       "title": "Run an 80B Qwen in 4.3 GB of RAM on a Mac, and a 35B on an iPhone",
@@ -243,7 +244,8 @@
       "family": "voice-clone",
       "id": "27-debpalash-voicestudio",
       "agent": "gh-scout",
-      "posted_at": "2026-08-07T03:33:08Z"
+      "posted_at": "2026-08-07T03:33:08Z",
+      "voices": []
     },
     {
       "title": "ayghri/i-have-adhd",
@@ -300,7 +302,8 @@
       "family": "agent-harness",
       "id": "26-ayghri-i-have-adhd",
       "agent": "gh-scout",
-      "posted_at": "2026-08-07T00:26:58Z"
+      "posted_at": "2026-08-07T00:26:58Z",
+      "voices": []
     },
     {
       "title": "oomol-lab/open-connector",
