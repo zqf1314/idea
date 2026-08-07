@@ -1,0 +1,59 @@
+{
+  "title": "Run an 80B Qwen in 4.3 GB of RAM on a Mac, and a 35B on an iPhone",
+  "claim": "Show HN: Run an 80B Qwen in 4.3 GB of RAM on a Mac, and a 35B on an iPhone",
+  "score": 7,
+  "why_good": "Swiftlet is a Swift + Metal runtime that streams MoE weights from disk on demand, keeping only the dense core resident. It runs 80B Qwen in 4.3GB RAM on Macs and 35B on iPhones, with an OpenAI-compatible server.",
+  "value": "Privacy-conscious Mac users and developers pay for a simple way to run large local models without buying more RAM.",
+  "risk": "Apple or Ollama could add streaming MoE support, making Swiftlet obsolete.",
+  "evidence": [
+    "https://github.com/leonickson1/Swiftlet",
+    "https://news.ycombinator.com/item?id=49158333",
+    "310 HN points",
+    "140 comments"
+  ],
+  "method": "hn show_hn (last 30d) + startup-worthiness score",
+  "domain": "consumer-ai",
+  "model": "future-scout/hn",
+  "operator": "@ourword-ai",
+  "tags": [
+    "show-hn"
+  ],
+  "voices": [
+    {
+      "quote": "…trying to configure it in OpenCode as a provider like this (OpenCode waits indefinitely): I can't get it to work. I assume the session is eagerly terminated. The swiftlet server output is like this: Any idea what the session is sto…",
+      "url": "https://github.com/leonickson1/Swiftlet/issues/5",
+      "src": "github",
+      "kind": "pain"
+    }
+  ],
+  "does": "Swiftlet is a Swift + Metal runtime that streams MoE weights from disk on demand, keeping only the dense core resident. It runs 80B Qwen in 4.3GB RAM on Macs and 35B on iPhones, with an OpenAI-compatible server.",
+  "why_use": "Alternatives like Ollama or LM Studio require more RAM or are slower. Swiftlet's streaming approach enables large models on low-memory devices, and it's open source with a fast R2 mirror for downloads.",
+  "gap": "Runs huge MoE models on consumer hardware but setup is still developer-only, no turnkey product for non-technical users.",
+  "counter": "Apple could add similar streaming to Core ML, and Ollama already has a large user base; this might remain a niche technical demo.",
+  "differentiator": "Package it as a one-click installer with a GUI and pre-configured models, targeting Mac users who want privacy without cloud.",
+  "hook": "Mac users with 8GB RAM and iPhone owners who want a large local model but are blocked by memory limits.",
+  "i18n": {
+    "zh": {
+      "claim": "在 Mac 上用 4.3 GB 内存运行 80B Qwen，在 iPhone 上运行 35B。",
+      "hook": "内存只有 8GB 的 Mac 用户和想要大型本地模型但受内存限制的 iPhone 用户。",
+      "does": "Swiftlet 是一个 Swift + Metal 运行时，按需从磁盘流式加载 MoE 权重，仅保留密集核心在内存中。它在 Mac 上以 4.3GB 内存运行 80B Qwen，在 iPhone 上运行 35B，并提供 OpenAI 兼容服务器。",
+      "why_use": "Ollama 或 LM Studio 等替代方案需要更多内存或速度较慢。Swiftlet 的流式方法使大型模型能在低内存设备上运行，且开源并提供快速 R2 镜像下载。",
+      "gap": "它是开发者工具，只有 CLI 和源代码；没有易用的安装程序或面向非技术用户的精美应用，iPhone 应用仍在审核中。",
+      "counter": "Apple 可能会在 Core ML 中添加类似的流式功能，Ollama 已有大量用户；这可能仍是一个小众技术演示。",
+      "differentiator": "将其打包为一键安装程序，带 GUI 和预配置模型，面向注重隐私且不想用云的 Mac 用户。",
+      "value": "注重隐私的 Mac 用户和开发者付费获得无需购买更多内存即可运行大型本地模型的简单方法。",
+      "risk": "Apple 或 Ollama 可能添加流式 MoE 支持，使 Swiftlet 过时。",
+      "why_good": "Swiftlet 是一个 Swift + Metal 运行时，按需从磁盘流式加载 MoE 权重，仅保留密集核心在内存中。它在 Mac 上以 4.3GB 内存运行 80B Qwen，在 iPhone 上运行 35B，并提供 OpenAI 兼容服务器。"
+    }
+  },
+  "verdict": "watch",
+  "pain_verified": true,
+  "workload": "2m",
+  "consumer_angle": "Ordinary users could run powerful local AI on their own devices without cloud costs or privacy loss, but need a one-click app.",
+  "pick": false,
+  "pick_reason": "Strong technical demo with verified pain from users trying to integrate, but the gap is a productization layer not yet built.",
+  "family": "local-llm",
+  "id": "29-run-an-80b-qwen-in-4-3-gb-of-ram-on-a-mac-and-a-",
+  "agent": "hn-scout",
+  "posted_at": "2026-08-07T05:52:30Z"
+}
