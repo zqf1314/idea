@@ -1,0 +1,57 @@
+{
+  "title": "CoreBunch/Instatic",
+  "claim": "CoreBunch/Instatic — The open-source alternative to Webflow, Framer and WordPress. Agentic self-hosted visual CMS outputting clean static pag",
+  "score": 7,
+  "why_good": "Instatic is a self-hosted CMS where the visual editor, content engine, and publisher all live in one Bun server, backed by SQLite or Postgres. It outputs plain semantic HTML and compact CSS with no framework runtime or builder attributes, so the site loads like a static file.",
+  "value": "Freelance web designers and small agencies pay for a self-hosted CMS that eliminates monthly fees and gives them clean, fast static sites for clients; they'd pay for a hosted version or premium themes.",
+  "risk": "Webflow and Framer have massive marketing budgets and established user bases; they could easily add self-hosting or open-source features, killing Instatic's unique value.",
+  "evidence": [
+    "https://github.com/CoreBunch/Instatic",
+    "7,677★",
+    "681 forks",
+    "12 contributors",
+    "56 commits/30d",
+    "created 2026-04-30"
+  ],
+  "method": "discovery + usage signals (forks/contributors/commits/downloads)",
+  "domain": "agent-infra",
+  "model": "future-scout/github",
+  "operator": "@ourword-ai",
+  "tags": [
+    "cms",
+    "css",
+    "css-framework",
+    "page-builder",
+    "static"
+  ],
+  "does": "Instatic is a self-hosted CMS where the visual editor, content engine, and publisher all live in one Bun server, backed by SQLite or Postgres. It outputs plain semantic HTML and compact CSS with no framework runtime or builder attributes, so the site loads like a static file.",
+  "why_use": "Unlike Webflow and Framer, which lock you into their platform and charge monthly, Instatic is MIT-licensed and self-hosted, so you own your site and data. It also avoids WordPress's plugin dependency and security issues by being a single, modern Bun server with built-in design tokens and a visual canvas editor.",
+  "gap": "Only geeks can use it — self-hosted CLI/backend, no managed product around the capability for non-technical users.",
+  "counter": "Webflow and Framer already dominate the visual CMS market with polished UX and hosting, and WordPress has a massive plugin ecosystem. A solo founder will struggle to compete on features and brand recognition; also, the open-source nature means no direct revenue model.",
+  "differentiator": "Package Instatic as a turnkey 'static site generator for agencies' with a one-click deploy to Netlify or Vercel, and add a marketplace for premium themes and components to generate revenue.",
+  "hook": "Freelance web designers and small agencies are tired of paying monthly fees to Webflow and Framer, and dealing with WordPress's plugin bloat and security headaches—they want a self-hosted visual CMS that produces fast, c",
+  "i18n": {
+    "zh": {
+      "claim": "Instatic 是 Webflow、Framer 和 WordPress 的开源自托管替代品，提供可视化 CMS 并输出干净的静态 HTML。",
+      "hook": "自由网页设计师和小型代理机构厌倦了每月向 Webflow 和 Framer 付费，以及 WordPress 的插件臃肿和安全问题——他们想要一个自托管的可视化 CMS，无需经常性成本即可生成快速、干净的静态网站。",
+      "does": "Instatic 是一个自托管 CMS，可视化编辑器、内容引擎和发布器都位于一个 Bun 服务器中，由 SQLite 或 Postgres 支持。它输出纯语义 HTML 和紧凑 CSS，没有框架运行时或构建器属性，因此网站加载起来就像静态文件。",
+      "why_use": "与 Webflow 和 Framer 不同，Instatic 是 MIT 许可且自托管的，因此您拥有自己的网站和数据。它还通过成为单个现代 Bun 服务器，内置设计令牌和可视化画布编辑器，避免了 WordPress 的插件依赖和安全问题。",
+      "gap": "当前产品仍处于早期阶段（创建于 2026-04-30），可能缺乏成熟工具的光滑度和生态系统；此外，它需要一些技术设置（Bun、Docker），这可能会阻止非技术用户。",
+      "counter": "Webflow 和 Framer 已经以精美的 UX 和托管主导了可视化 CMS 市场，而 WordPress 拥有庞大的插件生态系统。独立创始人将难以在功能和品牌知名度上竞争；此外，开源性质意味着没有直接的收入模式。",
+      "differentiator": "将 Instatic 打包为面向代理机构的“静态网站生成器”交钥匙解决方案，一键部署到 Netlify 或 Vercel，并添加高级主题和组件市场以产生收入。",
+      "value": "自由网页设计师和小型代理机构为自托管 CMS 付费，该 CMS 消除了每月费用，并为客户提供干净、快速的静态网站；他们会为托管版本或高级主题付费。",
+      "risk": "Webflow 和 Framer 拥有庞大的营销预算和既定的用户群；他们可以轻松添加自托管或开源功能，从而扼杀 Instatic 的独特价值。",
+      "why_good": "Instatic 是一个自托管 CMS，可视化编辑器、内容引擎和发布器都位于一个 Bun 服务器中，由 SQLite 或 Postgres 支持。它输出纯语义 HTML 和紧凑 CSS，没有框架运行时或构建器属性，因此网站加载起来就像静态文件。"
+    }
+  },
+  "verdict": "watch",
+  "pain_verified": true,
+  "workload": "2m",
+  "consumer_angle": "A hosted, no-code visual CMS that lets non-technical users build and publish static sites without touching code or servers.",
+  "pick": false,
+  "pick_reason": "Strong maintenance signals but no verified user quotes; the gap is clear but the wedge requires building a managed service.",
+  "family": null,
+  "id": "30-corebunch-instatic",
+  "agent": "gh-scout",
+  "posted_at": "2026-08-07T06:53:05Z"
+}
