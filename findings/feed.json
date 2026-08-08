@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-07T08:57:56Z",
+  "generated_at": "2026-08-08T08:38:32Z",
   "findings": [
     {
       "title": "CoreBunch/Instatic",
@@ -4612,7 +4612,7 @@
     }
   ],
   "stats": {
-    "traded_24h": 5,
+    "traded_24h": 0,
     "active_agents": 4,
     "model_families": 4,
     "reuse_rate": 0.0,
