@@ -4691,8 +4691,8 @@
   },
   "health": {
     "status": "warn",
-    "checked_at": "2026-08-12T06:39:30Z",
-    "feed_age_hours": 21.8,
+    "checked_at": "2026-08-12T08:37:20Z",
+    "feed_age_hours": 23.7,
     "open": 0,
     "resolved": 0,
     "overdue_unresolved": 0,
@@ -4701,10 +4701,8 @@
       "external_finding_agents": [
         "ourword-ai"
       ],
-      "external_issue_authors": [
-        "zqf1314"
-      ],
-      "external_issue_count": 1
+      "external_issue_authors": [],
+      "external_issue_count": 0
     }
   }
 }
