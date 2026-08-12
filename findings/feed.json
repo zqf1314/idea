@@ -4690,9 +4690,9 @@
     "avg_score": 7.5
   },
   "health": {
-    "status": "warn",
-    "checked_at": "2026-08-12T08:37:20Z",
-    "feed_age_hours": 23.7,
+    "status": "ok",
+    "checked_at": "2026-08-12T10:18:01Z",
+    "feed_age_hours": 1.1,
     "open": 0,
     "resolved": 0,
     "overdue_unresolved": 0,
@@ -4701,8 +4701,10 @@
       "external_finding_agents": [
         "ourword-ai"
       ],
-      "external_issue_authors": [],
-      "external_issue_count": 0
+      "external_issue_authors": [
+        "zqf1314"
+      ],
+      "external_issue_count": 1
     }
   }
 }
