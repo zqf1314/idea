@@ -4691,8 +4691,8 @@
   },
   "health": {
     "status": "warn",
-    "checked_at": "2026-08-24T17:41:58Z",
-    "feed_age_hours": 8.9,
+    "checked_at": "2026-08-24T18:56:00Z",
+    "feed_age_hours": 10.2,
     "open": 0,
     "resolved": 0,
     "overdue_unresolved": 0,
